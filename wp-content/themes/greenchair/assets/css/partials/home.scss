@@ -2,7 +2,6 @@
     .jumbotron {
         background-size: cover;
         background-position: top center;
-        min-height: 450px;
         background-repeat: no-repeat;
         margin-bottom: 0;
 
@@ -29,7 +28,10 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        .col {
+        .feature {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
             .inner {
                 background: #ffffff;
                 padding: 20px 0;
@@ -45,6 +47,76 @@
                     min-height: 50px;
                 }
             }
+        }
+    }
+
+    #about {
+        background-image: url('assets/images/motherandchild.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        p {
+            color: #ffffff;
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+
+            &.green {
+                font-weight: bold;
+                font-size: 1.3rem;
+                color: $green;
+            }
+        }
+    }
+
+    #essentials {
+        text-align: center;
+
+        .essential-item {
+            width: 18%;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+
+        p {
+            width: 55%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    #home-bottom {
+        padding: 60px 0;
+
+        .left {
+            background-image: url('assets/images/kids.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+        }
+
+        .right {
+            background-image: url('assets/images/greenwood.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+        }
+
+        h4 {
+            color: #ffffff;
+            padding-top: 15%;
+            width: 60%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
