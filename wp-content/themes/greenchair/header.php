@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico" type="image/x-icon">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-        <link href="https://fonts.googleapis.com/css?family=Amiri:400,700|Lato:400,700,900|Satisfy" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Amiri:400,700|Lato:400,700,900" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css">
         <?php wp_head(); ?>
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css?" />

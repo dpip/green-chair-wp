@@ -15,19 +15,25 @@ get_header(); ?>
           <div class="donate-selection-wrap">
             <div class="donate-icon-wrapper">
               <div class="donate-icon-container text-center">
-                <div class="icon">1</div>
-                <div>Your furnishings provide others<br /> the comforts of home</div>
-                <button type="button" class="btn donate-btn">Give Homeware</button>
+                <div class="icon">
+                  <div class="icon-shade icon-shade-donate">Donate gently used<br /> houseware and furnishings</div>
+                </div>
+                <div>Your furnishings provide others<br />warmth and the comforts of home</div>
+                <button type="button" class="btn donate-btn">Donate</button>
               </div>
               <div class="donate-icon-container text-center">
-                <div class="icon">2</div>
+                <div class="icon">
+                  <div class="icon-shade icon-shade-fund"><span>Fund our vision<br /> of hope and<br /> community</span></div>
+                </div>
                 <div>You make our programs possible<br /> & your support provides hope to others</div>
-                <button type="button" class="btn donate-btn">Give Money</button>
+                <button type="button" class="btn donate-btn">Fund</button>
               </div>
               <div class="donate-icon-container text-center">
-                <div class="icon">3</div>
+                <div class="icon">
+                  <div class="icon-shade icon-shade-volunteer"><span>Join our amazing<br /> team of volunteers</span></div>
+                </div>
                 <div>It takes many hands and hearts<br /> to make The Green Chair Project work</div>
-                <button type="button" class="btn donate-btn">Give Time</button>
+                <button type="button" class="btn donate-btn">Volunteer</button>
               </div>
             </div>
           </div>

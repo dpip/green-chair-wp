@@ -13,14 +13,51 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: #554a4e; }
+
+h1 {
+  font-family: "Amiri", serif; }
+
+h6 {
+  font-family: "Amiri", serif;
+  color: #16a79e;
+  text-transform: uppercase;
+  font-size: 1.2rem; }
+
+.btn-primary {
+  background: #ffffff;
+  border-color: #8cc342;
+  color: #8cc342;
+  text-transform: uppercase;
+  border-radius: 20px; }
+  .btn-primary:hover, .btn-primary:focus {
+    background: #8cc342;
+    color: #ffffff;
+    border-color: #8cc342; }
+
 #main-content {
   padding-top: 80px; }
 
-.navbar.bg-dark {
+.navbar.navbar-dark.bg-dark {
   background: #554a4e !important; }
 
-.navbar .navbar-brand img {
+.navbar.navbar-dark .navbar-brand img {
   min-width: 200px; }
+
+.navbar.navbar-dark .navbar-nav .nav-link {
+  font-family: "Amiri", serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.navbar.navbar-dark .menu-item-30.ml-5 a {
+  color: #8cc342;
+  font-weight: bold; }
 
 .donate-container {
   background-color: #F4F4F4; }
@@ -68,13 +105,75 @@ Use it to make something cool, have fun, and share what you've learned with othe
       align-items: center;
       flex-direction: column; }
       .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon {
-        border: 1px solid #8cc342;
+        border: 0px solid #8cc342;
         border-radius: 100%;
         height: 15rem;
         width: 15rem;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        transition: all .25s ease-in-out; }
+        .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon:hover {
+          border: 0.5rem solid #8cc342;
+          transition: all .25s ease-in-out; }
+          .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon:hover .icon-shade {
+            transition: all .25s ease-in-out;
+            height: 14rem;
+            width: 14rem;
+            font-size: 20px;
+            color: white; }
+        .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon .icon-shade {
+          transition: all .25s ease-in-out;
+          position: absolute;
+          background-color: #686868;
+          opacity: 0.6;
+          height: 0%;
+          width: 0%;
+          border-radius: 100%;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 0px;
+          color: rgba(255, 255, 255, 0); }
       .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .donate-btn {
         background-color: #8cc342;
-        color: white; }
+        color: white;
+        width: 10rem;
+        padding: 1rem; }
+
+.home-page .jumbotron {
+  background-size: cover;
+  background-position: top center;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
+  .home-page .jumbotron h1 {
+    font-family: "Amiri", serif;
+    font-weight: 900;
+    text-transform: capitalize;
+    color: #ffffff; }
+  .home-page .jumbotron p {
+    color: #ffffff; }
+  .home-page .jumbotron .text-container {
+    width: 55%;
+    margin: 0 auto; }
+  .home-page .jumbotron .btn-primary {
+    font-size: 1.4rem; }
+
+.home-page #features {
+  background-image: url("assets/images/whitetexture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .home-page #features .col .inner {
+    background: #ffffff;
+    padding: 20px 0;
+    text-align: center; }
+    .home-page #features .col .inner img {
+      width: 100%;
+      margin-bottom: 20px; }
+    .home-page #features .col .inner p {
+      padding: 0 20px;
+      min-height: 50px; }
