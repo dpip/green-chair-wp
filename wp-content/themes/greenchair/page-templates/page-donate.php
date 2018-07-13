@@ -16,8 +16,6 @@ get_header(); ?>
             <div class="donate-icon-wrapper">
               <div class="donate-icon-container text-center">
                 <div class="icon">
-                  <?xml version="1.0" encoding="iso-8859-1"?>
-                  <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                   <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" height="140px" width="140px" xml:space="preserve">
                   <g>
@@ -35,13 +33,6 @@ get_header(); ?>
                   			h69.935l39.636,103H24.564z" fill="#16a79e"/>
                   	</g>
                   </g>
-                  <!-- <g>
-                  	<g>
-                  		<path d="M52.069,215.93C50.21,214.069,47.63,213,45,213c-2.641,0-5.21,1.069-7.07,2.93C36.07,217.791,35,220.37,35,223
-                  			s1.069,5.21,2.93,7.069C39.79,231.93,42.37,233,45,233s5.21-1.07,7.069-2.931C53.93,228.21,55,225.63,55,223
-                  			S53.93,217.79,52.069,215.93z" fill="#16a79e"/>
-                  	</g>
-                  </g> -->
                   <g>
                   	<g>
                   		<path d="M475.496,286.398v-11.173c0-25.81-20.998-46.808-46.809-46.808H361c-5.522,0-10,4.478-10,10c0,5.522,4.478,10,10,10
@@ -83,10 +74,8 @@ get_header(); ?>
               </div>
               <div class="donate-icon-container text-center">
                 <div class="icon">
-                  <?xml version="1.0" encoding="iso-8859-1"?>
-                  <!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                   <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" id="Capa_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 viewBox="0 0 297 297" style="enable-background:new 0 0 297 297;" height="110px" width="110px" xml:space="preserve">
                   <g>
                   	<path d="M175.646,94.483c-10.696,0-20.353,4.561-27.145,11.849c-6.792-7.288-16.449-11.849-27.147-11.849
@@ -108,9 +97,7 @@ get_header(); ?>
               </div>
               <div class="donate-icon-container text-center">
                 <div class="icon">
-                  <?xml version="1.0" encoding="iso-8859-1"?>
-                  <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-                  <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" id="Capa_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   	 viewBox="0 0 416 416" style="enable-background:new 0 0 416 416;" height="120px" width="120px" xml:space="preserve">
                   <g>
                   	<g>
