@@ -1,10 +1,26 @@
-.navbar {
+.navbar.navbar-dark {
     &.bg-dark {
         background: $gray !important;
     }
     .navbar-brand {
         img {
             min-width: 200px;
+        }
+    }
+    .navbar-nav {
+        .nav-link {
+            font-family: $serif;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+    .menu-item-30 {
+        &.ml-5 {
+            a {
+                color: $green;
+                font-weight: bold;
+            }
         }
     }
 }

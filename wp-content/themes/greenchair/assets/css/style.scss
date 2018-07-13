@@ -17,9 +17,44 @@ Use it to make something cool, have fun, and share what you've learned with othe
 //Globals
 @import "partials/variables";
 
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-family: $sansserif;
+    color: $gray;
+}
+
+h1 {
+    font-family: $serif;
+}
+
+h6 {
+    font-family: $serif;
+    color: $teal;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background: #ffffff;
+    border-color: $green;
+    color: $green;
+    text-transform: uppercase;
+    border-radius: 20px;
+
+    &:hover,
+    &:focus {
+        background: $green;
+        color: #ffffff;
+        border-color: $green;
+    }
+}
+
 #main-content {
     padding-top: 80px;
 }
 
 //Additional Styles
 @import "partials/navbar";
+@import "partials/home";
