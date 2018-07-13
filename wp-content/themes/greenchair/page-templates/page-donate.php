@@ -4,7 +4,7 @@ Template Name: Donate Page
  */
 get_header(); ?>
 
-<div id="main-content">
+<div id="main-content" class="donate-page">
     <div class="container">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
           <div class="donate-intro-banner">

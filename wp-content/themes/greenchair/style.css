@@ -84,8 +84,9 @@ h6 {
   color: #8cc342;
   font-weight: bold; }
 
-.donate-container {
-  background-color: #F4F4F4; }
+.donate-page {
+  background-color: #F4F4F4;
+  padding-bottom: 10rem; }
 
 .donate-intro-banner {
   height: 30rem;
