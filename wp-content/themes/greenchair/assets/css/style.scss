@@ -29,6 +29,24 @@ h1 {
     font-family: $serif;
 }
 
+h2 {
+}
+
+h3 {
+    font-family: $serif;
+    color: $green;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h4 {
+    font-size: 2.4rem;
+    font-family: $serif;
+}
+
+h5 {
+}
+
 h6 {
     font-family: $serif;
     color: $teal;
@@ -51,8 +69,27 @@ h6 {
     }
 }
 
+.btn-green {
+    background: $green;
+    color: #ffffff;
+    border-color: $green;
+    text-transform: uppercase;
+    border-radius: 20px;
+
+    &:hover,
+    &:focus {
+        background: #ffffff;
+        border-color: $green;
+        color: $green;
+    }
+}
+
 #main-content {
     padding-top: 80px;
+}
+
+.green {
+    color: $green;
 }
 
 //Additional Styles

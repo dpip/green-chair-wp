@@ -23,6 +23,16 @@ body {
 h1 {
   font-family: "Amiri", serif; }
 
+h3 {
+  font-family: "Amiri", serif;
+  color: #8cc342;
+  font-size: 2rem;
+  font-weight: bold; }
+
+h4 {
+  font-size: 2.4rem;
+  font-family: "Amiri", serif; }
+
 h6 {
   font-family: "Amiri", serif;
   color: #16a79e;
@@ -40,8 +50,22 @@ h6 {
     color: #ffffff;
     border-color: #8cc342; }
 
+.btn-green {
+  background: #8cc342;
+  color: #ffffff;
+  border-color: #8cc342;
+  text-transform: uppercase;
+  border-radius: 20px; }
+  .btn-green:hover, .btn-green:focus {
+    background: #ffffff;
+    border-color: #8cc342;
+    color: #8cc342; }
+
 #main-content {
   padding-top: 80px; }
+
+.green {
+  color: #8cc342; }
 
 .navbar.navbar-dark.bg-dark {
   background: #554a4e !important; }
@@ -53,7 +77,8 @@ h6 {
   font-family: "Amiri", serif;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: bold; }
+  padding-left: 0.8rem;
+  padding-right: 0.8rem; }
 
 .navbar.navbar-dark .menu-item-30.ml-5 a {
   color: #8cc342;
@@ -62,7 +87,6 @@ h6 {
 .home-page .jumbotron {
   background-size: cover;
   background-position: top center;
-  min-height: 450px;
   background-repeat: no-repeat;
   margin-bottom: 0; }
   .home-page .jumbotron h1 {
@@ -82,13 +106,67 @@ h6 {
   background-image: url("assets/images/whitetexture.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
-  .home-page #features .col .inner {
-    background: #ffffff;
-    padding: 20px 0;
-    text-align: center; }
-    .home-page #features .col .inner img {
+  .home-page #features .feature {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .home-page #features .feature .inner {
+      background: #ffffff;
+      padding: 20px 0;
+      text-align: center; }
+      .home-page #features .feature .inner img {
+        width: 100%;
+        margin-bottom: 20px; }
+      .home-page #features .feature .inner p {
+        padding: 0 20px;
+        min-height: 50px; }
+
+.home-page #about {
+  background-image: url("assets/images/motherandchild.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .home-page #about p {
+    color: #ffffff;
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto; }
+    .home-page #about p.green {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #8cc342; }
+
+.home-page #essentials {
+  text-align: center; }
+  .home-page #essentials .essential-item {
+    width: 18%;
+    margin: 10px; }
+    .home-page #essentials .essential-item img {
       width: 100%;
-      margin-bottom: 20px; }
-    .home-page #features .col .inner p {
-      padding: 0 20px;
-      min-height: 50px; }
+      margin-bottom: 15px; }
+  .home-page #essentials p {
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto; }
+
+.home-page #home-bottom {
+  padding: 60px 0; }
+  .home-page #home-bottom .left {
+    background-image: url("assets/images/kids.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; }
+  .home-page #home-bottom .right {
+    background-image: url("assets/images/greenwood.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 400px; }
+  .home-page #home-bottom h4 {
+    color: #ffffff;
+    padding-top: 15%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; }
