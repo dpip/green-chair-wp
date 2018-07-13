@@ -116,6 +116,19 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center; }
+  .donate-selection-wrap:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(assets/images/shutterstock_1035584485.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 32rem;
+    opacity: 0.2;
+    z-index: -1;
+    content: ''; }
   .donate-selection-wrap .donate-icon-wrapper {
     width: 100%;
     height: 100%;
@@ -130,7 +143,7 @@ h6 {
       align-items: center;
       flex-direction: column; }
       .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon {
-        border: 0px solid #8cc342;
+        border: 4px solid #16a79e;
         border-radius: 100%;
         height: 15rem;
         width: 15rem;
@@ -141,19 +154,18 @@ h6 {
         cursor: pointer;
         transition: all .25s ease-in-out; }
         .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon:hover {
-          border: 0.5rem solid #8cc342;
           transition: all .25s ease-in-out; }
           .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon:hover .icon-shade {
             transition: all .25s ease-in-out;
-            height: 14rem;
-            width: 14rem;
+            height: 14.5rem;
+            width: 14.5rem;
             font-size: 20px;
             color: white; }
         .donate-selection-wrap .donate-icon-wrapper .donate-icon-container .icon .icon-shade {
           transition: all .25s ease-in-out;
           position: absolute;
           background-color: #686868;
-          opacity: 0.6;
+          opacity: 0.95;
           height: 0%;
           width: 0%;
           border-radius: 100%;
