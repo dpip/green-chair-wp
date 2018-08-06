@@ -62,7 +62,7 @@ h6 {
     color: #8cc342; }
 
 #main-content {
-  padding-top: 80px; }
+  padding-top: 90px; }
 
 .green {
   color: #8cc342; }
@@ -83,6 +83,25 @@ h6 {
 .navbar.navbar-dark .menu-item-30.ml-5 a {
   color: #8cc342;
   font-weight: bold; }
+
+#footer {
+  background: #554a4e;
+  color: #ffffff; }
+  #footer h6,
+  #footer p,
+  #footer a {
+    color: #ffffff; }
+  #footer #creds img {
+    max-width: 200px; }
+  #footer #social-links {
+    list-style-type: none;
+    padding-left: 0;
+    color: #ffffff; }
+    #footer #social-links li {
+      display: inline-block;
+      font-size: 3rem;
+      padding: 10px 5px;
+      line-height: 1; }
 
 .donate-page {
   padding-bottom: 10rem; }

@@ -85,7 +85,7 @@ h6 {
 }
 
 #main-content {
-    padding-top: 80px;
+    padding-top: 90px;
 }
 
 .green {
@@ -94,5 +94,6 @@ h6 {
 
 //Additional Styles
 @import "partials/navbar";
+@import "partials/footer";
 @import 'partials/donate';
 @import 'partials/home';
