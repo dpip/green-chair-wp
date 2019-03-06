@@ -12,9 +12,11 @@
                             <li><a href="https://www.linkedin.com/company/greenchairproject/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                         <p><span>1853 Capital Boulevard, Raleigh, NC 27604<br /> <a href="tel:(919) 322-0474 ">(919) 322-0474</a>&nbsp;|&nbsp;<a href="mailto:info@thegreenchair.org">info@thegreenchair.org</a></span></p>
+                        <p>Registered 501(c)(3) Charity: 27-2323103</p>
                         <p>Copyright &copy; <?php echo date('Y'); ?> | <a href="/privacy-policy">Privacy Policy</a></p>
                     </div>
                     <div class="col-sm" id="creds">
+
                         <img src="<?php bloginfo('template_directory'); ?>/assets/images/nccenterfornonprofits.png" class="img-fluid" />
                         <img src="<?php bloginfo('template_directory'); ?>/assets/images/sealtransparency.png" class="img-fluid" />
                         <img src="<?php bloginfo('template_directory'); ?>/assets/images/tbjaward.png" class="img-fluid" />

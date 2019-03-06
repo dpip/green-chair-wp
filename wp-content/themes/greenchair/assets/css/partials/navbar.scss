@@ -1,27 +1,20 @@
-.navbar.navbar-dark {
-    &.bg-dark {
-        background: $gray !important;
-    }
+.navbar.navbar-light {
     .navbar-brand {
+        margin-bottom: 10px;
+        margin-top: 10px;
+
         img {
-            min-width: 200px;
+            width: 200px;
         }
     }
+
     .navbar-nav {
         .nav-link {
-            font-family: $serif;
-            color: #ffffff;
+            font-family: $sansserif;
+            color: $green;
             text-transform: uppercase;
             padding-left: 0.8rem;
             padding-right: 0.8rem;
-        }
-    }
-    .menu-item-30 {
-        &.ml-5 {
-            a {
-                color: $green;
-                font-weight: bold;
-            }
         }
     }
 }

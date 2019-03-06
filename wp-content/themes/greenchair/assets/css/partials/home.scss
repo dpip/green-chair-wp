@@ -1,32 +1,28 @@
 .home-page {
     .jumbotron {
-        background-size: cover;
-        background-position: top center;
+        background-size: contain;
+        background-position: top right;
         background-repeat: no-repeat;
         margin-bottom: 0;
+        background-color: #c2c0b9;
+        min-height: 600px;
 
         h1 {
             font-family: $serif;
-            font-weight: 900;
             text-transform: capitalize;
             color: #ffffff;
         }
         p {
             color: #ffffff;
         }
-        .text-container {
-            width: 55%;
-            margin: 0 auto;
-        }
-        .btn-primary {
-            font-size: 1.4rem;
+
+        .btn-white {
+            margin-top: 20px;
         }
     }
 
     #features {
-        background-image: url('assets/images/whitetexture.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background: #ffffff;
 
         .feature {
             margin-top: 10px;

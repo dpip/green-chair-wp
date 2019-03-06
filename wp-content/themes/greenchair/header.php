@@ -16,7 +16,7 @@
         <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico" type="image/x-icon">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-        <link href="https://fonts.googleapis.com/css?family=Amiri:400,700|Lato:400,700,900" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700,700i|Lato:300,300i,400,400i,700,700i" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/assets/css/bootstrap.min.css">
         <?php wp_head(); ?>
@@ -25,9 +25,9 @@
     <body <?php body_class(); ?>>
         <div id="wrapper">
             <div id="main">
-                <nav class="navbar navbar-expand-lg fixed-top  navbar-dark bg-dark">
-                    <div class="container-fluid">
-                        <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/images/greenchairlogo.svg" /></a>
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="container-fluid flex-lg-column ">
+                        <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/images/greenchairlogogreen.svg" /></a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>

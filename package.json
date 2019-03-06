@@ -6,8 +6,7 @@
   "scripts": {
     "watch": "npm-run-all --parallel watch:*",
     "watch:css": "node-sass -w ./wp-content/themes/greenchair/assets/css/style.scss ./wp-content/themes/greenchair/style.css",
-    "watch:lint": "esw -w ./wp-content/themes/greenchair/assets/js/main.js",
-    "autoprefix": "postcss -c ./postcss.json"
+    "watch:lint": "esw -w ./wp-content/themes/greenchair/assets/js/main.js"
   },
   "repository": "https://relmo@bitbucket.org/centerlinedigital/8125-green-chair-website.git",
   "author": "Rebecca Elmo belmo@centerline.net, Daniel Pipkin dpipkin@centerline.net",
@@ -31,9 +30,5 @@
     "webpack": "^3.4.1",
     "yarn-run-all": "^3.1.1"
   },
-  "browserslist": [
-    "last 2 versions",
-    "ie 11",
-    "Firefox ESR"
-  ]
+  "browserslist": ["last 2 versions", "ie 11", "Firefox ESR"]
 }

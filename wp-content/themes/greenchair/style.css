@@ -18,33 +18,40 @@ body {
   padding: 0;
   font-size: 1rem;
   font-family: "Lato", sans-serif;
+  font-weight: 400;
   color: #554a4e; }
 
 h1 {
-  font-family: "Amiri", serif; }
+  font-family: "Arvo", serif;
+  font-weight: 400; }
 
 h3 {
-  font-family: "Amiri", serif;
+  font-family: "Arvo", serif;
   color: #8cc342;
   font-size: 2rem;
   font-weight: bold; }
 
 h4 {
   font-size: 2.4rem;
-  font-family: "Amiri", serif; }
+  font-family: "Arvo", serif; }
 
 h6 {
-  font-family: "Amiri", serif;
+  font-family: "Arvo", serif;
   color: #16a79e;
   text-transform: uppercase;
   font-size: 1.2rem; }
 
+.btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: .7rem 1rem; }
+
 .btn-primary {
   background: #ffffff;
   border-color: #8cc342;
-  color: #8cc342;
-  text-transform: uppercase;
-  border-radius: 20px; }
+  color: #8cc342; }
   .btn-primary:hover, .btn-primary:focus {
     background: #8cc342;
     color: #ffffff;
@@ -53,36 +60,36 @@ h6 {
 .btn-green {
   background: #8cc342;
   color: #ffffff;
-  border-color: #8cc342;
-  text-transform: uppercase;
-  border-radius: 20px; }
+  border-color: #8cc342; }
   .btn-green:hover, .btn-green:focus {
     background: #ffffff;
     border-color: #8cc342;
     color: #8cc342; }
 
-#main-content {
-  padding-top: 90px; }
-
 .green {
   color: #8cc342; }
 
-.navbar.navbar-dark.bg-dark {
-  background: #554a4e !important; }
-
-.navbar.navbar-dark .navbar-brand img {
-  min-width: 200px; }
-
-.navbar.navbar-dark .navbar-nav .nav-link {
-  font-family: "Amiri", serif;
+.btn-white {
+  background: none;
   color: #ffffff;
+  border-color: #ffffff; }
+  .btn-white:hover, .btn-white:focus {
+    background: #ffffff;
+    border-color: #8cc342;
+    color: #8cc342; }
+
+.navbar.navbar-light .navbar-brand {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+  .navbar.navbar-light .navbar-brand img {
+    width: 200px; }
+
+.navbar.navbar-light .navbar-nav .nav-link {
+  font-family: "Lato", sans-serif;
+  color: #8cc342;
   text-transform: uppercase;
   padding-left: 0.8rem;
   padding-right: 0.8rem; }
-
-.navbar.navbar-dark .menu-item-30.ml-5 a {
-  color: #8cc342;
-  font-weight: bold; }
 
 #footer {
   background: #554a4e;
@@ -118,7 +125,7 @@ h6 {
     width: 45rem;
     font-size: 60px;
     font-weight: bold;
-    font-family: "Amiri", serif;
+    font-family: "Arvo", serif;
     color: #8cc342;
     line-height: 4rem; }
   .donate-intro-banner .rule {
@@ -201,27 +208,23 @@ h6 {
         padding: 1rem; }
 
 .home-page .jumbotron {
-  background-size: cover;
-  background-position: top center;
+  background-size: contain;
+  background-position: top right;
   background-repeat: no-repeat;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  background-color: #c2c0b9;
+  min-height: 600px; }
   .home-page .jumbotron h1 {
-    font-family: "Amiri", serif;
-    font-weight: 900;
+    font-family: "Arvo", serif;
     text-transform: capitalize;
     color: #ffffff; }
   .home-page .jumbotron p {
     color: #ffffff; }
-  .home-page .jumbotron .text-container {
-    width: 55%;
-    margin: 0 auto; }
-  .home-page .jumbotron .btn-primary {
-    font-size: 1.4rem; }
+  .home-page .jumbotron .btn-white {
+    margin-top: 20px; }
 
 .home-page #features {
-  background-image: url("assets/images/whitetexture.jpg");
-  background-repeat: no-repeat;
-  background-size: cover; }
+  background: #ffffff; }
   .home-page #features .feature {
     margin-top: 10px;
     margin-bottom: 10px; }
