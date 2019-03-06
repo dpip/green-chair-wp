@@ -23,7 +23,9 @@ get_header(); ?>
                 <div class="row text-center">
                     <div class="col-xs-12 col-sm-12 col-md-3 feature">
                         <div class="inner">
-                            <img src="<?php the_field('home_block_1_image'); ?>" alt="<?php the_field('home_block_1_text'); ?> image" />
+                            <div class="img-container">
+                                <img src="<?php the_field('home_block_1_image'); ?>" alt="<?php the_field('home_block_1_text'); ?> image" />
+                            </div>
                             <h6><?php the_field('home_block_1_text'); ?></h6>
                             <p><?php the_field('home_block_1_description'); ?></p>
                             <a href="<?php the_field('home_block_1_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_1_cta_text'); ?></a>
@@ -31,7 +33,9 @@ get_header(); ?>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-3 feature">
                         <div class="inner">
-                            <img src="<?php the_field('home_block_2_image'); ?>" alt="<?php the_field('home_block_2_text'); ?> image" />
+                            <div class="img-container">
+                                <img src="<?php the_field('home_block_2_image'); ?>" alt="<?php the_field('home_block_2_text'); ?> image" />
+                            </div>
                             <h6><?php the_field('home_block_2_text'); ?></h6>
                             <p><?php the_field('home_block_2_description'); ?></p>
                             <a href="<?php the_field('home_block_2_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_2_cta_text'); ?></a>
@@ -39,7 +43,9 @@ get_header(); ?>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-3 feature">
                         <div class="inner">
-                            <img src="<?php the_field('home_block_3_image'); ?>" alt="<?php the_field('home_block_3_text'); ?> image" />
+                            <div class="img-container">
+                                <img src="<?php the_field('home_block_3_image'); ?>" alt="<?php the_field('home_block_3_text'); ?> image" />
+                            </div>
                             <h6><?php the_field('home_block_3_text'); ?></h6>
                             <p><?php the_field('home_block_3_description'); ?></p>
                             <a href="<?php the_field('home_block_3_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_3_cta_text'); ?></a>
@@ -47,7 +53,9 @@ get_header(); ?>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-3 feature">
                         <div class="inner">
-                            <img src="<?php the_field('home_block_4_image'); ?>" alt="<?php the_field('home_block_4_text'); ?> image" />
+                            <div class="img-container">
+                                <img src="<?php the_field('home_block_4_image'); ?>" alt="<?php the_field('home_block_4_text'); ?> image" />
+                            </div>
                             <h6><?php the_field('home_block_4_text'); ?></h6>
                             <p><?php the_field('home_block_4_description'); ?></p>
                             <a href="<?php the_field('home_block_4_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_4_cta_text'); ?></a>

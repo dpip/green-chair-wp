@@ -232,9 +232,12 @@ h6 {
       background: #ffffff;
       padding: 20px 0;
       text-align: center; }
-      .home-page #features .feature .inner img {
-        width: 100%;
-        margin-bottom: 20px; }
+      .home-page #features .feature .inner .img-container {
+        max-height: 140px;
+        margin-bottom: 15px; }
+        .home-page #features .feature .inner .img-container img {
+          width: 100%;
+          height: auto; }
       .home-page #features .feature .inner p {
         padding: 0 20px;
         min-height: 50px; }
