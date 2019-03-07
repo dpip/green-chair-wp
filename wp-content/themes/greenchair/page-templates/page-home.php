@@ -5,6 +5,9 @@ Template Name: Home Page
 get_header(); ?>
 
 <div id="main-content" class="home-page">
+    <div id="fb-root"></div>
+    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php $backgroundimage = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
         <div class="jumbotron d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo $backgroundimage ?>);">
@@ -67,10 +70,116 @@ get_header(); ?>
         <div id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col py-5">
-                        <p class="text-center">The Green Chair Project is a non-profit organization that collects donated furnishings for people transitioning from homelessness, crisis or disasters.  </p>
-                        <p class="text-center">We partner with over 55 agencies, shelters and nonprofits to provide essential furnishings for referred clients to live sustainably in their new homes.</p>
-                        <p class="green text-center"> Since our founding in 2010, The Green Chair Project has helped more than 2,300 families begin a new.</p>
+                    <div class="col-md-5 py-5">
+                        <div class="inner">
+                            <?php the_field('middle_section_text'); ?>
+                            <a href="<?php the_field('middle_section_cta_url'); ?>" class="btn btn-primary"><?php the_field('middle_section_cta'); ?></a>
+                        </div>
+                    </div>
+                    <div class="col-md-7 py-5">
+                        <div class="videoWrapper">
+                            <?php the_field('middle_section_video'); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="news-events">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <h2>News</h2>
+                        <div class="row">
+                            <?php
+                                //News Items
+                                $the_query = new WP_Query( 
+                                    array(
+                                        'post_type' => 'news-item', 
+                                        'posts_per_page' => 4
+                                    ) 
+                                );
+
+                                if ( $the_query->have_posts() ) {
+                                    while ( $the_query->have_posts() ) {
+                                        $the_query->the_post();
+                                        $id = get_the_ID();
+                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                                        $title = get_the_title($id);
+                                        $link = get_the_permalink($id);
+                                        $content = wp_trim_words(get_the_content(), 30, '...');
+
+                                        echo '<div class="news-item col-xs-12 col-sm-12 col-md-6">';
+                                                echo '<a href="' . $link .'">';
+                                                    echo '<div class="img-wrap">';
+                                                        echo $img;
+                                                    echo '</div>';
+                                                echo '</a>';
+                                                echo '<h5>'. $title . '</h5>';
+                                                echo '<p>' . $content . '</p>';
+                                                echo '<a href="' . $link .'" class="learn-more">Learn more &raquo; </a>';
+                                        echo '</div>';
+                                    }
+                                    
+                                    wp_reset_postdata();
+                                } else {
+                                    '<p>Unfortunately, we have no news at this time.</p>';
+                                }
+                            ?>
+                            <a href="/news-events" class="btn btn-primary see-all">See all news</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h2>Upcoming Events</h2>
+                        <div class="row">
+                            <?php
+                                //Event Items
+                                $today = time();
+                                $the_query = new WP_Query( 
+                                    array(
+                                        'post_type'=>'events-item', 
+                                        'posts_per_page' => 3,  
+                                        'orderby' => 'meta_value', 
+                                        'order' => 'ASC',
+                                        'meta_query' => array(
+                                            array(
+                                                'key'     => 'events_end_date_edited',
+                                                'value'   => $today,
+                                                'compare' => '>='
+                                            ),
+                                        )
+                                    ) 
+                                );
+
+                                if ( $the_query->have_posts() ) {
+
+                                    while ( $the_query->have_posts() ) {
+                                        $the_query->the_post();
+                                        $id = get_the_ID();
+                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                                        $title = get_the_title($id);
+                                        $link = get_the_permalink($id);
+                                        $content = wp_trim_words(get_the_content(), 30, '...');
+                                        $date = get_post_meta($id, 'events_start_date', true);;
+
+                                        echo '<div class="event-item col-xs-12 col-sm-12 col-md-12">';
+                                                echo '<a href="' . $link .'">';
+                                                    echo '<div class="img-wrap">';
+                                                        echo $img;
+                                                    echo '</div>';
+                                                echo '</a>';
+                                                echo '<h5>'. $title . '</h5>';
+                                                echo '<p class="date">' . $date . '</p>';
+                                                echo '<p>' . $content . '</p>';
+                                                echo '<a href="' . $link .'" class="learn-more">Learn more &raquo; </a>';
+                                        echo '</div>';
+                                    }
+                                    
+                                    wp_reset_postdata();
+                                } else {
+                                    '<p>Unfortunately, we have no news at this time.</p>';
+                                }
+                            ?>
+                        </div>
                     </div>
                 </div>
             </div>

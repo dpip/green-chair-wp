@@ -1,3 +1,5 @@
+@import "variables";
+
 .home-page {
     .jumbotron {
         background-size: contain;
@@ -8,10 +10,9 @@
         min-height: 600px;
 
         h1 {
-            font-family: $serif;
-            text-transform: capitalize;
             color: #ffffff;
         }
+
         p {
             color: #ffffff;
         }
@@ -52,22 +53,65 @@
     }
 
     #about {
-        background-image: url('assets/images/motherandchild.jpg');
+        background-image: url('assets/images/greenwood.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
         padding-top: 40px;
         padding-bottom: 40px;
 
-        p {
-            color: #ffffff;
-            width: 55%;
-            margin-left: auto;
-            margin-right: auto;
+        .inner {
+            background: #ffffff;
+            padding: 30px;
 
-            &.green {
-                font-weight: bold;
-                font-size: 1.3rem;
+            .btn-primary {
+                margin-top: 15px;
+            }
+        }
+    }
+
+    #news-events {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .news-item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            .img-wrap {
+                max-height: 155px;
+                overflow: hidden;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .learn-more {
+                color: $green;
+            }
+        }
+
+        .see-all {
+            margin-top: 20px;
+        }
+
+        .event-item {
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            .img-wrap {
+                max-height: 155px;
+                overflow: hidden;
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+            .learn-more {
                 color: $green;
             }
         }
@@ -94,7 +138,7 @@
     }
 
     #home-bottom {
-        padding: 60px 0;
+        padding: 60px 0 0 0;
 
         .left {
             background-image: url('assets/images/kids.jpg');
@@ -119,5 +163,11 @@
             margin-left: auto;
             margin-right: auto;
         }
+    }
+}
+
+.page-template-page-home {
+    #footer {
+        margin-top: 0;
     }
 }

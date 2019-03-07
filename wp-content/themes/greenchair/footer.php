@@ -16,13 +16,13 @@
                         <p>Copyright &copy; <?php echo date('Y'); ?> | <a href="/privacy-policy">Privacy Policy</a></p>
                     </div>
                     <div class="col-sm" id="creds">
-
                         <img src="<?php bloginfo('template_directory'); ?>/assets/images/nccenterfornonprofits.png" class="img-fluid" />
                         <img src="<?php bloginfo('template_directory'); ?>/assets/images/sealtransparency.png" class="img-fluid" />
                         <img src="<?php bloginfo('template_directory'); ?>/assets/images/tbjaward.png" class="img-fluid" />
                     </div>
                     <div class="col-sm">
-                        Newsletter Sign Up Form
+                    <!--TODO: CODE neded -->
+                        Newsletter Sign Up Form (Code needed)
                     </div>
                 </div>
             </div>

@@ -25,6 +25,11 @@ h1 {
   font-family: "Arvo", serif;
   font-weight: 400; }
 
+h2 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  margin-bottom: 1rem; }
+
 h3 {
   font-family: "Arvo", serif;
   color: #8cc342;
@@ -32,8 +37,12 @@ h3 {
   font-weight: bold; }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-family: "Arvo", serif; }
+
+h5 {
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif; }
 
 h6 {
   font-family: "Arvo", serif;
@@ -78,6 +87,12 @@ h6 {
     border-color: #8cc342;
     color: #8cc342; }
 
+.videoWrapper iframe {
+  max-width: 100%; }
+
+.navbar.navbar-light.bg-light {
+  background-color: #ffffff !important; }
+
 .navbar.navbar-light .navbar-brand {
   margin-bottom: 10px;
   margin-top: 10px; }
@@ -93,7 +108,8 @@ h6 {
 
 #footer {
   background: #554a4e;
-  color: #ffffff; }
+  color: #ffffff;
+  margin-top: 60px; }
   #footer h6,
   #footer p,
   #footer a {
@@ -215,8 +231,6 @@ h6 {
   background-color: #c2c0b9;
   min-height: 600px; }
   .home-page .jumbotron h1 {
-    font-family: "Arvo", serif;
-    text-transform: capitalize;
     color: #ffffff; }
   .home-page .jumbotron p {
     color: #ffffff; }
@@ -243,20 +257,44 @@ h6 {
         min-height: 50px; }
 
 .home-page #about {
-  background-image: url("assets/images/motherandchild.jpg");
+  background-image: url("assets/images/greenwood.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   padding-top: 40px;
   padding-bottom: 40px; }
-  .home-page #about p {
-    color: #ffffff;
-    width: 55%;
-    margin-left: auto;
-    margin-right: auto; }
-    .home-page #about p.green {
-      font-weight: bold;
-      font-size: 1.3rem;
+  .home-page #about .inner {
+    background: #ffffff;
+    padding: 30px; }
+    .home-page #about .inner .btn-primary {
+      margin-top: 15px; }
+
+.home-page #news-events {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+  .home-page #news-events .news-item {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .home-page #news-events .news-item .img-wrap {
+      max-height: 155px;
+      overflow: hidden;
+      margin-bottom: 10px; }
+    .home-page #news-events .news-item p {
+      margin-bottom: 0; }
+    .home-page #news-events .news-item .learn-more {
+      color: #8cc342; }
+  .home-page #news-events .see-all {
+    margin-top: 20px; }
+  .home-page #news-events .event-item {
+    margin-top: 15px;
+    margin-bottom: 15px; }
+    .home-page #news-events .event-item .img-wrap {
+      max-height: 155px;
+      overflow: hidden;
+      margin-bottom: 10px; }
+    .home-page #news-events .event-item p {
+      margin-bottom: 0; }
+    .home-page #news-events .event-item .learn-more {
       color: #8cc342; }
 
 .home-page #essentials {
@@ -273,7 +311,7 @@ h6 {
     margin-right: auto; }
 
 .home-page #home-bottom {
-  padding: 60px 0; }
+  padding: 60px 0 0 0; }
   .home-page #home-bottom .left {
     background-image: url("assets/images/kids.jpg");
     background-repeat: no-repeat;
@@ -292,3 +330,28 @@ h6 {
     width: 60%;
     margin-left: auto;
     margin-right: auto; }
+
+.page-template-page-home #footer {
+  margin-top: 0; }
+
+.events-single-post .intro-image {
+  max-height: 500px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+.events-single-post img {
+  max-width: 100% !important; }
+
+.events-single-post .details {
+  background: #554a4e;
+  margin: 30px 0;
+  padding: 20px 40px; }
+  .events-single-post .details h4 {
+    margin-top: 0; }
+
+.events-single-post .aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }

@@ -32,6 +32,9 @@ h1 {
 }
 
 h2 {
+    font-family: $serif;
+    font-weight: 700;
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -42,11 +45,13 @@ h3 {
 }
 
 h4 {
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-family: $serif;
 }
 
 h5 {
+    font-size: 1.4rem;
+    font-family: $sansserif;
 }
 
 h6 {
@@ -107,8 +112,15 @@ h6 {
     }
 }
 
+.videoWrapper {
+    iframe {
+        max-width: 100%;
+    }
+}
+
 //Additional Styles
 @import "partials/navbar";
 @import "partials/footer";
 @import 'partials/donate';
 @import 'partials/home';
+@import 'partials/events';
