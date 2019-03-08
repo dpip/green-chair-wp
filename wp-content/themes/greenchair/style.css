@@ -90,8 +90,67 @@ h6 {
 .videoWrapper iframe {
   max-width: 100%; }
 
+#search-form {
+  margin: 0 0 30px 0;
+  position: relative; }
+  #search-form input[type="text"] {
+    border: none;
+    padding: 0;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.4;
+    padding: 13px 20px 10px 26px;
+    vertical-align: top;
+    background: #f3f3f3;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    position: relative; }
+  #search-form button[type="submit"] {
+    position: absolute;
+    right: 1px;
+    top: -2px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: #554a4e;
+    padding: 0; }
+
+.sidebar {
+  padding: 0 20px; }
+
+.pagination ul {
+  list-style-type: none; }
+  .pagination ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 5px; }
+    .pagination ul li a {
+      background: #8cc342;
+      color: #ffffff;
+      padding: 10px 15px;
+      font-weight: bold; }
+    .pagination ul li span {
+      color: #8cc342;
+      font-weight: bold;
+      border-bottom: 1px solid #8cc342;
+      padding: 5px 10px; }
+
 .navbar.navbar-light.bg-light {
-  background-color: #ffffff !important; }
+  background-color: #ffffff !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .navbar.navbar-light .navbar-brand {
   margin-bottom: 10px;
@@ -275,10 +334,17 @@ h6 {
   .home-page #news-events .news-item {
     margin-top: 15px;
     margin-bottom: 15px; }
+    .home-page #news-events .news-item .inner {
+      -webkit-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+      min-height: 450px; }
     .home-page #news-events .news-item .img-wrap {
       max-height: 155px;
       overflow: hidden;
       margin-bottom: 10px; }
+    .home-page #news-events .news-item .content-block {
+      padding: 30px; }
     .home-page #news-events .news-item p {
       margin-bottom: 0; }
     .home-page #news-events .news-item .learn-more {
@@ -334,6 +400,32 @@ h6 {
 .page-template-page-home #footer {
   margin-top: 0; }
 
+.news-events .event-item {
+  margin: 20px 0 40px 0; }
+  .news-events .event-item .btn-inline {
+    padding: 5px 20px; }
+  .news-events .event-item .continue {
+    color: #8cc342; }
+  .news-events .event-item h5 {
+    margin-bottom: 3px; }
+    .news-events .event-item h5 a {
+      color: #554a4e; }
+
+.news-events .see-all {
+  margin-top: 20px; }
+
+.news-events.events-only .sidebar {
+  padding-top: 60px; }
+
+.news-events.events-only .event-item .continue {
+  background: #8cc342;
+  color: #ffffff;
+  padding: 5px 20px 7px 20px;
+  border-radius: 20px;
+  vertical-align: middle; }
+  .news-events.events-only .event-item .continue:hover {
+    text-decoration: none; }
+
 .events-single-post .intro-image {
   max-height: 500px;
   width: auto;
@@ -345,7 +437,6 @@ h6 {
   max-width: 100% !important; }
 
 .events-single-post .details {
-  background: #554a4e;
   margin: 30px 0;
   padding: 20px 40px; }
   .events-single-post .details h4 {
@@ -355,3 +446,44 @@ h6 {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
+.news-events .news-item {
+  margin: 40px 0;
+  -webkit-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1); }
+  .news-events .news-item .block-content {
+    padding: 30px; }
+  .news-events .news-item .date {
+    display: inline-block;
+    vertical-align: middle;
+    background: #8cc342;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-right: 5px; }
+  .news-events .news-item .source {
+    display: inline-block;
+    vertical-align: middle;
+    background: #8cc342;
+    color: #ffffff;
+    padding: 5px 10px; }
+  .news-events .news-item .continue {
+    color: #8cc342; }
+
+.news-events.news-only .sidebar {
+  padding-top: 60px; }
+
+.news-single-post .date {
+  display: inline-block;
+  vertical-align: middle;
+  background: #8cc342;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin-right: 5px; }
+
+.news-single-post .source {
+  display: inline-block;
+  vertical-align: middle;
+  background: #8cc342;
+  color: #ffffff;
+  padding: 5px 10px; }

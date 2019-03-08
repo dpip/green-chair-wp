@@ -78,10 +78,21 @@
             margin-top: 15px;
             margin-bottom: 15px;
 
+            .inner {
+                -webkit-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+                -moz-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+                box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+                min-height: 450px;
+            }
+
             .img-wrap {
                 max-height: 155px;
                 overflow: hidden;
                 margin-bottom: 10px;
+            }
+
+            .content-block {
+                padding: 30px;
             }
 
             p {

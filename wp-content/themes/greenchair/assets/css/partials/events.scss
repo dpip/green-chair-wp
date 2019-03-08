@@ -1,3 +1,50 @@
+@import "variables";
+
+.news-events {
+    .event-item {
+        margin: 20px 0 40px 0;
+
+        .btn-inline {
+            padding: 5px 20px;
+        }
+
+        .continue {
+            color: $green;
+        }
+
+        h5 {
+            margin-bottom: 3px;
+            a {
+                color: $gray;
+            }
+        }
+    }
+
+    .see-all {
+        margin-top: 20px;
+    }
+
+    &.events-only {
+        .sidebar {
+            padding-top: 60px;
+        }
+
+        .event-item {
+            .continue {
+                background: $green;
+                color: #ffffff;
+                padding: 5px 20px 7px 20px;
+                border-radius: 20px;
+                vertical-align: middle;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
 .events-single-post {
     .intro-image {
         max-height: 500px;

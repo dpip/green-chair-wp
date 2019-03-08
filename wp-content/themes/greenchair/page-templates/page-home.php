@@ -109,14 +109,18 @@ get_header(); ?>
                                         $content = wp_trim_words(get_the_content(), 30, '...');
 
                                         echo '<div class="news-item col-xs-12 col-sm-12 col-md-6">';
+                                            echo '<div class="inner">';
                                                 echo '<a href="' . $link .'">';
                                                     echo '<div class="img-wrap">';
                                                         echo $img;
                                                     echo '</div>';
                                                 echo '</a>';
-                                                echo '<h5>'. $title . '</h5>';
-                                                echo '<p>' . $content . '</p>';
-                                                echo '<a href="' . $link .'" class="learn-more">Learn more &raquo; </a>';
+                                                echo '<div class="content-block">';
+                                                    echo '<h5>'. $title . '</h5>';
+                                                    echo '<p>' . $content . '</p>';
+                                                    echo '<a href="' . $link .'" class="learn-more">Continue reading &raquo; </a>';
+                                                echo '</div>';
+                                            echo '</div>';
                                         echo '</div>';
                                     }
                                     
@@ -125,7 +129,9 @@ get_header(); ?>
                                     '<p>Unfortunately, we have no news at this time.</p>';
                                 }
                             ?>
-                            <a href="/news-events" class="btn btn-primary see-all">See all news</a>
+                            <div class="col-sm-12">
+                                <a href="/news" class="btn btn-primary see-all">See all news</a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -168,7 +174,7 @@ get_header(); ?>
                                                     echo '</div>';
                                                 echo '</a>';
                                                 echo '<h5>'. $title . '</h5>';
-                                                echo '<p class="date">' . $date . '</p>';
+                                                echo '<p class="date"><i class="far fa-clock"></i> ' . $date . '</p>';
                                                 echo '<p>' . $content . '</p>';
                                                 echo '<a href="' . $link .'" class="learn-more">Learn more &raquo; </a>';
                                         echo '</div>';
@@ -179,6 +185,9 @@ get_header(); ?>
                                     '<p>Unfortunately, we have no news at this time.</p>';
                                 }
                             ?>
+                            <div class="col-sm-12">
+                                <a href="/events" class="btn btn-primary see-all">See all events</a>
+                            </div>
                         </div>
                     </div>
                 </div>

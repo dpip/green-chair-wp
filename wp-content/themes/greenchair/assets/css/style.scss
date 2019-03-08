@@ -118,9 +118,83 @@ h6 {
     }
 }
 
+#search-form {
+    margin: 0 0 30px 0;
+    position: relative;
+
+    input[type="text"] {
+        border: none;
+        padding: 0;
+        background-color: #f3f3f3;
+        font-size: 14px;
+        width: 100%;
+        line-height: 1.4;
+        padding: 13px 20px 10px 26px;
+        vertical-align: top;
+        background: #f3f3f3;
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        position: relative;
+    }
+
+    button[type="submit"] {
+        position: absolute;
+        right: 1px;
+        top: -2px;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        background-color: transparent;
+        border: none;
+        font-size: 1rem;
+        text-align: center;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        -ms-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        color: $gray;
+        padding: 0;
+    }
+}
+
+.sidebar {
+    padding: 0 20px;
+}
+
+.pagination {
+    ul {
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+            vertical-align: top;
+            margin: 1px 5px;
+
+            a {
+                background: $green;
+                color: #ffffff;
+                padding: 10px 15px;
+                font-weight: bold;
+            }
+
+            span {
+                color: $green;
+                font-weight: bold;
+                border-bottom: 1px solid $green;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
 //Additional Styles
 @import "partials/navbar";
 @import "partials/footer";
 @import 'partials/donate';
 @import 'partials/home';
 @import 'partials/events';
+@import 'partials/news';

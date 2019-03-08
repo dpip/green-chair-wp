@@ -1,6 +1,7 @@
 .navbar.navbar-light {
     &.bg-light {
         background-color: #ffffff !important;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
     }
     .navbar-brand {
         margin-bottom: 10px;
