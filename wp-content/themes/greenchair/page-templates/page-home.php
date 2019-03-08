@@ -227,6 +227,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+        <div class="fb-page" data-href="https://www.facebook.com/thegreenchairproject/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thegreenchairproject/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thegreenchairproject/">The Green Chair Project</a></blockquote></div>
         <div id="home-bottom">
             <div class="container-fluid">
                 <div class="row">
