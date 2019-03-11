@@ -5,9 +5,6 @@ Template Name: Home Page
 get_header(); ?>
 
 <div id="main-content" class="home-page">
-    <div id="fb-root"></div>
-    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php $backgroundimage = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
         <div class="jumbotron d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo $backgroundimage ?>);">
@@ -196,38 +193,19 @@ get_header(); ?>
         <div id="essentials">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 py-5">
-                        <h3 class="text-center">Five Essential Items</h3>
+                    <div class="col-sm-12 py-3">
+                        <h3 class="text-center"><?php echo get_field('middle_2_section_heading_'); ?></h3>
                     </div>
                     <div class="essential-item">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/couch.svg" />
-                        <h6>Couches</h6>
+                        <img src="<?php echo get_field('middle_2_section_image'); ?>" class="img-fluid mx-auto" />
                     </div>
-                    <div class="essential-item">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/loveseat.svg" />
-                        <h6>Love Seats</h6>
-                    </div>
-                    <div class="essential-item">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/tables.svg" />
-                        <h6>Tables</h6>
-                    </div>
-                    <div class="essential-item">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/chairs.svg" />
-                        <h6>Chairs</h6>
-                    </div>
-                    <div class="essential-item">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/images/dresser.svg" />
-                        <h6>Dressers</h6>
-                    </div>
-                    <div class="col-sm-12 pt-4">
-                        <p>We offer FREE weekly pick-ups in Wake County for the 5 core building blocks of any home. Please fill out our Essentials Pick-Up Donation Form and we’ll be in contact shortly!</p>
-                        <p class="pb-3">Please note, free pick up scheduling is first come, first served. Read more here.</p>
-                        <a href="" class="btn btn-green">Schedule a Free Pickup</a> 
+                    <div class="col-sm-12 pt-4 text-center">
+                        <?php the_field('middle_2_section_copy'); ?>
+                        <a href="<?php the_field('middle_2_section_cta_url'); ?>" class="btn btn-green"><?php the_field('middle_2_section_cta_text'); ?></a> 
                     </div>
                 </div>
             </div>
         </div>
-        <div class="fb-page" data-href="https://www.facebook.com/thegreenchairproject/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/thegreenchairproject/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/thegreenchairproject/">The Green Chair Project</a></blockquote></div>
         <div id="home-bottom">
             <div class="container-fluid">
                 <div class="row">

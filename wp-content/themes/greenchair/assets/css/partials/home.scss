@@ -129,22 +129,14 @@
     }
 
     #essentials {
-        text-align: center;
-
         .essential-item {
-            width: 18%;
+            max-width: 100%;
             margin: 10px;
 
             img {
                 width: 100%;
                 margin-bottom: 15px;
             }
-        }
-
-        p {
-            width: 55%;
-            margin-left: auto;
-            margin-right: auto;
         }
     }
 
