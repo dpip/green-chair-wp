@@ -194,6 +194,7 @@ get_header(); ?>
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 py-3">
+                        <hr class="mb-4" />
                         <h3 class="text-center"><?php echo get_field('middle_2_section_heading_'); ?></h3>
                     </div>
                     <div class="essential-item">
@@ -201,7 +202,7 @@ get_header(); ?>
                     </div>
                     <div class="col-sm-12 pt-4 text-center">
                         <?php the_field('middle_2_section_copy'); ?>
-                        <a href="<?php the_field('middle_2_section_cta_url'); ?>" class="btn btn-green"><?php the_field('middle_2_section_cta_text'); ?></a> 
+                        <a href="<?php the_field('middle_2_section_cta_url'); ?>" class="btn btn-green" target="_blank"><?php the_field('middle_2_section_cta_text'); ?></a> 
                     </div>
                 </div>
             </div>
@@ -209,12 +210,12 @@ get_header(); ?>
         <div id="home-bottom">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col left">
+                    <div class="col left" style="background-image:url('<?php the_field('bottom_section_image'); ?>');">
                     </div>
                     <div class="col right">
-                        <h4 class="text-center align-middle">Community support makes new beginnings possible</h4>
+                        <h4 class="text-center align-middle"><?php echo get_field('bottom_section_text') ?></h4>
                         <div class="text-center">
-                            <a href="" class="btn btn-primary my-3">Give today</a>
+                            <a href="<?php the_field('bottom_section_cta_url'); ?>" class="btn btn-primary my-3"><?php the_field('bottom_section_cta_text') ?></a>
                         </div>
                     </div>
                 </div>

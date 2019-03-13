@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-<div id="main-content">
+<div id="main-content" class="py-5">
     <div class="container">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
            <h1><?php the_title(); ?></h1>
