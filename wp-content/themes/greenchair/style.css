@@ -158,6 +158,17 @@ h6 {
   .widget ul a {
     color: #554a4e; }
 
+#upper-navigation {
+  background: #8cc342; }
+  #upper-navigation #menu-top-green-navigation {
+    margin-bottom: 0;
+    padding: 5px 0;
+    list-style-type: none; }
+    #upper-navigation #menu-top-green-navigation li a {
+      color: #ffffff;
+      font-weight: 700;
+      text-transform: uppercase; }
+
 .navbar.navbar-light.bg-light {
   background-color: #ffffff !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -521,6 +532,16 @@ h6 {
     justify-content: center;
     align-items: center; }
 
+.archive-page .blog-image {
+  max-height: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.archive-page .continue {
+  color: #8cc342; }
+
 .single-post-info .jumbotron {
   background: #ffffff; }
 
@@ -544,3 +565,10 @@ h6 {
   .single-post-info .alignright,
   .single-post-info .alignleft {
     float: none; } }
+
+.image-leadspace .jumbotron {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  .image-leadspace .jumbotron h1 {
+    color: #ffffff; }

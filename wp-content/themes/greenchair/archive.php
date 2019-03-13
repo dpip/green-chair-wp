@@ -45,12 +45,12 @@ get_header(); ?>
             <div id="post-<?php the_ID(); ?>" <?php post_class('blog-item mb-5'); ?>>
                 <div class="blog-image">
                     <a href="<?php the_permalink(); ?>">
-                        <?php echo get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'img-responsive')); ?>
+                        <?php echo get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'img-fluid mx-auto d-block')); ?>
                     </a>
                 </div>
-                <h3><?php the_title(); ?> | <?php the_date(); ?></h3>
+                <h3 class="mt-3"><?php the_title(); ?> | <?php the_date(); ?></h3>
                 <p><?php the_excerpt(); ?></p>
-                <a href="<?php the_permalink(); ?>">Continue reading &raquo;</a>
+                <a href="<?php the_permalink(); ?>" class="continue">Continue reading &raquo;</a>
             </div> <!-- end blog-item -->
         <?php
         }
