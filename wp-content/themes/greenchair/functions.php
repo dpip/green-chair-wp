@@ -20,6 +20,29 @@ register_nav_menus( array(
     'footer_menu' => 'Footer Menu',
 ) );
 
+//Sidebar
+add_action( 'widgets_init', 'theme_slug_widgets_init' );
+function theme_slug_widgets_init() {
+    register_sidebar(
+        array(
+            'id' => 'sidebar-1',
+            'name' => __( 'Blog Sidebar' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget' => '</div>',
+            'before_title' => '<h5 class="widget-title">',
+            'after_title' => '</h5>'
+        )
+    );
+}
+
+//Add class to next and previous links
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="btn btn-primary"';
+}
+
 //Adding Bootstrap Dropdown Walker for Mobile Nav
 class wp_bootstrap_navwalker extends Walker_Nav_Menu
 {

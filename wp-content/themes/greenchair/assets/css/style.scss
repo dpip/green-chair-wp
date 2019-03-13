@@ -37,7 +37,8 @@ h2 {
     margin-bottom: 1rem;
 }
 
-h3 {
+h3,
+.widget-title {
     font-family: $serif;
     color: $green;
     font-size: 2rem;
@@ -195,6 +196,17 @@ h6 {
     }
 }
 
+.widget {
+    ul {
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        a {
+            color: $gray;
+        }
+    }
+}
+
 //Additional Styles
 @import "partials/navbar";
 @import "partials/footer";
@@ -203,3 +215,4 @@ h6 {
 @import 'partials/events';
 @import 'partials/news';
 @import 'partials/about';
+@import 'partials/blog';
