@@ -16,9 +16,7 @@ add_theme_support( 'post-thumbnails' );
 
 // Menus 
 register_nav_menus( array(
-    'main_navigation' => 'Main Navigation',
-    'upper_navigation' => 'Top Green Navigation'
-) );
+    'main_navigation' => 'Main Navigation') );
 
 //Sidebar
 add_action( 'widgets_init', 'theme_slug_widgets_init' );

@@ -25,15 +25,6 @@
     <body <?php body_class(); ?>>
         <div id="wrapper">
             <div id="main">
-                <div id="upper-navigation">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="offset-md-6 col-md-6">
-                                <?php wp_nav_menu( array( 'theme_location' => 'upper_navigation', 'container' => false, 'menu' => 'upper-navigation', 'menu_class'=> 'text-right' ) ); ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <div class="container-fluid flex-lg-column ">
                         <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/images/greenchairlogogreen.svg" /></a>
