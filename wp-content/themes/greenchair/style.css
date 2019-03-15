@@ -51,6 +51,11 @@ h6 {
   text-transform: uppercase;
   font-size: 1.2rem; }
 
+a {
+  color: #8cc342; }
+  a:hover {
+    color: #8cc342; }
+
 .btn {
   font-family: "Lato", sans-serif;
   font-weight: 300;
@@ -571,4 +576,16 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat; }
   .image-leadspace .jumbotron h1 {
-    color: #ffffff; }
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48); }
+
+#location {
+  background-image: url("assets/images/greenwood.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 40px 0;
+  color: #ffffff; }
+
+.page-template-page-contact #footer {
+  margin-top: 0; }

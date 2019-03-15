@@ -62,6 +62,14 @@ h6 {
     font-size: 1.2rem;
 }
 
+a {
+    color: $green;
+
+    &:hover {
+        color: $green;
+    }
+}
+
 .btn {
     font-family: $sansserif;
     font-weight: 300;
@@ -217,3 +225,4 @@ h6 {
 @import 'partials/about';
 @import 'partials/blog';
 @import 'partials/misctemplates';
+@import 'partials/contact';
