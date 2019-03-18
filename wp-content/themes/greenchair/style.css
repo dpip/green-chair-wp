@@ -502,8 +502,17 @@ h6 {
   color: #ffffff;
   padding: 5px 10px; }
 
-.img-placeholder {
-  background-color: red; }
+.about-page .jumbotron {
+  min-height: 300px; }
+
+.doc-wrap {
+  display: flex; }
+
+@media screen and (max-width: 991.98px) {
+  .doc-wrap {
+    flex-direction: column; }
+  .content {
+    margin-top: 25px !important; } }
 
 .blog-page .jumbotron {
   background-size: cover;
