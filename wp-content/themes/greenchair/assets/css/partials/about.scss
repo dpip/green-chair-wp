@@ -12,11 +12,50 @@
     display: flex;
 }
 
+.jumbo-breakdown {
+    margin-top: 50px;
+    h1 {
+        color: white;
+    }
+}
+
+.breakdown-block {
+    flex: 1;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: -125px;
+    margin-top: 50px;
+    h2 {
+        font-weight: bold;
+    }
+    p {
+        text-transform: uppercase;
+    }
+}
+
+.founder-img {
+    height: 260px;
+    width: 260px;
+    background-size: cover;
+    background-color: black;
+}
+
+.picture-direction::after {
+    content: "Right";
+}
+
 @media screen and (max-width: 991.98px) { 
     .doc-wrap {
         flex-direction: column;
     }
     .content {
         margin-top: 25px !important;
+    }
+ }
+ @media screen and (max-width: 767px) { 
+    .picture-direction::after {
+        content: "Below";
     }
  }
