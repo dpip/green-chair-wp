@@ -1,23 +1,5 @@
 @import "variables";
 
-#upper-navigation {
-    background: $green;
-
-    #menu-top-green-navigation {
-        margin-bottom: 0;
-        padding: 5px 0;
-        list-style-type: none;
-
-        li {
-            a {
-                color: #ffffff;
-                font-weight: 700;
-                text-transform: uppercase;
-            }
-        }
-    }
-}
-
 .navbar.navbar-light {
     &.bg-light {
         background-color: #ffffff !important;
@@ -40,5 +22,25 @@
             padding-left: 0.8rem;
             padding-right: 0.8rem;
         }
+
+        .btn-green {
+            vertical-align: bottom;
+            padding: 0;
+            margin-left: 10px;
+            font-size: 1rem;
+
+            a {
+                color: #ffffff;
+                font-weight: 400;
+
+                &:hover,
+                &:focus {
+                    color: $green;
+                }
+            }
+        }
     }
 }
+
+
+

@@ -28,7 +28,7 @@ get_header(); ?>
                             </div>
                             <h6><?php the_field('home_block_1_text'); ?></h6>
                             <p><?php the_field('home_block_1_description'); ?></p>
-                            <a href="<?php the_field('home_block_1_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_1_cta_text'); ?></a>
+                            <a href="<?php the_field('home_block_1_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_1_cta_text'); ?></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-3 feature">
@@ -38,7 +38,7 @@ get_header(); ?>
                             </div>
                             <h6><?php the_field('home_block_2_text'); ?></h6>
                             <p><?php the_field('home_block_2_description'); ?></p>
-                            <a href="<?php the_field('home_block_2_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_2_cta_text'); ?></a>
+                            <a href="<?php the_field('home_block_2_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_2_cta_text'); ?></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-3 feature">
@@ -48,7 +48,7 @@ get_header(); ?>
                             </div>
                             <h6><?php the_field('home_block_3_text'); ?></h6>
                             <p><?php the_field('home_block_3_description'); ?></p>
-                            <a href="<?php the_field('home_block_3_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_3_cta_text'); ?></a>
+                            <a href="<?php the_field('home_block_3_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_3_cta_text'); ?></a>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-12 col-md-3 feature">
@@ -58,7 +58,7 @@ get_header(); ?>
                             </div>
                             <h6><?php the_field('home_block_4_text'); ?></h6>
                             <p><?php the_field('home_block_4_description'); ?></p>
-                            <a href="<?php the_field('home_block_4_cta_url'); ?>" class="btn btn-primary"><?php the_field('home_block_4_cta_text'); ?></a>
+                            <a href="<?php the_field('home_block_4_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_4_cta_text'); ?></a>
                         </div>
                     </div>
                 </div>

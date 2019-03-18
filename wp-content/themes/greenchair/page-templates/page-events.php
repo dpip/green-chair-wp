@@ -7,7 +7,7 @@ get_header(); ?>
 <div id="main-content" class="news-events events-only">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-md-8">
                 <h1 class="display-5 mt-5"><?php echo get_the_title(); ?></h1>
                 <hr />
                 <?php
@@ -86,7 +86,7 @@ get_header(); ?>
                     }
                 ?>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-md-4">
                 <div class="sidebar">
                     <form id="search-form" action="<?php echo home_url( '/' ); ?>" method="get" role="form">
                         <input type="text" name="s" id="search" placeholder="Search">
@@ -94,7 +94,46 @@ get_header(); ?>
                         <input type="hidden" name="post_type[]" value="events" />
                         <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
                     </form>
-                    <?php //get_sidebar('sidebar-1'); ?>
+                    <h4 class="mt-4">News</h4>
+                    <hr />
+                    <?php
+                    $the_query = new WP_Query( 
+                        array(
+                            'post_type' => 'news-item', 
+                            'posts_per_page' => 3
+                        ) 
+                    );
+
+                    if ( $the_query->have_posts() ) {
+
+                        while ( $the_query->have_posts() ) {
+                            $the_query->the_post();
+                            $id = get_the_ID();
+                            $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                            $title = get_the_title($id);
+                            $date = get_post_meta($id, 'news_date', true);
+                            $source = get_post_meta($id, 'news_source', true);
+                            $link = get_the_permalink($id);
+                            $content = wp_trim_words( get_the_content(), 40, '...' );
+
+                            echo '<div class="news-item">';
+                                    echo '<div class="block-content">';
+                                        echo '<h5 class="font-weight-bold">'. $title . '</h5>';
+                                        
+                                        echo '<p class="content">'. $content . '</p>';
+                                        echo '<a class="continue float-right" href="' . $link . '">Continue reading &raquo; </a>';
+                                        echo '<div class="clearfix"></div>';
+                                    echo '</div>';
+                                echo '</div>';
+                        }
+
+                        wp_reset_postdata();
+                    } else {
+                        echo '<p class="text-center">Unfortunately, we have no news.</p>';
+
+                    }
+                ?>
+                <a class="btn btn-green" href="/news">See all News</a>
                 </div>
             </div>
         </div>

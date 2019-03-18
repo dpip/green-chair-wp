@@ -7,7 +7,7 @@ get_header(); ?>
 <div id="main-content" class="news-events news-only">    
     <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-sm-8">
+            <div class="col-xs-12 col-md-8">
                 <h1 class="display-5 mt-5"><?php echo get_the_title(); ?></h1>
                 <hr />
                 <?php
@@ -77,7 +77,7 @@ get_header(); ?>
                     }
                 ?>
             </div>
-            <div class="hidden-xs col-sm-4">
+            <div class="hidden-xs col-md-4">
                 <div class="sidebar">
                     <form id="search-form" action="<?php echo home_url( '/' ); ?>" method="get" role="form">
                         <input type="text" name="s" id="search" placeholder="Search">
@@ -85,7 +85,44 @@ get_header(); ?>
                         <input type="hidden" name="post_type[]" value="events" />
                         <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
                     </form>
-                    <?php //get_sidebar('sidebar-1'); ?>
+                    
+                    <h4 class="mt-4">Recent Blog Posts</h4>
+                    <hr />
+                    <?php 
+                    $the_query = new WP_Query( array('post_type' => 'post', 'posts_per_page' => 4));
+                    if ( $the_query->have_posts() ) {
+                        while ( $the_query->have_posts() ) {
+                            $the_query->the_post();
+                            $id = get_the_ID();
+                            $title = get_the_title();
+                            $link = get_the_permalink();
+                            $date = get_the_date();
+                            $content = get_the_content();
+                            $excerpt = get_the_excerpt($id);
+                            $trimmedcontent = wp_trim_words($content, 20, '...');
+                            $image = get_the_post_thumbnail($id, 'full', array('class' => 'img-responsive'));
+
+                            echo '<div class="blog-post mb-5">';
+                                echo '<div class="inner">';
+                                    echo '<a href="'. $link . '">';
+                                            if(!empty($image)){
+                                                echo '<div class="img-wrap">'. $image . '</div>';
+                                            }
+                                    echo '</a>'; 
+                                        echo '<div class="post-content">';
+                                            echo '<h5><a href="'. $link . '">' . $title . '</a></h5>'; 
+                                            echo '<p><i class="far fa-calendar-alt"></i> '. $date; 
+                                                
+                                            echo '</p>'; 
+                                            echo '<p>'. $trimmedcontent . ' <a class="continue" href="' . $link . '">Read more &raquo;</a></p>';
+                                        echo '</div>';
+                                       
+                                    
+                                echo '</div>';
+                            echo '</div>';
+                        }
+                    } ?>
+                    <a class="btn btn-green" href="/blog">See all Blog Posts</a>
                 </div>
             </div>
         </div>

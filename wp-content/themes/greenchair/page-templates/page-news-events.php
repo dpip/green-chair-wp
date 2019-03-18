@@ -6,7 +6,7 @@ get_header(); ?>
 
 <div id="main-content" class="news-events">    
     <div class="container">
-        <div class="row">
+        <div class="row py-4">
             <div class="col-xs-12 col-sm-8">
                 <h2 class="mt-3">News</h2>
                 <hr />
