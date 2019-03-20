@@ -62,6 +62,10 @@ get_header(); ?>
                 </div>
             </div>
         </div>
+        <div class="container" style="margin-top: 50px;">
+                <a href="/get-involved" class="btn btn-primary">Get Involved</a>
+                <a href="/donate" class="btn btn-primary" style="margin-left: 10px;">Donate Now</a>
+        </div>
     <?php endwhile; ?>
     <?php endif; ?>
 </div><!-- #main-content -->
