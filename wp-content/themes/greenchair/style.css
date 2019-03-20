@@ -508,32 +508,43 @@ a {
   padding: 5px 10px; }
 
 .about-page .jumbotron {
-  min-height: 300px; }
+  min-height: 400px; }
 
 .doc-wrap {
   display: flex; }
 
-.jumbo-breakdown {
-  margin-top: 50px; }
-  .jumbo-breakdown h1 {
-    color: white; }
+.jumbo-about {
+  background-position: 0px -15px;
+  background-size: cover; }
+  .jumbo-about h1 {
+    color: white;
+    margin-top: -10px !important; }
 
-.breakdown-block {
-  flex: 1;
-  color: white;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  margin-left: -125px;
-  margin-top: 50px; }
-  .breakdown-block h2 {
-    font-weight: bold; }
-  .breakdown-block p {
-    text-transform: uppercase; }
+.jumbo-breakdown {
+  margin-top: 50px;
+  background-size: cover; }
+  .jumbo-breakdown h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: white; }
+  .jumbo-breakdown .breakdown-block {
+    flex: 1;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px; }
+    .jumbo-breakdown .breakdown-block h2 {
+      font-weight: bold;
+      font-size: 50px; }
+    .jumbo-breakdown .breakdown-block p {
+      text-transform: uppercase; }
+
+.sepia {
+  filter: sepia(50%); }
 
 .founder-img {
   height: 260px;
-  width: 260px;
+  width: auto;
   background-size: cover;
   background-color: black; }
 

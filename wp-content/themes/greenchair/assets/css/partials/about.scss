@@ -4,7 +4,7 @@
 
 .about-page {
     .jumbotron {
-        min-height: 300px;
+        min-height: 400px;
     }
 }
 
@@ -12,32 +12,47 @@
     display: flex;
 }
 
-.jumbo-breakdown {
-    margin-top: 50px;
+.jumbo-about {
+    background-position: 0px -15px;
+    background-size: cover;
     h1 {
         color: white;
+        margin-top: -10px !important;
     }
 }
 
-.breakdown-block {
-    flex: 1;
-    color: white;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
-    margin-left: -125px;
+.jumbo-breakdown {
     margin-top: 50px;
-    h2 {
+    background-size: cover;
+    h1 {
         font-weight: bold;
+        font-size: 50px;
+        color: white;
     }
-    p {
-        text-transform: uppercase;
+    .breakdown-block {
+        flex: 1;
+        color: white;
+        justify-content: flex-start;
+        align-items: center;
+        // text-align: center;
+        // margin-left: -125px;
+        margin-top: 50px;
+        h2 {
+            font-weight: bold;
+            font-size: 50px;
+        }
+        p {
+            text-transform: uppercase;
+        }
     }
 }
+
+.sepia { filter: sepia(50%); }
+
 
 .founder-img {
     height: 260px;
-    width: 260px;
+    width: auto;
     background-size: cover;
     background-color: black;
 }
