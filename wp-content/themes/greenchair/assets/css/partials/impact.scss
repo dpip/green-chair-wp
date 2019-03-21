@@ -1,0 +1,26 @@
+@import "variables";
+
+// impact section
+
+.jumbo-impact {
+    background-size: cover;
+    h1 {
+        font-weight: bold;
+        font-size: 4.5rem;
+        color: white !important;
+    }
+    .breakdown-block {
+        flex: 1;
+        color: white;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 50px;
+        h2 {
+            font-weight: bold;
+            font-size: 50px;
+        }
+        p {
+            text-transform: uppercase;
+        }
+    }
+}

@@ -215,6 +215,11 @@ a {
     }
 }
 
+.sepia {
+    filter: sepia(50%); 
+}
+
+
 //Additional Styles
 @import "partials/navbar";
 @import "partials/footer";
@@ -223,6 +228,7 @@ a {
 @import 'partials/events';
 @import 'partials/news';
 @import 'partials/about';
+@import 'partials/impact';
 @import 'partials/blog';
 @import 'partials/misctemplates';
 @import 'partials/contact';

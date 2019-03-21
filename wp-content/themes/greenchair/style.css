@@ -163,6 +163,9 @@ a {
   .widget ul a {
     color: #554a4e; }
 
+.sepia {
+  filter: sepia(50%); }
+
 .navbar.navbar-light.bg-light {
   background-color: #ffffff !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
@@ -520,28 +523,6 @@ a {
     color: white;
     margin-top: -10px !important; }
 
-.jumbo-breakdown {
-  margin-top: 50px;
-  background-size: cover; }
-  .jumbo-breakdown h1 {
-    font-weight: bold;
-    font-size: 50px;
-    color: white; }
-  .jumbo-breakdown .breakdown-block {
-    flex: 1;
-    color: white;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 50px; }
-    .jumbo-breakdown .breakdown-block h2 {
-      font-weight: bold;
-      font-size: 50px; }
-    .jumbo-breakdown .breakdown-block p {
-      text-transform: uppercase; }
-
-.sepia {
-  filter: sepia(50%); }
-
 .founder-img {
   height: 260px;
   width: auto;
@@ -550,6 +531,12 @@ a {
 
 .picture-direction::after {
   content: "Right"; }
+
+.jumbo-staff {
+  margin-top: 50px; }
+  .jumbo-staff h1 {
+    color: white;
+    margin-top: -10px !important; }
 
 @media screen and (max-width: 991.98px) {
   .doc-wrap {
@@ -560,6 +547,24 @@ a {
 @media screen and (max-width: 767px) {
   .picture-direction::after {
     content: "Below"; } }
+
+.jumbo-impact {
+  background-size: cover; }
+  .jumbo-impact h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: white !important; }
+  .jumbo-impact .breakdown-block {
+    flex: 1;
+    color: white;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px; }
+    .jumbo-impact .breakdown-block h2 {
+      font-weight: bold;
+      font-size: 50px; }
+    .jumbo-impact .breakdown-block p {
+      text-transform: uppercase; }
 
 .blog-page .jumbotron {
   background-size: cover;

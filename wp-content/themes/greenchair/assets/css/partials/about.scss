@@ -21,35 +21,6 @@
     }
 }
 
-.jumbo-breakdown {
-    margin-top: 50px;
-    background-size: cover;
-    h1 {
-        font-weight: bold;
-        font-size: 50px;
-        color: white;
-    }
-    .breakdown-block {
-        flex: 1;
-        color: white;
-        justify-content: flex-start;
-        align-items: center;
-        // text-align: center;
-        // margin-left: -125px;
-        margin-top: 50px;
-        h2 {
-            font-weight: bold;
-            font-size: 50px;
-        }
-        p {
-            text-transform: uppercase;
-        }
-    }
-}
-
-.sepia { filter: sepia(50%); }
-
-
 .founder-img {
     height: 260px;
     width: auto;
@@ -59,6 +30,14 @@
 
 .picture-direction::after {
     content: "Right";
+}
+
+.jumbo-staff {
+    margin-top: 50px;
+    h1 {
+        color: white;
+        margin-top: -10px !important;
+    }
 }
 
 @media screen and (max-width: 991.98px) { 
