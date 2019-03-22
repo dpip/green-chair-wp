@@ -49,13 +49,13 @@ get_header(); ?>
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row staff-wrap">
             <?php
-                                //News Items
+                                //Staff Items
                                 $the_query = new WP_Query( 
                                     array(
                                         'post_type' => 'team-item',
-                                        'posts_per_page=100'
+                                        'posts_per_page=50'
                                     ) 
                                 );
 
@@ -70,22 +70,23 @@ get_header(); ?>
                                         $phone = get_field('phone_number');
                                         $linkedin = get_field('email');
                                         $linkedin = get_field('linkedin_url');
+                                        $category = get_field('team_category');
 
-                                        echo '<div class="news-item col-xs-12 col-sm-12 col-md-6">';
-                                            echo '<div class="inner">';
+                                        echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
                                                     echo '<div class="img-wrap">';
                                                         echo $img;
                                                     echo '</div>';
                                                 echo '</a>';
                                                 echo '<div class="content-block">';
-                                                    echo '<h5>'. $title . '</h5>';
-                                                    echo '<h5>'. $position . '</h5>';
-                                                    echo '<h5>'. $company . '</h5>';
-                                                    echo '<p>' . $phone . '</p>';
-                                                    echo '<p>' . $email . '</p>';
+                                                    echo '<div class="title-container">';
+                                                        echo '<h5>'. $title . '</h5>';
+                                                        echo '<p>'. $position . '</p>';
+                                                    echo '</div>';
+                                                    echo '<p>'. $company . '</p>';
+                                                    echo '<p>Phone:' . $phone . '</p>';
+                                                    echo '<p>Email:' . $email . '</p>';
                                                     echo '<p>' . $linkedin . '</p>';
                                                 echo '</div>';
-                                            echo '</div>';
                                         echo '</div>';
                                     }
                                     
