@@ -1,0 +1,33 @@
+@import "variables";
+
+.get-involved {
+    .jumbotron {
+        background-size: cover;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+
+        h1,
+        p {
+            color: #ffffff;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48);
+        }
+    }
+
+    #get-involved-types {
+        margin-top: -100px;
+    }
+
+    .type {
+        text-align: center;
+        .img-wrap {
+            max-height: 170px;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            color: $gray;
+            font-size: 1.6rem;
+        }
+    }
+}

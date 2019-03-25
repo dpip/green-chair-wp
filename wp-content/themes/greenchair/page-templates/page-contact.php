@@ -6,7 +6,7 @@ get_header(); ?>
 
 <div id="main-content" class="image-leadspace contact">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php $backgroundimage = get_the_post_thumbnail_url(get_the_ID(), 'full', true); ?>
+    <?php $backgroundimage = get_the_post_thumbnail_url(get_the_ID(), 'full', true); ?>
     <div class="jumbotron" style="background-image:url(<?php echo $backgroundimage ?>);">
         <div class="container">
             <div class="row py-5">
@@ -26,7 +26,7 @@ get_header(); ?>
             </div>
         </div>
     </div>  
-    <div id="location">
+    <div id="location" class="woodbackground">
         <div class="container">
             <?php the_field('location_sidebar'); ?>
         </div>
