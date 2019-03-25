@@ -125,6 +125,18 @@ a {
     }
 }
 
+.underline {
+    border-bottom: 1px solid $green;
+}
+
+.woodbackground {
+    background-image: url('assets/images/greenwood.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    color: #ffffff;
+}
+
 .videoWrapper {
     iframe {
         max-width: 100%;
@@ -216,10 +228,8 @@ a {
 }
 
 .sepia {
-    filter: sepia(50%); 
+    filter: sepia(50%);
 }
-
-
 
 //Additional Styles
 @import "partials/navbar";
@@ -233,3 +243,4 @@ a {
 @import 'partials/blog';
 @import 'partials/misctemplates';
 @import 'partials/contact';
+@import 'partials/get-involved';

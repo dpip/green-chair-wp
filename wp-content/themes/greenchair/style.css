@@ -96,6 +96,16 @@ a {
     border-color: #8cc342;
     color: #8cc342; }
 
+.underline {
+  border-bottom: 1px solid #8cc342; }
+
+.woodbackground {
+  background-image: url("assets/images/greenwood.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff; }
+
 .videoWrapper iframe {
   max-width: 100%; }
 
@@ -345,10 +355,6 @@ a {
         min-height: 50px; }
 
 .home-page #about {
-  background-image: url("assets/images/greenwood.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   padding-top: 40px;
   padding-bottom: 40px; }
   .home-page #about .inner {
@@ -407,10 +413,6 @@ a {
     background-position: center;
     min-height: 400px; }
   .home-page #home-bottom .right {
-    background-image: url("assets/images/greenwood.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     min-height: 400px; }
   .home-page #home-bottom h4 {
     color: #ffffff;
@@ -712,12 +714,30 @@ a {
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48); }
 
 #location {
-  background-image: url("assets/images/greenwood.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
   padding: 40px 0;
   color: #ffffff; }
 
 .page-template-page-contact #footer {
   margin-top: 0; }
+
+.get-involved .jumbotron {
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+  .get-involved .jumbotron h1,
+  .get-involved .jumbotron p {
+    color: #ffffff;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48); }
+
+.get-involved #get-involved-types {
+  margin-top: -100px; }
+
+.get-involved .type {
+  text-align: center; }
+  .get-involved .type .img-wrap {
+    max-height: 170px;
+    overflow: hidden;
+    margin-bottom: 20px; }
+  .get-involved .type h3 {
+    color: #554a4e;
+    font-size: 1.6rem; }

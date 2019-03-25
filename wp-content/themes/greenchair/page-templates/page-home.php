@@ -64,7 +64,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div id="about">
+        <div id="about" class="woodbackground">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 py-5">
@@ -212,9 +212,9 @@ get_header(); ?>
                 <div class="row">
                     <div class="col left" style="background-image:url('<?php the_field('bottom_section_image'); ?>');">
                     </div>
-                    <div class="col right">
-                        <h4 class="text-center align-middle"><?php echo get_field('bottom_section_text') ?></h4>
-                        <div class="text-center">
+                    <div class="col right woodbackground">
+                        <div class="text-center align-middle">
+                            <h4><?php echo get_field('bottom_section_text') ?></h4>
                             <a href="<?php the_field('bottom_section_cta_url'); ?>" class="btn btn-primary my-3"><?php the_field('bottom_section_cta_text') ?></a>
                         </div>
                     </div>
