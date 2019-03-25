@@ -43,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .staff-item {
@@ -57,15 +58,14 @@
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
     transition: transform 0.1s ease-in-out, box-shadow 0.1s;
     margin: 1rem;
+    padding: 0px !important;
     cursor: pointer;
         .img-wrap {
-            min-width: 20rem;
-            min-height: 20rem; /* layout hack */
             background: #fff center center no-repeat;
-            border: 1px solid red;
             img {
-                height: 100%;
-                width: 100%;
+                width: 20rem;
+                height: 20rem; 
+                object-fit: cover;
             }
         }
         .content-block {
@@ -76,10 +76,37 @@
             min-height: 15rem;
             width: 100%;
         }
-    &:hover {
-        transform: translateY(-0.5rem) scale(1.0125);
-        box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+    // &:hover {
+    //     transform: translateY(-0.5rem) scale(1.0125);
+    //     box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+    // }
+}
+
+.board-container {
+    margin-top: 50px;
+}
+
+.financials-container {
+    margin-top: 50px;
+}
+.financials-row {
+    margin-top: 25px;
+    .financials-item {
+        height: 200px;
     }
+}
+.board-item {
+    padding-top: 25px;
+    .board-company {
+        font-style: italic;
+        opacity: 0.5;
+    }
+}
+
+.horizontal-rule {
+    border-top: 1px solid black;
+    width: 90%;
+    height: 2px;
 }
 
 @media screen and (max-width: 991.98px) { 
