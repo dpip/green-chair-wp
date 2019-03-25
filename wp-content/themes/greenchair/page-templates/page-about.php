@@ -97,6 +97,39 @@ get_header(); ?>
                             ?>
             </div>
         </div>
+        <div class="container board-container">
+            <h2>Board Members</h2>
+            <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4"></div>
+            </div>
+        </div>
+        
+        <div class="container financials-container">
+            
+            <h2>Financials</h2>
+            <div class="row">
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <p>The Green Chair Project is committed to helping our neighbors in need, in socially and fiscally responsible ways. Learn more about our finances by viewing the reports below.</p>
+                </div>
+            </div>
+            <div class="row financials-row">
+                <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
+                    <h6>Letter of Determination</h6>
+                    <p>The Green Chair Project is a registered 501c(3) organization and was founded in 2010.</p>
+                    <a href="https://n17.daknoadmin.com/site_data/thegreenchair/editor_assets/501(c)(3)%20letter.pdf">View our IRS Letter of Determination »</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
+                    <h6>Audited Financials</h6>
+                    <p>The Green Chair Project performed its first annual independent audit that includes financial position, compliance information, and related statements of activities.</p>
+                    <a href="https://www.thegreenchair.org/site_data/thegreenchair/editor_assets/The_Green_Chair_Project_Audited_Financial_Statements_2017.pdf">View our most recent Audited Financial Statements »</a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
+                    <h6>IRS Form 990</h6>
+                    <p>The Green Chair Project files this form to provide the IRS with the information required by section 6033.   </p>
+                    <a href="https://www.thegreenchair.org/site_data/thegreenchair/editor_assets/2017_990.pdf">View our most recent 990 »</a>
+                </div>
+            </div>
+        </div>
         <div class="container" style="margin-top: 50px;">
                 <a href="/get-involved" class="btn btn-primary">Get Involved</a>
                 <a href="/donate" class="btn btn-primary" style="margin-left: 10px;">Donate Now</a>

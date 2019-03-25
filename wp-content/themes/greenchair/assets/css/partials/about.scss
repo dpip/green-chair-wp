@@ -62,7 +62,6 @@
             min-width: 20rem;
             min-height: 20rem; /* layout hack */
             background: #fff center center no-repeat;
-            border: 1px solid red;
             img {
                 height: 100%;
                 width: 100%;
@@ -79,6 +78,20 @@
     &:hover {
         transform: translateY(-0.5rem) scale(1.0125);
         box-shadow: 0 0.5em 3rem -1rem rgba(0,0,0,0.5);
+    }
+}
+
+.board-container {
+    margin-top: 50px;
+}
+
+.financials-container {
+    margin-top: 50px;
+}
+.financials-row {
+    margin-top: 25px;
+    .financials-item {
+        height: 200px;
     }
 }
 
