@@ -48,7 +48,65 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container staff-container">
+            <div class="row staff-wrap">
+            <?php
+                                //Staff Items
+                                $the_query = new WP_Query( 
+                                    array(
+                                        'post_type' => 'team-item',
+                                        'posts_per_page' => -1,
+                                        'tax_query' => array(
+                                            array(
+                                                'taxonomy' => 'team_category',
+                                                'field'    => 'slug',
+                                                'terms'    => 'staff',
+                                            ),
+                                        )
+                                    ) 
+                                );
+
+                                if ( $the_query->have_posts() ) {
+                                    while ( $the_query->have_posts() ) {
+                                        $the_query->the_post();
+                                        $id = get_the_ID();
+                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                                        $title = get_the_title($id);
+                                        $position = get_field('position_title');
+                                        $company = get_field('company');
+                                        $phone = get_field('phone_number');
+                                        $email = get_field('email');
+                                        $linkedin = get_field('linkedin_url');
+                                        $category = get_field('team_category');
+                    
+
+                                        echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
+                                                    echo '<div class="img-wrap">';
+                                                        echo $img;
+                                                    echo '</div>';
+                                                echo '</a>';
+                                                echo '<div class="content-block">';
+                                                    echo '<div class="title-container">';
+                                                        echo '<h6>'. $title . '</h6>';
+                                                        echo '<p>'. $position . '</p>';
+                                                    echo '</div>';
+                                                    echo '<p>Phone: ' . $phone . '</p>';
+                                                    echo '<p>Email: ' . $email . '</p>';
+                                                    echo '<p><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
+                                                    echo '<p><a class="" href ="">More about ' . $title . ' »</a></p>';
+                                                echo '</div>';
+                                        echo '</div>';
+                                    }
+                                    
+                                    wp_reset_postdata();
+                                } else {
+                                    '<p>Unfortunately, we have no news at this time.</p>';
+                                }
+                            ?>
+            </div>
+        </div>
+        <div class="container board-container">
+            <h2>Board of Directors</h2>
             <div class="row staff-wrap">
             <?php
                                 //Staff Items
@@ -72,24 +130,16 @@ get_header(); ?>
                                         $linkedin = get_field('linkedin_url');
                                         $category = get_field('team_category');
 
-                                        echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
-                                                    echo '<div class="img-wrap">';
-                                                        echo $img;
-                                                    echo '</div>';
+                                        echo '<div class="board-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
                                                 echo '</a>';
                                                 echo '<div class="content-block">';
                                                     echo '<div class="title-container">';
-                                                        echo '<h5>'. $title . '</h5>';
-                                                        echo '<p>'. $position . '</p>';
+                                                        echo '<h6>'. $title . '</h6>';
+                                                        echo '<p>'. $position . ', <span class="board-company">'. $company . '</span></p>';
                                                     echo '</div>';
-                                                    echo '<p>'. $company . '</p>';
-                                                    echo '<p>Phone:' . $phone . '</p>';
-                                                    echo '<p>Email:' . $email . '</p>';
-                                                    echo '<p>' . $linkedin . '</p>';
                                                 echo '</div>';
                                         echo '</div>';
                                     }
-                                    
                                     wp_reset_postdata();
                                 } else {
                                     '<p>Unfortunately, we have no news at this time.</p>';
@@ -97,15 +147,7 @@ get_header(); ?>
                             ?>
             </div>
         </div>
-        <div class="container board-container">
-            <h2>Board Members</h2>
-            <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4"></div>
-            </div>
-        </div>
-        
         <div class="container financials-container">
-            
             <h2>Financials</h2>
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-lg-8">
