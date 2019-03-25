@@ -72,6 +72,7 @@ get_header(); ?>
                                         $id = get_the_ID();
                                         $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
                                         $title = get_the_title($id);
+                                        $firstname = explode(' ',trim($title));
                                         $position = get_field('position_title');
                                         $company = get_field('company');
                                         $phone = get_field('phone_number');
@@ -92,7 +93,7 @@ get_header(); ?>
                                                 echo '<div class="content-block">';
                                                     echo '<div class="title-container">';
                                                         if (has_post_thumbnail()) {
-                                                            echo '<h6>'. $title . '</h6>';
+                                                            echo '<h6>'. $title . '<div class="horizontal-rule"></div></h6>';
                                                         } else {
                                                             echo '<h6 class="placeholder">'. $title . '</h6>';
                                                         }
@@ -100,15 +101,22 @@ get_header(); ?>
                                                     echo '</div>';
                                                     echo '<p>Phone: ' . $phone . '</p>';
                                                     echo '<p>Email: ' . $email . '</p>';
-                                                    echo '<p><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
-                                                    echo '<p><a class="" href ="">More about ' . $title . ' »</a></p>';
+                                                    echo '<div class="content-last-of">';
+                                                        if (!empty($linkedin)) {
+                                                            echo '<p class="linkedin"><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
+                                                            echo '<p class="vertical-rule"></p>';
+                                                        } else {
+                                                            echo '<span></span>';
+                                                        }
+                                                        echo '<p class="more-about"><a class="" href ="">More about ' . $firstname[0] . ' »</a></p>';
+                                                    echo '</div>';
                                                 echo '</div>';
                                         echo '</div>';
                                     }
                                     
                                     wp_reset_postdata();
                                 } else {
-                                    '<p>Unfortunately, we have no news at this time.</p>';
+                                    '<p>Oops! Something went wrong.</p>';
                                 }
                             ?>
             </div>
@@ -149,7 +157,9 @@ get_header(); ?>
                                                 echo '</a>';
                                                 echo '<div class="content-block">';
                                                     echo '<div class="title-container">';
-                                                        echo '<h6>'. $title . '</h6>';
+                                                        echo '<div class="board-title-wrap">';
+                                                            echo '<h6>'. $title . ' <div class="horizontal-rule"></div></h6>';
+                                                        echo '</div>';
                                                         if (!empty($company)) {
                                                             echo '<p>'. $position . ', <span class="board-company">'. $company . '</span></p>';
                                                         } else {
@@ -175,23 +185,23 @@ get_header(); ?>
             </div>
             <div class="row financials-row">
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
-                    <h6>Letter of Determination</h6>
+                    <h6>Letter of Determination<div class="horizontal-rule"></div></h6>
                     <p>The Green Chair Project is a registered 501c(3) organization and was founded in 2010.</p>
                     <a href="https://n17.daknoadmin.com/site_data/thegreenchair/editor_assets/501(c)(3)%20letter.pdf">View our IRS Letter of Determination »</a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
-                    <h6>Audited Financials</h6>
+                    <h6>Audited Financials<div class="horizontal-rule"></div></h6>
                     <p>The Green Chair Project performed its first annual independent audit that includes financial position, compliance information, and related statements of activities.</p>
                     <a href="https://www.thegreenchair.org/site_data/thegreenchair/editor_assets/The_Green_Chair_Project_Audited_Financial_Statements_2017.pdf">View our most recent Audited Financial Statements »</a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
-                    <h6>IRS Form 990</h6>
+                    <h6>IRS Form 990<div class="horizontal-rule"></div></h6>
                     <p>The Green Chair Project files this form to provide the IRS with the information required by section 6033.   </p>
                     <a href="https://www.thegreenchair.org/site_data/thegreenchair/editor_assets/2017_990.pdf">View our most recent 990 »</a>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 75px;">
+        <div class="container get-involved" style="margin-top: 75px;">
                 <a href="/get-involved" class="btn btn-primary">Get Involved</a>
                 <a href="/donate" class="btn btn-primary" style="margin-left: 10px;">Donate Now</a>
         </div>
