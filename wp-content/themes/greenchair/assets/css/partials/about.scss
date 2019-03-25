@@ -2,22 +2,18 @@
 
 // about section
 
-.about-page {
-    .jumbotron {
-        min-height: 400px;
-    }
-}
-
 .doc-wrap {
     display: flex;
 }
 
 .jumbo-about {
     background-position: center;
-    // background-size: cover;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1 {
         color: white;
-        margin-top: -10px !important;
+        margin-top: -100px !important;
         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
 }
@@ -34,15 +30,17 @@
 
 .jumbo-staff {
     margin-top: 50px;
+    background-position: center;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
     h1 {
         color: white;
         margin-top: -10px !important;
         white-space: nowrap;
         text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
+    
 }
 .staff-wrap {
     display: flex;
