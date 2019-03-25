@@ -13,11 +13,12 @@
 }
 
 .jumbo-about {
-    background-position: 0px -15px;
-    background-size: cover;
+    background-position: center;
+    // background-size: cover;
     h1 {
         color: white;
         margin-top: -10px !important;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
 }
 
@@ -37,7 +38,12 @@
     h1 {
         color: white;
         margin-top: -10px !important;
+        white-space: nowrap;
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
     }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
 }
 .staff-wrap {
     display: flex;
@@ -68,6 +74,20 @@
                 object-fit: cover;
             }
         }
+        .staff-placeholder {
+            width: 20rem;
+            height: 20rem; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-image: url('assets/images/greenwood.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: white;
+            text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+        }
         .content-block {
             display: block;
             padding: 1em 0.5em;
@@ -90,11 +110,12 @@
     margin-top: 50px;
 }
 .financials-row {
-    margin-top: 25px;
+    margin-top: 50px;
     .financials-item {
         height: 200px;
     }
 }
+
 .board-item {
     padding-top: 25px;
     .board-company {
@@ -107,6 +128,10 @@
     border-top: 1px solid black;
     width: 90%;
     height: 2px;
+}
+
+.placeholder {
+    opacity: 0;
 }
 
 @media screen and (max-width: 991.98px) { 
@@ -122,3 +147,6 @@
         content: "Below";
     }
  }
+
+
+ 

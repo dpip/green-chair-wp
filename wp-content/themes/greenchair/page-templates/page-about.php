@@ -82,12 +82,20 @@ get_header(); ?>
 
                                         echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
                                                     echo '<div class="img-wrap">';
-                                                        echo $img;
+                                                        if (has_post_thumbnail()) {
+                                                            echo $img; 
+                                                        } else {
+                                                            echo '<div class="staff-placeholder"><h4>' . $title . '</h4></div>';
+                                                        }
                                                     echo '</div>';
                                                 echo '</a>';
                                                 echo '<div class="content-block">';
                                                     echo '<div class="title-container">';
-                                                        echo '<h6>'. $title . '</h6>';
+                                                        if (has_post_thumbnail()) {
+                                                            echo '<h6>'. $title . '</h6>';
+                                                        } else {
+                                                            echo '<h6 class="placeholder">'. $title . '</h6>';
+                                                        }
                                                         echo '<p>'. $position . '</p>';
                                                     echo '</div>';
                                                     echo '<p>Phone: ' . $phone . '</p>';
@@ -113,7 +121,14 @@ get_header(); ?>
                                 $the_query = new WP_Query( 
                                     array(
                                         'post_type' => 'team-item',
-                                        'posts_per_page=50'
+                                        'posts_per_page' => -1,
+                                        'tax_query' => array(
+                                            array(
+                                                'taxonomy' => 'team_category',
+                                                'field'    => 'slug',
+                                                'terms'    => 'board',
+                                            ),
+                                        )
                                     ) 
                                 );
 
@@ -135,7 +150,11 @@ get_header(); ?>
                                                 echo '<div class="content-block">';
                                                     echo '<div class="title-container">';
                                                         echo '<h6>'. $title . '</h6>';
-                                                        echo '<p>'. $position . ', <span class="board-company">'. $company . '</span></p>';
+                                                        if (!empty($company)) {
+                                                            echo '<p>'. $position . ', <span class="board-company">'. $company . '</span></p>';
+                                                        } else {
+                                                            echo '<p>'. $position . '</p>';
+                                                        }
                                                     echo '</div>';
                                                 echo '</div>';
                                         echo '</div>';
@@ -172,7 +191,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 50px;">
+        <div class="container" style="margin-top: 75px;">
                 <a href="/get-involved" class="btn btn-primary">Get Involved</a>
                 <a href="/donate" class="btn btn-primary" style="margin-left: 10px;">Donate Now</a>
         </div>
