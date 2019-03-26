@@ -25,7 +25,7 @@ get_header(); ?>
                 <hr />
 
             <?php endwhile; ?>
-            <div id="search-nav" class="pagination center-block">
+            <div id="search-nav" class="pagination mx-auto d-block">
                 <?php echo paginate_links( $args ); ?>
             </div>
         <?php else : ?>

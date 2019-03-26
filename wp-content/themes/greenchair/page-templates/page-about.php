@@ -37,7 +37,7 @@ get_header(); ?>
                     <?php the_field('about_story_section'); ?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-5 content">
-                    <div class="founder-img" style="background-image: url(http://greenchair.loc:8888/wp-content/uploads/2019/03/25299861758_7ea43c5a40_z.jpg);"></div>
+                    <div class="founder-img" style="background-image: url(/wp-content/uploads/2019/03/25299861758_7ea43c5a40_z.jpg);"></div>
                 </div>
             </div>
         </div>
@@ -70,8 +70,9 @@ get_header(); ?>
                                     while ( $the_query->have_posts() ) {
                                         $the_query->the_post();
                                         $id = get_the_ID();
-                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
                                         $title = get_the_title($id);
+                                        $firstname = explode(' ',trim($title));
                                         $position = get_field('position_title');
                                         $company = get_field('company');
                                         $phone = get_field('phone_number');
@@ -82,25 +83,38 @@ get_header(); ?>
 
                                         echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
                                                     echo '<div class="img-wrap">';
-                                                        echo $img;
+                                                        if (has_post_thumbnail()) {
+                                                            echo $img; 
+                                                        } else {
+                                                            echo '<div class="staff-placeholder"><h4>' . $title . '</h4></div>';
+                                                        }
                                                     echo '</div>';
                                                 echo '</a>';
                                                 echo '<div class="content-block">';
                                                     echo '<div class="title-container">';
-                                                        echo '<h6>'. $title . '</h6>';
+                                                        if (has_post_thumbnail()) {
+                                                            echo '<h6>'. $title . '<div class="horizontal-rule"></div></h6>';
+                                                        } else {
+                                                            echo '<h6 class="placeholder">'. $title . '</h6>';
+                                                        }
                                                         echo '<p>'. $position . '</p>';
                                                     echo '</div>';
                                                     echo '<p>Phone: ' . $phone . '</p>';
                                                     echo '<p>Email: ' . $email . '</p>';
-                                                    echo '<p><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
-                                                    echo '<p><a class="" href ="">More about ' . $title . ' »</a></p>';
+                                                    echo '<div class="content-last-of">';
+                                                        if (!empty($linkedin)) {
+                                                            echo '<p class="linkedin"><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
+                                                            echo '<p class="vertical-rule"></p>';
+                                                        } 
+                                                        echo '<p class="more-about"><a class="" href ="">More about ' . $firstname[0] . ' »</a></p>';
+                                                    echo '</div>';
                                                 echo '</div>';
                                         echo '</div>';
                                     }
                                     
                                     wp_reset_postdata();
                                 } else {
-                                    '<p>Unfortunately, we have no news at this time.</p>';
+                                    '<p>Oops! Something went wrong.</p>';
                                 }
                             ?>
             </div>
@@ -109,42 +123,54 @@ get_header(); ?>
             <h2>Board of Directors</h2>
             <div class="row staff-wrap">
             <?php
-                                //Staff Items
-                                $the_query = new WP_Query( 
-                                    array(
-                                        'post_type' => 'team-item',
-                                        'posts_per_page=50'
-                                    ) 
-                                );
+                //Board Items
+                $the_query = new WP_Query( 
+                    array(
+                        'post_type' => 'team-item',
+                        'posts_per_page' => -1,
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'team_category',
+                                'field'    => 'slug',
+                                'terms'    => 'board',
+                            ),
+                        )
+                    ) 
+                );
 
-                                if ( $the_query->have_posts() ) {
-                                    while ( $the_query->have_posts() ) {
-                                        $the_query->the_post();
-                                        $id = get_the_ID();
-                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
-                                        $title = get_the_title($id);
-                                        $position = get_field('position_title');
-                                        $company = get_field('company');
-                                        $phone = get_field('phone_number');
-                                        $linkedin = get_field('email');
-                                        $linkedin = get_field('linkedin_url');
-                                        $category = get_field('team_category');
+                if ( $the_query->have_posts() ) {
+                    while ( $the_query->have_posts() ) {
+                        $the_query->the_post();
+                        $id = get_the_ID();
+                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                        $title = get_the_title($id);
+                        $position = get_field('position_title');
+                        $company = get_field('company');
+                        $phone = get_field('phone_number');
+                        $linkedin = get_field('email');
+                        $category = get_field('team_category');
 
-                                        echo '<div class="board-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
-                                                echo '</a>';
-                                                echo '<div class="content-block">';
-                                                    echo '<div class="title-container">';
-                                                        echo '<h6>'. $title . '</h6>';
-                                                        echo '<p>'. $position . ', <span class="board-company">'. $company . '</span></p>';
-                                                    echo '</div>';
-                                                echo '</div>';
+                        echo '<div class="board-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
+                                echo '</a>';
+                                echo '<div class="content-block">';
+                                    echo '<div class="title-container">';
+                                        echo '<div class="board-title-wrap">';
+                                            echo '<h6>'. $title . ' <div class="horizontal-rule"></div></h6>';
                                         echo '</div>';
-                                    }
-                                    wp_reset_postdata();
-                                } else {
-                                    '<p>Unfortunately, we have no news at this time.</p>';
-                                }
-                            ?>
+                                        if (!empty($company)) {
+                                            echo '<p>'. $position . ', <span class="board-company">'. $company . '</span></p>';
+                                        } else {
+                                            echo '<p>'. $position . '</p>';
+                                        }
+                                    echo '</div>';
+                                echo '</div>';
+                        echo '</div>';
+                    }
+                    wp_reset_postdata();
+                } else {
+                    '<p>Unfortunately, we have no board of directors at this time.</p>';
+                }
+            ?>
             </div>
         </div>
         <div class="container financials-container">
@@ -156,25 +182,25 @@ get_header(); ?>
             </div>
             <div class="row financials-row">
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
-                    <h6>Letter of Determination</h6>
+                    <h6>Letter of Determination<div class="horizontal-rule"></div></h6>
                     <p>The Green Chair Project is a registered 501c(3) organization and was founded in 2010.</p>
                     <a href="https://n17.daknoadmin.com/site_data/thegreenchair/editor_assets/501(c)(3)%20letter.pdf">View our IRS Letter of Determination »</a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
-                    <h6>Audited Financials</h6>
+                    <h6>Audited Financials<div class="horizontal-rule"></div></h6>
                     <p>The Green Chair Project performed its first annual independent audit that includes financial position, compliance information, and related statements of activities.</p>
                     <a href="https://www.thegreenchair.org/site_data/thegreenchair/editor_assets/The_Green_Chair_Project_Audited_Financial_Statements_2017.pdf">View our most recent Audited Financial Statements »</a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
-                    <h6>IRS Form 990</h6>
+                    <h6>IRS Form 990<div class="horizontal-rule"></div></h6>
                     <p>The Green Chair Project files this form to provide the IRS with the information required by section 6033.   </p>
                     <a href="https://www.thegreenchair.org/site_data/thegreenchair/editor_assets/2017_990.pdf">View our most recent 990 »</a>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 50px;">
-                <a href="/get-involved" class="btn btn-primary">Get Involved</a>
-                <a href="/donate" class="btn btn-primary" style="margin-left: 10px;">Donate Now</a>
+        <div class="container get-involved" style="margin-top: 75px;">
+            <a href="/get-involved" class="btn btn-primary">Get Involved</a>
+            <a href="/donate" class="btn btn-primary" style="margin-left: 10px;">Donate Now</a>
         </div>
     <?php endwhile; ?>
     <?php endif; ?>

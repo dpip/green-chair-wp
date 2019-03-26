@@ -100,7 +100,7 @@ get_header(); ?>
                                     while ( $the_query->have_posts() ) {
                                         $the_query->the_post();
                                         $id = get_the_ID();
-                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
                                         $title = get_the_title($id);
                                         $link = get_the_permalink($id);
                                         $content = wp_trim_words(get_the_content(), 30, '...');
@@ -158,7 +158,7 @@ get_header(); ?>
                                     while ( $the_query->have_posts() ) {
                                         $the_query->the_post();
                                         $id = get_the_ID();
-                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
                                         $title = get_the_title($id);
                                         $link = get_the_permalink($id);
                                         $content = wp_trim_words(get_the_content(), 30, '...');

@@ -42,5 +42,58 @@
     }
 }
 
+// Dropdown hover navigation styles :: Medium Devices, Desktops
+
+@media only screen and (min-width : 992px) {
+    .dropdown-menu {
+        margin: 0px !important;
+        transition: all 0.15s;
+        overflow: hidden;
+        transform-origin: top center;
+        transform: scale(1,0);
+        display: block;
+        opacity: 0;
+        border-top: 0.5px solid white !important;
+        border-radius: 0px 0px 5px 5px !important;
+        a {
+            transition: all 0.15s;
+            &:hover {
+                color: $green !important;
+            }
+        }
+    }
+    .dropdown {
+        .nav-link {
+            transition: all 0.15s;
+            position: relative;
+            transform: translateY(0px);
+            &:hover {
+                display: block;
+            }
+        }
+        &:hover {
+            .nav-link {
+                transform: translateY(-2px);
+            }
+        }
+    }
+    .menu-item:hover > .dropdown-menu {
+        display: block;
+        max-height: 800px;
+        transform: scale(1);
+        opacity: 1;
+        cursor: pointer;
+    }
+    
+    .submenu-item:hover > .dropdown-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+
 
 
