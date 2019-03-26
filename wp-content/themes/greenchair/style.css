@@ -808,3 +808,7 @@ a {
   .get-involved .type h3 {
     color: #554a4e;
     font-size: 1.6rem; }
+
+.get-involved #supporters-list .my-2 img {
+  max-height: 130px;
+  width: auto; }

@@ -104,54 +104,106 @@ get_header(); ?>
         </div>
         <div id="supporters-list">
             <div class="container">
-                <div class="row">                    
+                <div class="row">    
+                    <div class="col-sm-12">
+                        <h3 class="text-center mt-4 mb-3 underline">$10,000+</h3>
+                    </div>                
                     <?php
-                        $terms = get_terms( array( 'taxonomy' => 'supporter_category', 'hide_empty' => false) );
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'tenthousand-plus',
+                                    ),
+                                ),
+                            ) 
+                        );
 
-                        if ( ! empty( $terms ) && ! is_wp_error( $terms ) ) {
-                            foreach ( $terms as $term ) {
-                                echo '<div class="col-sm-12">';
-                                    echo '<h3 class="text-center mt-4 mb-3 underline">'. $term->name .'</h3>';
-                                echo '</div>';
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                                $title = get_the_title($id);
+                                $link = get_field('company_website');
 
-                                $args = array( 
-                                    'post_type' => 'supporters', 
-                                    'posts_per_page' => -1, 
-                                    'tax_query' => array(
-                                        array(
-                                            'taxonomy' => 'supporter_category',
-                                            'field'    => 'slug',
-                                            'terms'    => $term->slug
-                                        )
-                                    )
-                                );
-
-                                $the_query = new WP_Query($args);
-
-                                if ( $the_query->have_posts() ) {
-                                    while ( $the_query->have_posts() ) {
-                                        $the_query->the_post();
-
-                                        $id = get_the_ID();
-                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid d-block mx-auto'));
-                                        $title = get_the_title($id);
-
-                                        echo '<div class="col-lg-3 my-2">';
-                                            if(!empty($img)){
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                    if(!empty($img)){
+                                        if(!empty($link)){
+                                            echo '<a href="' . $link . '" target="_blank">';
                                                 echo $img;
-                                            }else{
-                                                echo '<p>'. $title . '</p>';
-                                            }
-                                        echo '</div>';
+                                            echo '</a>';
+                                        }else{
+                                            echo $img;
+                                        }
+                                    }else{
+                                        echo '<p>'. $title . '</p>';
                                     }
-                                    wp_reset_postdata();
-                                } else {
-                                    echo '<p>No supporters in this category.</p>';
-                                }
-
-
+                                echo '</div>';
                             }
+                            
+                            wp_reset_postdata();
+                        } else {
+                            '<p>Unfortunately, we have no supporters at this level.</p>';
                         }
+                            
+                    ?>
+
+                    <div class="col-sm-12">
+                        <h3 class="text-center mt-4 mb-3 underline">Government Support</h3>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'government-support',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                                $title = get_the_title($id);
+                                $link = get_field('company_website');
+                                $content = get_field('disclaimer_text');
+
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                    if(!empty($img)){
+                                        if(!empty($link)){
+                                            echo '<a href="' . $link . '" target="_blank">';
+                                                echo $img;
+                                            echo '</a>';
+                                        }else{
+                                            echo $img;
+                                        }
+                                    }else{
+                                        echo '<p>'. $title . '</p>';
+                                    }
+
+                                    if(!empty($content)){
+                                        echo '<p>'. $content . '</p>';
+                                    }
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } else {
+                            '<p>Unfortunately, we have no supporters at this level.</p>';
+                        }
+                            
                     ?>
                 </div>
             </div>

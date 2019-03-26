@@ -30,4 +30,13 @@
             font-size: 1.6rem;
         }
     }
+
+    #supporters-list {
+        .my-2 {
+            img {
+                max-height: 130px;
+                width: auto;
+            }
+        }
+    }
 }
