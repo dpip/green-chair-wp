@@ -200,9 +200,127 @@ get_header(); ?>
                             }
                             
                             wp_reset_postdata();
-                        } else {
-                            '<p>Unfortunately, we have no supporters at this level.</p>';
-                        }
+                        }    
+                    ?>
+
+                    <div class="col-sm-12">
+                        <h3 class="text-center mt-4 mb-3 underline">Foundation and Community Grants</h3>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'foundation-and-community-grants',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                                $title = get_the_title($id);
+                                $link = get_field('company_website');
+                                $content = get_field('disclaimer_text');
+
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                    if(!empty($img)){
+                                        if(!empty($link)){
+                                            echo '<a href="' . $link . '" target="_blank">';
+                                                echo $img;
+                                            echo '</a>';
+                                        }else{
+                                            echo $img;
+                                        }
+                                    }else{
+                                        echo '<p>'. $title . '</p>';
+                                    }
+
+                                    if(!empty($content)){
+                                        echo '<p>'. $content . '</p>';
+                                    }
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } 
+                            
+                    ?>
+
+
+                    <div class="col-sm-12">
+                        <h3 class="text-center mt-4 mb-3 underline">Workplace Campaigns</h3>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'workplace-campaigns',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $title = get_the_title($id);
+                                
+                                echo '<div class="col-lg-3 text-center">';
+                                        echo '<p>'. $title . '</p>';
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } 
+                            
+                    ?>
+
+
+                    <div class="col-sm-12">
+                        <h3 class="text-center mt-4 mb-3 underline">Faith Partners</h3>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'faith-partners',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $title = get_the_title($id);
+                                
+                                echo '<div class="col-lg-3 my-2 text-center">';
+                                        echo '<p>'. $title . '</p>';
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } 
                             
                     ?>
                 </div>
