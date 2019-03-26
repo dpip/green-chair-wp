@@ -6,7 +6,7 @@ get_header(); ?>
         <div class="row">
             <div class="col-lg-12">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-                    <?php echo get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'img-fluid intro-image center-block'));
+                    <?php echo get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'img-fluid intro-image d-block mx-auto'));
                     ?>
                     <h1 class="text-center display-3 mt-5"><?php the_title(); ?></h1>
                     <div class="details">

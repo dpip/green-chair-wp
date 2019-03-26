@@ -26,7 +26,7 @@ get_header(); ?>
                         while ( $the_query->have_posts() ) {
                             $the_query->the_post();
                             $id = get_the_ID();
-                            $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid center-block'));
+                            $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
                             $title = get_the_title($id);
                             $date = get_post_meta($id, 'news_date', true);
                             $source = get_post_meta($id, 'news_source', true);
@@ -59,7 +59,7 @@ get_header(); ?>
 
                         }
                         echo '<div class="clearfix"></div>';
-                        echo '<nav class="pagination center-block">';
+                        echo '<nav class="pagination mx-auto d-block">';
                             $big = 999999999; // need an unlikely integer
                             echo paginate_links( array(
                             'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
