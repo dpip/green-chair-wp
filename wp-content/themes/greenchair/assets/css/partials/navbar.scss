@@ -42,6 +42,11 @@
     }
 }
 
+.dropdown-item.active, .dropdown-item:active {
+    color: $green;
+    text-decoration: none;
+    background-color: white;
+}
 // Dropdown hover navigation styles :: Medium Devices, Desktops
 
 @media only screen and (min-width : 992px) {
@@ -171,6 +176,30 @@
       
     }
     
+  }
+
+  @media only screen and (max-width : 991px) {
+      .dropdown-menu {
+          border: 1px solid white;
+          border-bottom: 1px solid rgba(0,0,0,.15);
+          .dropdown-item {
+              position: relative;
+            &::after {
+                content: '';
+                height: 6px !important;
+                width: 6px !important;
+                border-radius: 1rem;
+                background-color: rgba(0,0,0,.15);
+                color: rgba(0,0,0,.15);
+                font-size: 1px;
+                position: absolute;
+                top: 14px;
+                left: 12px;
+
+            }
+          }
+      }
+      
   }
 
 
