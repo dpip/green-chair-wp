@@ -362,6 +362,8 @@ a {
     padding: 30px; }
     .home-page #about .inner .btn-primary {
       margin-top: 15px; }
+    .home-page #about .inner p {
+      color: #554a4e; }
 
 .home-page #news-events {
   padding-top: 40px;
