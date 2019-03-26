@@ -198,7 +198,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container get-involved" style="margin-top: 75px;">
+        <div class="container d-flex justify-center" style="margin-top: 75px;">
             <a href="/get-involved" class="btn btn-primary">Get Involved</a>
             <a href="/donate" class="btn btn-primary" style="margin-left: 10px;">Donate Now</a>
         </div>
