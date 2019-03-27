@@ -6,7 +6,7 @@ get_header(); ?>
 
 <div id="main-content" class="about-page">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <div class="jumbotron jumbo-about d-flex flex-column justify-content-center align-items-center" style="background-image: url(http://greenchair.loc:8888/wp-content/uploads/2019/03/greenchair-2.jpg);">
+        <div class="jumbotron jumbo-about d-flex flex-column justify-content-center align-items-center" style="background-image: url('<?php echo get_field('about_image_top'); ?>');">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 ">
@@ -37,14 +37,14 @@ get_header(); ?>
                     <?php the_field('about_story_section'); ?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-5 content">
-                    <div class="founder-img" style="background-image: url(/wp-content/uploads/2019/03/25299861758_7ea43c5a40_z.jpg);"></div>
+                    <div class="founder-img" style="background-image: url('<?php echo get_field('founder_image'); ?>');"></div>
                 </div>
             </div>
         </div>
-        <div class="jumbotron jumbo-staff d-flex flex-column justify-content-center align-items-center" style="background-image: url(http://greenchair.loc:8888/wp-content/uploads/2019/03/Staff_Photo_101018.jpg);">
+        <div class="jumbotron jumbo-staff d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo get_field('staff_image_main'); ?>);">
             <div class="container">
                 <div class="column">
-                <h1 class="my-3 display-3">Our Staff</h1>
+                <h1 class="my-3 display-3"><?php echo the_field('staff_heading'); ?></h1>
                 </div>
             </div>
         </div>
@@ -78,8 +78,7 @@ get_header(); ?>
                                         $phone = get_field('phone_number');
                                         $email = get_field('email');
                                         $linkedin = get_field('linkedin_url');
-                                        $category = get_field('team_category');
-                    
+                                        $category = get_field('team_category');            
 
                                         echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
                                                     echo '<div class="img-wrap">';
@@ -99,8 +98,12 @@ get_header(); ?>
                                                         }
                                                         echo '<p>'. $position . '</p>';
                                                     echo '</div>';
-                                                    echo '<p>Phone: ' . $phone . '</p>';
-                                                    echo '<p>Email: ' . $email . '</p>';
+                                                    if (!empty($phone)) {
+                                                        echo '<div class="staff-phone-block"><p class="phone-icon"><i class="fas fa-phone"></i></p><p class="vertical-rule"></p><p>' . $phone . '</p></div>';
+                                                    }                                                   
+                                                    if (!empty($email)) {
+                                                        echo '<div class="staff-email-block"><p class="email-icon"><i class="fas fa-envelope"></i></p><p class="vertical-rule"></p><p>' . $email . '</p></div>';
+                                                    } 
                                                     echo '<div class="content-last-of">';
                                                         if (!empty($linkedin)) {
                                                             echo '<p class="linkedin"><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
@@ -110,8 +113,7 @@ get_header(); ?>
                                                     echo '</div>';
                                                 echo '</div>';
                                         echo '</div>';
-                                    }
-                                    
+                                    }                                   
                                     wp_reset_postdata();
                                 } else {
                                     '<p>Oops! Something went wrong.</p>';
@@ -120,7 +122,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="container board-container">
-            <h2>Board of Directors</h2>
+            <h2><?php echo the_field('board_heading'); ?></h2>
             <div class="row staff-wrap">
             <?php
                 //Board Items
@@ -174,10 +176,10 @@ get_header(); ?>
             </div>
         </div>
         <div class="container financials-container">
-            <h2>Financials</h2>
+            <h2><?php echo the_field('financials_heading'); ?></h2>
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-lg-8">
-                    <p>The Green Chair Project is committed to helping our neighbors in need, in socially and fiscally responsible ways. Learn more about our finances by viewing the reports below.</p>
+                    <p><?php echo the_field('financials_lead_text'); ?></p>
                 </div>
             </div>
             <div class="row financials-row">

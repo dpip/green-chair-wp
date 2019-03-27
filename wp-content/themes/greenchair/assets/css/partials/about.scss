@@ -56,7 +56,7 @@
     flex-direction: column;
     font-size: 16px;
     width: 100%;
-    max-width: 20rem;
+    max-width: 18rem;
     overflow: hidden;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
     transition: transform 0.1s ease-in-out, box-shadow 0.1s;
@@ -66,14 +66,14 @@
         .img-wrap {
             background: #fff center center no-repeat;
             img {
-                width: 20rem;
-                height: 20rem; 
+                width: 18rem;
+                height: 18rem; 
                 object-fit: cover;
             }
         }
         .staff-placeholder {
-            width: 20rem;
-            height: 20rem; 
+            width: 18rem;
+            height: 18rem; 
             display: flex;
             justify-content: center;
             align-items: center;
@@ -92,6 +92,28 @@
             text-decoration: none;
             min-height: 15rem;
             width: 100%;
+        }
+        .staff-phone-block {
+            display: flex;
+            align-items: center;
+            .phone-icon {
+                padding-right: 13px;
+                color: $teal;
+                &:hover {
+                    color: $gray;
+                }
+            }
+        }
+        .staff-email-block {
+            display: flex;
+            align-items: center;
+            .email-icon {
+                padding-right: 13px;
+                color: $teal;
+                &:hover {
+                    color: $gray;
+                }
+            }
         }
 }
 
@@ -147,7 +169,7 @@
         height: 26px;
         display: flex;
         align-items: center;
-        padding-right: 13px;
+        padding-right: 11px;
         &:hover {
             color: #554a4e;
             .fab {

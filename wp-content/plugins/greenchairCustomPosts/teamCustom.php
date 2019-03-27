@@ -30,7 +30,7 @@ function create_team_tax() {
 		array(
 			'label' => __( 'Team Category' ),
 			'rewrite' => array( 'slug' => 'team_category' ),
-			'hierarchical' => true
+			'hierarchical' => true,
 		)
 	);
 }
