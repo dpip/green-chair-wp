@@ -29,7 +29,6 @@
                     <div class="container-fluid flex-lg-column ">
                         <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/images/greenchairlogogreen.svg" /></a>
                         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <!-- <span class="navbar-toggler-icon"></span> -->
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
