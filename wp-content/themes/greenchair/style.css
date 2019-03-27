@@ -905,3 +905,20 @@ a {
 .get-involved #supporters-list .my-2 img {
   max-height: 130px;
   width: auto; }
+
+.careers-intro h3 {
+  margin-top: 25px; }
+
+.careers-rule {
+  color: #16a79e;
+  display: inline-flex;
+  flex-direction: column; }
+
+.careers-available-title {
+  margin-top: 25px;
+  color: #16a79e; }
+
+.career-container {
+  width: 100%;
+  height: auto;
+  margin-top: 25px; }

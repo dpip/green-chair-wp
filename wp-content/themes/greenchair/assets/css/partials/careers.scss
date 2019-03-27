@@ -1,0 +1,23 @@
+@import "variables";
+
+.careers-intro {
+    h3 {
+        // color: $green !important;
+        margin-top: 25px;
+    }
+}
+.careers-rule {
+    color: $teal;
+    display: inline-flex;
+    flex-direction: column;
+}
+.careers-available-title {
+    margin-top: 25px;
+    color: $teal;
+    
+}
+.career-container {
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+}
