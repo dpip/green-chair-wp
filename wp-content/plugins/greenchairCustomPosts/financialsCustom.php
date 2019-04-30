@@ -28,7 +28,7 @@ function create_financials_tax() {
 		'financials-item',
 		array(
 			'label' => __( 'Financial Category' ),
-			'rewrite' => array( 'slug' => 'financial_category' ),
+			'rewrite' => array( 'slug' => 'financials_category' ),
             'hierarchical' => true
 		)
 	);

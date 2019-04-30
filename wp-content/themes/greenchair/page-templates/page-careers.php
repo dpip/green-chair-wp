@@ -17,17 +17,17 @@ get_header(); ?>
         </div>
     </div>
     <div class="container">
-    <h4 class="careers-rule">Our mission <div class="horizontal-rule"></div></h4>
+    <h4 class="careers-rule"><?php echo the_field('intro_title'); ?><div class="horizontal-rule"></div></h4>
         <div class="row">
             <div class="col-xs-12 col-md-12 careers-intro">
                 <?php the_content(); ?>
-                <h3>Working together to provide everyone the comforts of home</h3>
-                <p>It’s an audacious, incredibly rewarding mission that our increasingly diverse team is dedicated to achieving. Interested applicants please email cover letter and resume to Suzi Bevacqua at suzi@thegreenchair.org.</p>
+                <h3><?php echo the_field('intro_statement'); ?></h3>
+                <p><?php echo the_field('intro_supporting_text'); ?></p>
             </div>
         </div>
     </div>  
     <div class="container">
-        <h4 class="careers-rule careers-available-title">Available roles <div class="horizontal-rule"></div></h4>
+        <h4 class="careers-rule careers-available-title"><?php echo the_field('available_careers_title'); ?><div class="horizontal-rule"></div></h4>
         <div class="row">
         <div class="col-xs-12 col-md-6 col-lg-6 careers-intro career-container">
         <h2>Director of Program Services</h2>
