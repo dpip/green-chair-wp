@@ -18,217 +18,217 @@ Use it to make something cool, have fun, and share what you've learned with othe
 @import "partials/variables";
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    font-family: $sansserif;
-    font-weight: 400;
-    color: $gray;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: $sansserif;
+  font-weight: 400;
+  color: $gray;
 }
 
 h1 {
-    font-family: $serif;
-    font-weight: 400;
+  font-family: $serif;
+  font-weight: 400;
 }
 
 h2 {
-    font-family: $serif;
-    font-weight: 700;
-    margin-bottom: 1rem;
+  font-family: $serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 h3,
 .widget-title {
-    font-family: $serif;
-    color: $green;
-    font-size: 2rem;
-    font-weight: bold;
+  font-family: $serif;
+  color: $green;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 h4 {
-    font-size: 2rem;
-    font-family: $serif;
+  font-size: 2rem;
+  font-family: $serif;
 }
 
 h5 {
-    font-size: 1.4rem;
-    font-family: $sansserif;
+  font-size: 1.4rem;
+  font-family: $sansserif;
 }
 
 h6 {
-    font-family: $serif;
-    color: $teal;
-    text-transform: uppercase;
-    font-size: 1.2rem;
+  font-family: $serif;
+  color: $teal;
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 a {
-    color: $green;
+  color: $green;
 
-    &:hover {
-        color: $green;
-    }
+  &:hover {
+    color: $green;
+  }
 }
 
 .btn {
-    font-family: $sansserif;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 1rem;
-    padding: .7rem 1rem;
+  font-family: $sansserif;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: .7rem 1rem;
 }
 
 .btn-primary {
-    background: #ffffff;
-    border-color: $green;
-    color: $green;
+  background: #ffffff;
+  border-color: $green;
+  color: $green;
 
-    &:hover,
-    &:focus {
-        background: $green;
-        color: #ffffff;
-        border-color: $green;
-    }
-}
-
-.btn-green {
+  &:hover,
+  &:focus {
     background: $green;
     color: #ffffff;
     border-color: $green;
+  }
+}
 
-    &:hover,
-    &:focus {
-        background: #ffffff;
-        border-color: $green;
-        color: $green;
-    }
+.btn-green {
+  background: $green;
+  color: #ffffff;
+  border-color: $green;
+
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    border-color: $green;
+    color: $green;
+  }
 }
 
 .green {
-    color: $green;
+  color: $green;
 }
 
 .gray {
-    color: $gray;
+  color: $gray;
 }
 
 .btn-white {
-    background: none;
-    color: #ffffff;
-    border-color: #ffffff;
+  background: none;
+  color: #ffffff;
+  border-color: #ffffff;
 
-    &:hover,
-    &:focus {
-        background: #ffffff;
-        border-color: $green;
-        color: $green;
-    }
+  &:hover,
+  &:focus {
+    background: #ffffff;
+    border-color: $green;
+    color: $green;
+  }
 }
 
 .underline {
-    border-bottom: 1px solid $green;
+  border-bottom: 1px solid $green;
 }
 
 .woodbackground {
-    background-image: url('assets/images/greenwood.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: #ffffff;
+  background-image: url('assets/images/greenwood.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff;
 }
 
 .videoWrapper {
-    iframe {
-        max-width: 100%;
-    }
+  iframe {
+    max-width: 100%;
+  }
 }
 
 #search-form {
-    margin: 0 0 30px 0;
+  margin: 0 0 30px 0;
+  position: relative;
+
+  input[type="text"] {
+    border: none;
+    padding: 0;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    width: 100%;
+    line-height: 1.4;
+    padding: 13px 20px 10px 26px;
+    vertical-align: top;
+    background: #f3f3f3;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
     position: relative;
+  }
 
-    input[type="text"] {
-        border: none;
-        padding: 0;
-        background-color: #f3f3f3;
-        font-size: 14px;
-        width: 100%;
-        line-height: 1.4;
-        padding: 13px 20px 10px 26px;
-        vertical-align: top;
-        background: #f3f3f3;
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        border-radius: 5px;
-        -webkit-border-radius: 5px;
-        position: relative;
-    }
-
-    button[type="submit"] {
-        position: absolute;
-        right: 1px;
-        top: -2px;
-        width: 45px;
-        height: 45px;
-        line-height: 45px;
-        background-color: transparent;
-        border: none;
-        font-size: 1rem;
-        text-align: center;
-        -webkit-transition: all 0.4s ease;
-        -moz-transition: all 0.4s ease;
-        -ms-transition: all 0.4s ease;
-        -o-transition: all 0.4s ease;
-        transition: all 0.4s ease;
-        color: $gray;
-        padding: 0;
-    }
+  button[type="submit"] {
+    position: absolute;
+    right: 1px;
+    top: -2px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: $gray;
+    padding: 0;
+  }
 }
 
 .sidebar {
-    padding: 0 20px;
+  padding: 0 20px;
 }
 
 .pagination {
-    ul {
-        list-style-type: none;
+  ul {
+    list-style-type: none;
 
-        li {
-            display: inline-block;
-            vertical-align: top;
-            margin: 1px 5px;
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin: 1px 5px;
 
-            a {
-                background: $green;
-                color: #ffffff;
-                padding: 10px 15px;
-                font-weight: bold;
-            }
+      a {
+        background: $green;
+        color: #ffffff;
+        padding: 10px 15px;
+        font-weight: bold;
+      }
 
-            span {
-                color: $green;
-                font-weight: bold;
-                border-bottom: 1px solid $green;
-                padding: 5px 10px;
-            }
-        }
+      span {
+        color: $green;
+        font-weight: bold;
+        border-bottom: 1px solid $green;
+        padding: 5px 10px;
+      }
     }
+  }
 }
 
 .widget {
-    ul {
-        padding-left: 20px;
-        margin-bottom: 30px;
+  ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
 
-        a {
-            color: $gray;
-        }
+    a {
+      color: $gray;
     }
+  }
 }
 
 .sepia {
-    filter: sepia(50%);
+  filter: sepia(50%);
 }
 
 //Additional Styles
@@ -245,3 +245,4 @@ a {
 @import 'partials/contact';
 @import 'partials/get-involved';
 @import 'partials/careers';
+@import 'partials/volunteer';
