@@ -37,14 +37,14 @@ get_header(); ?>
                     <?php the_field('about_story_section'); ?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-5 content">
-                    <div class="founder-img" style="background-image: url('<?php echo get_field('founder_image'); ?>');"></div>
+                    <div class="founder-img" style="background-image: url('<?php echo get_field('about_image_founder'); ?>');"></div>
                 </div>
             </div>
         </div>
-        <div class="jumbotron jumbo-staff d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo get_field('staff_image_main'); ?>);">
+        <div class="jumbotron jumbo-staff d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo get_field('about_image_staff_main'); ?>);">
             <div class="container">
                 <div class="column">
-                <h1 class="my-3 display-3"><?php echo the_field('staff_heading'); ?></h1>
+                <h1 class="my-3 display-3"><?php echo the_field('about_staff_heading'); ?></h1>
                 </div>
             </div>
         </div>
@@ -122,7 +122,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="container board-container">
-            <h2><?php echo the_field('board_heading'); ?></h2>
+            <h2><?php echo the_field('about_board_heading'); ?></h2>
             <div class="row staff-wrap">
             <?php
                 //Board Items
@@ -176,10 +176,10 @@ get_header(); ?>
             </div>
         </div>
         <div class="container financials-container">
-            <h2><?php echo the_field('financials_heading'); ?></h2>
+            <h2><?php echo the_field('about_financials_heading'); ?></h2>
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-lg-8">
-                    <p><?php echo the_field('financials_lead_text'); ?></p>
+                    <p><?php echo the_field('about_financials_lead_text'); ?></p>
                 </div>
             </div>
             <div class="row financials-row">
