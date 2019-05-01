@@ -179,7 +179,7 @@ get_header(); ?>
                                     
                                     wp_reset_postdata();
                                 } else {
-                                    '<p>Unfortunately, we have no news at this time.</p>';
+                                    '<p>Unfortunately, we have no upcoming events at this time.</p>';
                                 }
                             ?>
                             <div class="col-sm-12">

@@ -70,7 +70,8 @@ a {
   }
 }
 
-.btn {
+.btn,
+.wp-block-button__link {
   font-family: $sansserif;
   font-weight: 300;
   text-transform: uppercase;
@@ -91,7 +92,8 @@ a {
   }
 }
 
-.btn-green {
+.btn-green,
+.wp-block-button__link {
   background: $green;
   color: #ffffff;
   border-color: $green;

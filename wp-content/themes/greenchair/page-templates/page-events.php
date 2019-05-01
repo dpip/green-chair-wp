@@ -63,7 +63,7 @@ get_header(); ?>
                                         
                                     echo '</div>';
                                 }  
-                                echo '<div class="col-sm-12"> <a class="continue" href="' . $link . '">Read more &raquo;</a></div>';   
+                                echo '<div class="col-sm-12 mt-3"> <a class="continue" href="' . $link . '">Read more &raquo;</a></div>';   
                             echo '</div><hr />';
 
                         }
