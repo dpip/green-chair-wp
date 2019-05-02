@@ -148,7 +148,7 @@ get_header(); ?>
                             
                             wp_reset_postdata();
                         } else {
-                            '<p>Unfortunately, we have no supporters at this level.</p>';
+                           echo '<p>Unfortunately, we have no supporters at this level.</p>';
                         }
                             
                     ?>

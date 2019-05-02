@@ -63,7 +63,7 @@ get_header(); ?>
                                         
                                     echo '</div>';
                                 }  
-                                echo '<div class="col-sm-12"> <a class="continue" href="' . $link . '">Read more &raquo;</a></div>';   
+                                echo '<div class="col-sm-12 mt-3"> <a class="continue" href="' . $link . '">Read more &raquo;</a></div>';   
                             echo '</div><hr />';
 
                         }
@@ -81,7 +81,7 @@ get_header(); ?>
 
                         wp_reset_postdata();
                     } else {
-                        echo '<p class="text-center">Unfortunately, we have no news.</p>';
+                        echo '<p class="text-center">Unfortunately, we have no upcoming events at this time.</p>';
 
                     }
                 ?>

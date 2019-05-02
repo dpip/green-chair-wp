@@ -24,9 +24,23 @@ get_header(); ?>
                 <div class="col-xs-12 col-sm-12 col-md-4 py-5">
                     <div class="news-item">
                         <div class="block-content">
-                            <h5 class="font-weight-bold">Required Community Service</h5>
-                            <p class="content">To learn more about required community service and our requirements.</p>
-                            <a class="continue float-right" href="' . $link . '">Continue reading &raquo; </a>
+                            <a class="continue float-right" href="<?php the_field('sidebar_cta_url_1'); ?>">
+                                <img src="<?php the_field('sidebar_image_1'); ?>" class="img-fluid mx-auto mb-3" />
+                            </a>
+                            <h5 class="font-weight-bold"><?php the_field('sidebar_title_1'); ?></h5>
+                            <p class="content"><?php the_field('sidebar_copy_1'); ?></p>
+                            <a class="continue float-right" href="<?php the_field('sidebar_cta_url_1'); ?>"><?php the_field('sidebar_cta_text_1'); ?> &raquo; </a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="block-content">
+                            <a class="continue float-right" href="<?php the_field('sidebar_cta_url_2'); ?>">
+                                <img src="<?php the_field('sidebar_image_2'); ?>" class="img-fluid mx-auto mb-3" />
+                            </a>
+                                <h5 class="font-weight-bold"><?php the_field('sidebar_title_2'); ?></h5>
+                            <p class="content"><?php the_field('sidebar_copy_2'); ?></p>
+                            <a class="continue float-right" href="<?php the_field('sidebar_cta_url_2'); ?>"><?php the_field('sidebar_cta_text_2'); ?> &raquo; </a>
                             <div class="clearfix"></div>
                         </div>
                     </div>

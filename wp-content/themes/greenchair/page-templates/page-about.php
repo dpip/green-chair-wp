@@ -116,7 +116,7 @@ get_header(); ?>
                                     }                                   
                                     wp_reset_postdata();
                                 } else {
-                                    '<p>Oops! Something went wrong.</p>';
+                                    echo '<p>Oops! Something went wrong.</p>';
                                 }
                             ?>
             </div>
@@ -170,7 +170,7 @@ get_header(); ?>
                     }
                     wp_reset_postdata();
                 } else {
-                    '<p>Unfortunately, we have no board of directors at this time.</p>';
+                    echo '<p>Unfortunately, we have no board of directors at this time.</p>';
                 }
             ?>
             </div>
