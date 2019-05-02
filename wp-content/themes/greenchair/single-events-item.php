@@ -45,6 +45,10 @@ get_header(); ?>
                                     if(!empty($address)){
                                         echo $address;
                                     }
+                                    $url = get_post_meta($id, 'events_url', true);
+                                    if(!empty($url)){
+                                        echo '<p><a href="' . $url .'" class="btn btn-green " target="_blank">Purchase Tickets</a></p>';
+                                    }
                                 ?>
                                 </p>
                             </div>

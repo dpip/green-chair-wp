@@ -27,13 +27,8 @@ function events_details_meta() {
     $ret = $ret . '<p><label>End Time: </label><input type="text" name="events_end_time" value="' . get_events_field("events_end_time") . '" /> <em>Format 10:00 am</em></p>';
     $ret = $ret . '<input type="hidden" name="events_end_date_edited" value="' . strtotime(get_events_field("events_end_date")) . '" />';
     $ret = $ret . '<p><label>End Date: </label><input type="text" name="events_end_date" class="datepicker" value="' . get_events_field("events_end_date") . '" /> <em>Format mm/dd/yy</em></p>';
-     $ret = $ret . '<p><label>Address: </label><br /><textarea rows="10" cols="50" name="events_address" >'. get_events_field("events_address") . '</textarea><br /></p>';
-
-    $ret = $ret . '<script>
-                  jQuery(function() {
-                    jQuery( ".datepicker" ).datepicker();
-                  });
-                  </script>';
+    $ret = $ret . '<p><label>Address: </label><br /><textarea rows="10" cols="50" name="events_address" >'. get_events_field("events_address") . '</textarea><br /></p>';
+    $ret = $ret . '<p><label>Ticket URL: </label><input type="url" name="events_url" value="' . get_events_field("events_url") . '" /> <em>Format http://google.com</em></p>';
   
     echo $ret;
 }
@@ -65,6 +60,7 @@ function save_events_details(){
    save_events_field("events_end_date_edited");
    save_events_field("events_end_date");
    save_events_field("events_address");
+   save_events_field("events_url");
 }
 
 function save_events_field($events_field) {

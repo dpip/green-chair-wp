@@ -81,7 +81,7 @@ get_header(); ?>
 
                         wp_reset_postdata();
                     } else {
-                        echo '<p class="text-center">Unfortunately, we have no news.</p>';
+                        echo '<p class="text-center">Unfortunately, we have no upcoming events at this time.</p>';
 
                     }
                 ?>

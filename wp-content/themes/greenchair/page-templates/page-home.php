@@ -123,7 +123,7 @@ get_header(); ?>
                                     
                                     wp_reset_postdata();
                                 } else {
-                                    '<p>Unfortunately, we have no news at this time.</p>';
+                                    echo '<p>Unfortunately, we have no news at this time.</p>';
                                 }
                             ?>
                             <div class="col-sm-12">
@@ -136,7 +136,7 @@ get_header(); ?>
                         <div class="row">
                             <?php
                                 //Event Items
-                                $today = time();
+                                $yesterday = strtotime('yesterday 23:59:59');
                                 $the_query = new WP_Query( 
                                     array(
                                         'post_type'=>'events-item', 
@@ -146,7 +146,7 @@ get_header(); ?>
                                         'meta_query' => array(
                                             array(
                                                 'key'     => 'events_end_date_edited',
-                                                'value'   => $today,
+                                                'value'   => $yesterday,
                                                 'compare' => '>='
                                             ),
                                         )
@@ -179,7 +179,9 @@ get_header(); ?>
                                     
                                     wp_reset_postdata();
                                 } else {
-                                    '<p>Unfortunately, we have no upcoming events at this time.</p>';
+                                    echo '<div class="col-xs-12 col-sm-12">
+                                        <p>Unfortunately, we have no upcoming events at this time.</p>
+                                    </div>';
                                 }
                             ?>
                             <div class="col-sm-12">
