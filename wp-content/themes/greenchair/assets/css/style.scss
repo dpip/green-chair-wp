@@ -112,6 +112,10 @@ a {
   color: $gray;
 }
 
+.teal {
+  color: $teal;
+}
+
 .btn-white {
   background: none;
   color: #ffffff;
@@ -230,6 +234,7 @@ a {
 .sepia {
   filter: sepia(50%);
 }
+
 
 //Additional Styles
 @import "partials/navbar";
