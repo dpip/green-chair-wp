@@ -737,12 +737,62 @@ a {
   color: white;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; }
+  margin-top: 50px;
+  position: relative; }
   .breakdown-block h2 {
     font-weight: bold;
     font-size: 50px; }
   .breakdown-block p {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 100%;
+    margin-bottom: 0px; }
+    .breakdown-block p span {
+      height: 4px;
+      background-color: #8cc441;
+      animation: growSpan 1s ease-in forwards;
+      flex: 0 0 0px; }
+  .breakdown-block .impact-accent {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    bottom: 10px !important; }
+    .breakdown-block .impact-accent span {
+      height: 4px;
+      background-color: #8cc441;
+      flex: 0 0 0px; }
+    .breakdown-block .impact-accent .accentOne {
+      animation: growAccentOne 1.7s ease-in forwards; }
+    .breakdown-block .impact-accent .accentTwo {
+      animation: growAccentTwo 1.7s ease-in forwards; }
+    .breakdown-block .impact-accent .accentThree {
+      animation: growAccentThree 1.7s ease-in forwards; }
+
+@keyframes growAccentOne {
+  0% {
+    flex: 0 0 0px; }
+  100% {
+    flex: 0 0 130px; } }
+
+@keyframes growAccentTwo {
+  0% {
+    flex: 0 0 0px; }
+  100% {
+    flex: 0 0 158px; } }
+
+@keyframes growAccentThree {
+  0% {
+    flex: 0 0 0px; }
+  100% {
+    flex: 0 0 150px; } }
 
 .impact-get-involved {
   display: flex;
@@ -826,6 +876,23 @@ a {
 
 .testimony-quote {
   font-style: italic; }
+
+.impact-plus {
+  position: relative;
+  animation: moveplus 0.15s ease-in forwards;
+  animation-delay: 1.75s;
+  opacity: 0;
+  transform: translateX(-10px); }
+
+@keyframes moveplus {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px); }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
 
 .blog-page .jumbotron {
   background-size: cover;

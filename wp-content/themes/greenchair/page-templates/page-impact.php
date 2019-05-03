@@ -25,16 +25,25 @@ get_header(); ?>
                             <p><?php echo get_field('impact_column_three_bottom'); ?></p>
                         </div> -->
                         <div class="col breakdown-block block-three">
-                            <h2>2,847+</h2>
-                            <p>families served</p>
+                            <div class="d-flex"><h2 class="timerOne"></h2><h2 class="green impact-plus">+</h2></div>
+                            <div>
+                                <p>families served</p>
+                                <p class="impact-accent"><span class="accentOne"></span></p>
+                             </div>
                         </div>
                         <div class="col breakdown-block block-three">
-                            <h2>11,632+</h2>
-                            <p>furniture donors</p>
+                        <div class="d-flex"><h2 class="timerTwo"></h2><h2 class="green impact-plus">+</h2></div>
+                            <div>
+                                <p>furniture donors</p>
+                                <p class="impact-accent"><span class="accentTwo"></span></p>
+                            </div>      
                         </div>
                         <div class="col breakdown-block block-three">
-                            <h2>82,941+</h2>
-                            <p>volunteer hours</p>
+                        <div class="d-flex"><h2 class="timerThree"></h2><h2 class="green impact-plus">+</h2></div>
+                            <div>
+                                <p>volunteer hours</p>
+                                <p class="impact-accent"><span class="accentThree"></span></p>
+                            </div>
                         </div>
                     </div>
                  </div>
@@ -137,22 +146,22 @@ get_header(); ?>
             </div>
         </div>
         <div class="container" style="padding-top: 40px;">
-        <h1>Testimonials</h1>
+            <h1>Testimonials</h1>
             <div class="row" style="margin-top: 40px;">
-            <div class="col">
-                <h3>- Shatina</h3>    
-                <p class="testimony-quote">"They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!!"</p>
+                <div class="col">
+                    <h3>- Shatina</h3>    
+                    <p class="testimony-quote">"They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!!"</p>
+                </div>
+                <div class="col">
+                    <h3>- Marie</h3>    
+                    <p class="testimony-quote">"I was blessed today by the Green chair project and im so greatful for everything that were able to bless me with in my new home thank you very much."</p>
+                </div>
+                <div class="col">
+                    <h3>- Alizabeth</h3>    
+                    <p class="testimony-quote">"The green chair project has helped me and my family tremendously and we are so grateful. The staff there are so polite and helpful. Thank you all so much!!!"</p>
+                </div>
             </div>
-            <div class="col">
-                <h3>- Marie</h3>    
-                <p class="testimony-quote">"I was blessed today by the Green chair project and im so greatful for everything that were able to bless me with in my new home thank you very much."</p>
-            </div>
-            <div class="col">
-                <h3>- Alizabeth</h3>    
-                <p class="testimony-quote">"The green chair project has helped me and my family tremendously and we are so grateful. The staff there are so polite and helpful. Thank you all so much!!!"</p>
-            </div>
-        </div>
-        </div>
+         </div>
         </div>
     <?php endwhile; ?>
     <?php endif; ?>

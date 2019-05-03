@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-
+  position: relative;
   h2 {
     font-weight: bold;
     font-size: 50px;
@@ -26,6 +26,68 @@
 
   p {
     text-transform: uppercase;
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    width: 100%;
+    margin-bottom: 0px;
+    span {
+      height: 4px;
+      background-color: $green;
+      animation: growSpan 1s ease-in forwards;
+      flex: 0 0 0px;
+    }
+  }
+  .impact-accent {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    bottom: 10px !important;
+    span {
+      height: 4px;
+      background-color: $green;
+      flex: 0 0 0px;
+    }
+    .accentOne {
+      animation: growAccentOne 1.7s ease-in forwards;
+    }
+    .accentTwo {
+      animation: growAccentTwo 1.7s ease-in forwards;
+    }
+    .accentThree {
+      animation: growAccentThree 1.7s ease-in forwards;
+    }
+  }
+}
+
+@keyframes growAccentOne {
+  0% {
+    flex: 0 0 0px;
+  }
+  100% {
+    flex: 0 0 130px;
+  }
+}
+@keyframes growAccentTwo {
+  0% {
+    flex: 0 0 0px;
+  }
+  100% {
+    flex: 0 0 158px;
+  }
+}
+@keyframes growAccentThree {
+  0% {
+    flex: 0 0 0px;
+  }
+  100% {
+    flex: 0 0 150px;
   }
 }
 
@@ -175,4 +237,25 @@
 
 .testimony-quote {
   font-style: italic;
+}
+
+.impact-plus {
+  position: relative;
+  animation: moveplus 0.15s ease-in forwards;
+  animation-delay: 1.75s;
+  opacity: 0;
+  transform: translateX(-10px);
+}
+@keyframes moveplus {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
