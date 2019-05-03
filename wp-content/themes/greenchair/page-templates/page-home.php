@@ -10,7 +10,7 @@ get_header(); ?>
         <div class="jumbotron d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo $backgroundimage ?>);">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-8 ">
+                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
                         <h1 class="my-3 display-3"><?php echo get_the_title(); ?></h1>
                         <?php the_content(); ?>
                         <a href="<?php the_field('home_cta_url'); ?>" class="btn btn-white"><?php the_field('home_cta_text'); ?></a>
