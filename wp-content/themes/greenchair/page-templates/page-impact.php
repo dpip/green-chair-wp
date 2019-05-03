@@ -149,16 +149,37 @@ get_header(); ?>
             <h1>Testimonials</h1>
             <div class="row" style="margin-top: 40px;">
                 <div class="col">
-                    <h3>- Shatina</h3>    
-                    <p class="testimony-quote">"They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!!"</p>
+                    <div class="testimony-card">
+                        <div class="testimony-card-top">
+                        <p class="testimony-quote">"They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!!"</p>
+                        </div>
+                        <div class="testimony-card-bottom">
+                            <div class="testimony-avatar"></div>
+                            <p class="testimony-name">&ndash; Shatina</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <h3>- Marie</h3>    
-                    <p class="testimony-quote">"I was blessed today by the Green chair project and im so greatful for everything that were able to bless me with in my new home thank you very much."</p>
+                    <div class="testimony-card">
+                        <div class="testimony-card-top">
+                        <p class="testimony-quote">"I was blessed today by the Green chair project and im so greatful for everything that were able to bless me with in my new home thank you very much."</p>
+                        </div>
+                        <div class="testimony-card-bottom">
+                            <div class="testimony-avatar"></div>
+                            <p class="testimony-name">&ndash; Marie</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
-                    <h3>- Alizabeth</h3>    
-                    <p class="testimony-quote">"The green chair project has helped me and my family tremendously and we are so grateful. The staff there are so polite and helpful. Thank you all so much!!!"</p>
+                                     <div class="testimony-card">
+                        <div class="testimony-card-top">
+                        <p class="testimony-quote">"The green chair project has helped me and my family tremendously and we are so grateful. The staff there are so polite and helpful. Thank you all so much!!!"</p>
+                        </div>
+                        <div class="testimony-card-bottom">
+                            <div class="testimony-avatar"></div>
+                            <p class="testimony-name">&ndash; Alizabeth</p>
+                        </div>
+                    </div>
                 </div>
             </div>
          </div>

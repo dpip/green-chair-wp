@@ -908,6 +908,36 @@ a {
     opacity: 1;
     transform: translateX(0px); } }
 
+.testimony-card {
+  width: auto;
+  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
+  border-radius: 25px; }
+  .testimony-card .testimony-card-top {
+    padding-bottom: 80px;
+    background-color: white;
+    padding: 10px; }
+  .testimony-card .testimony-card-bottom {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-color: #8cc441; }
+    .testimony-card .testimony-card-bottom .testimony-avatar {
+      position: absolute;
+      top: -40px;
+      height: 80px;
+      width: 80px;
+      border-radius: 100%;
+      background-image: url(assets/images/testOne.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+    .testimony-card .testimony-card-bottom .testimony-name {
+      margin-top: 60px;
+      color: white; }
+
 .blog-page .jumbotron {
   background-size: cover;
   background-position: top center;
