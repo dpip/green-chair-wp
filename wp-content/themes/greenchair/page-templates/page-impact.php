@@ -151,7 +151,7 @@ get_header(); ?>
                 <div class="col">
                     <div class="testimony-card">
                         <div class="testimony-card-top">
-                        <p class="testimony-quote">"They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!!"</p>
+                        <p class="testimony-quote"><span>"</span> They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!! <span>"</span></p>
                         </div>
                         <div class="testimony-card-bottom">
                             <div class="testimony-avatar"></div>
