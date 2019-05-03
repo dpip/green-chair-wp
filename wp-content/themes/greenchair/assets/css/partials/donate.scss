@@ -8,7 +8,8 @@
     padding-top: 0;
     padding-bottom: 0;
     color: #ffffff;
-    min-height: 60vh;
+    height: 60vh;
+    margin-bottom: 0;
   }
 
   h1 {
@@ -23,13 +24,34 @@
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48);
   }
 
+  .content-container {
+    height: 60vh;
+  }
+
   .content {
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+
   }
 
   .inner-band {
     background: rgba(24, 167, 157, 0.8);
     padding: 30px;
+    height: 60vh;
     text-align: center;
+  }
+
+  .sidebar-donate {
+    .inner {
+      background: #efefef;
+      padding-left: 30px;
+      padding-right: 30px;
+      height: 100%;
+    }
+  }
+}
+
+.page-template-page-donate {
+  #footer {
+    margin: 0;
   }
 }
