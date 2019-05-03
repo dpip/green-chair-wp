@@ -45,9 +45,14 @@ jQuery(function($) {
       onComplete: null // callback method for when the element finishes updating
     };
 
+    let impactOne = $(".timerOne").attr("data-impactnum");
+    let impactTwo = $(".timerTwo").attr("data-impactnum");
+    let impactThree = $(".timerThree").attr("data-impactnum");
+    console.log(impactOne);
+
     $(".timerOne").countTo({
       from: 50,
-      to: 2847,
+      to: impactOne,
       speed: 1500,
       refreshInterval: 50,
       onComplete: function(value) {
@@ -56,7 +61,7 @@ jQuery(function($) {
     });
     $(".timerTwo").countTo({
       from: 50,
-      to: 11632,
+      to: impactTwo,
       speed: 1500,
       refreshInterval: 50,
       onComplete: function(value) {
@@ -65,7 +70,7 @@ jQuery(function($) {
     });
     $(".timerThree").countTo({
       from: 50,
-      to: 82941,
+      to: impactThree,
       speed: 1500,
       refreshInterval: 50,
       onComplete: function(value) {
