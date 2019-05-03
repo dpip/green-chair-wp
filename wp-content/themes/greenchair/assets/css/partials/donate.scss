@@ -1,128 +1,35 @@
 @import '_variables';
+
 .donate-page {
-  padding-bottom: 10rem;
-}
-.donate-intro-banner {
-  height: 30rem;
-  width: 100%;
-  color: #686868;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  .intro-main {
-    width: 45rem;
-    font-size: 60px;
-    font-weight: bold;
-    font-family: $serif;
-    color: $green;
-    line-height: 4rem;
-  }
-  .rule {
-    width: 30rem;
-    height: 2rem;
-    border-bottom: 1px solid #686868;
-  }
-  .intro-sub {
-    font-size: 30px;
-    margin-top: 2rem;
-  }
-}
-.donate-selection-wrap {
-  width: 100%;
-  height: 26rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  &:after {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(assets/images/shutterstock_1035584485.jpg);
-    background-size: cover;
+  .jumbotron {
     background-repeat: no-repeat;
-    width: 100%;
-    height: 32rem;
-    opacity: 0.2;
-    z-index: -1;
-    content: '';
+    background-size: cover;
+    background-position: left center;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: #ffffff;
+    min-height: 60vh;
   }
 
-  .donate-icon-wrapper {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    line-height: 1.2;
 
-    .donate-icon-container {
-      width: calc(100% / 3);
-      height: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-direction: column;
-      .icon {
-        border: 4px solid $teal;
-        // background-color: $teal;
-        // background-color: #686868;
-        border-radius: 100%;
-        height: 15rem;
-        width: 15rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        cursor: pointer;
-        transition: all .25s ease-in-out;
+  }
 
-        &:hover {
-          // border: .5rem solid $green;
-          transition: all .25s ease-in-out;
-          .icon-shade {
-            transition: all .25s ease-in-out;
-            height: 14.5rem;
-            width: 14.5rem;
-            font-size: 20px;
-            color: rgba(255, 255, 255, 1);
-          }
-        }
-        .icon-shade {
-          transition: all .25s ease-in-out;
-          position: absolute;
-          background-color: #686868;
-          opacity: 0.95;
-          height: 0%;
-          width: 0%;
-          border-radius: 100%;
-          color: white;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          font-size: 0px;
-          color: rgba(255, 255, 255, 0);
-        }
-        // .icon-shade-donate:before {
-        //   width: 12rem;
-        //   content: 'Donate Houseware and Furnishings';
-        // }
-        // .icon-shade-donate:after {
-        //
-        // }
-        // .icon-shade-fund:after {
-        //   content: 'Help fund Our Mission';
-        // }
-        // .icon-shade-volunteer:after {
-        //   content: 'Join our amazing team of volunteers';
-        // }
-      }
-      .donate-btn {
-        background-color: $green;
-        color: white;
-        width: 10rem;
-        padding: 1rem;
-      }
-    }
+  h1,
+  h4 {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48);
+  }
+
+  .content {
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .inner-band {
+    background: rgba(24, 167, 157, 0.8);
+    padding: 30px;
+    text-align: center;
   }
 }

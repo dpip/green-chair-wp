@@ -136,10 +136,11 @@ a {
 }
 
 .woodbackground {
-  background-image: url('assets/images/greenwood.jpg');
+  background-image: url('assets/images/greendotbkd.jpg');
   background-size: cover;
+  background-color: $green;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: bottom center;
   color: #ffffff;
 }
 
