@@ -133,17 +133,25 @@ get_header(); ?>
         </div>
         <div class="testimony-banner wood-background">
             <div class="container">
-                <h4 style="font-style: italic;">"I was blessed today by the Green chair project and im so greatful for everything that were able to bless me with in my new home thank you very much."</h4>
+                <h4 style="font-style: italic;">"My kids and I love our new home. The experience at The Green Chair Project was so great and the kids absolutely loved it. They enjoyed picking out furniture for our home. Everyone at Green Chair made us feel so important." - Antoinette</h4>
             </div>
         </div>
-        <div class="container">
-            <div class="row d-flex flex-row-reverse row impact-duo justify-content-center align-items-center">
-            <div class="col d-flex justify-content-center align-items-center duo-icon-bottom">
+        <div class="container" style="padding-top: 40px;">
+        <h1>Testimonials</h1>
+            <div class="row" style="margin-top: 40px;">
+            <div class="col">
+                <h3>- Shatina</h3>    
+                <p class="testimony-quote">"They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!!"</p>
             </div>
-            <div class="col impact-duo-content">
-                <h3>1 in 5 children</h3>    
-                <p class="">Lorem ipsum dolor sit amet, per malis epicurei eu. Ius labore graeco interpretaris in. No nec enim viris instructior, repudiare pertinacia vis eu. Sit meis cotidieque et, ad simul graeco mandamus vim, vel vero augue ut. Ponderum praesent scripserit sit ad, mundi tritani eos te.</p>
+            <div class="col">
+                <h3>- Marie</h3>    
+                <p class="testimony-quote">"I was blessed today by the Green chair project and im so greatful for everything that were able to bless me with in my new home thank you very much."</p>
             </div>
+            <div class="col">
+                <h3>- Alizabeth</h3>    
+                <p class="testimony-quote">"The green chair project has helped me and my family tremendously and we are so grateful. The staff there are so polite and helpful. Thank you all so much!!!"</p>
+            </div>
+        </div>
         </div>
         </div>
     <?php endwhile; ?>
