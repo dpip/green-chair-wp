@@ -127,10 +127,12 @@ get_header(); ?>
                             echo '</div>';
                         }
                         wp_reset_postdata();
+                    }else{
+                        echo '<p>We have no upcoming events at this time.</p>';
                     }
                     ?>
                     
-                    <a href="<?php site_url(); ?>/events" class="btn btn-green see-all">See all events &raquo;</a>
+                    <a href="<?php site_url(); ?>/events" class="btn btn-green see-all">See all past events &raquo;</a>
 
                     <form id="search-form" class="mt-5" action="<?php echo home_url( '/' ); ?>" method="get" role="form">
                         <input type="text" name="s" id="search" placeholder="Search">

@@ -1,4 +1,4 @@
-jQuery(function($) {
+jQuery(function ($) {
   $(document).ready(function() {
     $.fn.countTo = function(options) {
       // merge the default plugin settings with the custom options
@@ -7,7 +7,7 @@ jQuery(function($) {
       // how many times to update the value, and how much to increment the value on each update
       var loops = Math.ceil(options.speed / options.refreshInterval),
         increment = (options.to - options.from) / loops;
-
+ 
       return $(this).each(function() {
         var _this = this,
           loopCount = 0,
