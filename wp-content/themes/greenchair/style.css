@@ -91,6 +91,9 @@ a {
 .gray {
   color: #3a3a3a; }
 
+.teal {
+  color: #18a79d; }
+
 .btn-white {
   background: none;
   color: #ffffff;
@@ -728,17 +731,98 @@ a {
     font-weight: bold;
     font-size: 4.5rem;
     color: white !important; }
-  .jumbo-impact .breakdown-block {
-    flex: 1;
-    color: white;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 50px; }
-    .jumbo-impact .breakdown-block h2 {
-      font-weight: bold;
-      font-size: 50px; }
-    .jumbo-impact .breakdown-block p {
-      text-transform: uppercase; }
+
+.breakdown-block {
+  flex: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; }
+  .breakdown-block h2 {
+    font-weight: bold;
+    font-size: 50px; }
+  .breakdown-block p {
+    text-transform: uppercase; }
+
+.impact-get-involved {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+
+.impact-duo {
+  margin-top: 40px; }
+  .impact-duo .duo-icon-top .impact-chart {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%; }
+    .impact-duo .duo-icon-top .impact-chart .pie {
+      background: #20504F;
+      border-radius: 50%; }
+    .impact-duo .duo-icon-top .impact-chart .pie circle {
+      fill: none;
+      stroke: #20504F;
+      stroke-width: 32;
+      animation: rotate 1.5s ease-in; }
+    .impact-duo .duo-icon-top .impact-chart i {
+      color: white;
+      font-size: 20px; }
+    .impact-duo .duo-icon-top .impact-chart .chart-house {
+      position: absolute;
+      z-index: 200; }
+      .impact-duo .duo-icon-top .impact-chart .chart-house.chart-house-one {
+        position: absolute;
+        top: 50 !important;
+        left: 20 !important; }
+  .impact-duo .duo-icon-bottom {
+    border-left: 6px solid #8cc441; }
+
+.testimony-banner {
+  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(assets/images/greenwood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff; }
+
+.stat-banner {
+  margin-top: 80px;
+  margin-bottom: 0px !important;
+  padding: 100px 0px 100px 0px;
+  background-image: url(assets/images/homebackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: #ffffff; }
+
+.stat-container {
+  padding-top: 40px; }
+  .stat-container h1 {
+    padding: 40px 0px 0px 0px; }
+  .stat-container .row {
+    padding: 40px 0px 40px 0px; }
+  .stat-container .impact-one .impact-graphic {
+    display: flex;
+    justify-content: center; }
+    .stat-container .impact-one .impact-graphic .fa-couch {
+      color: #8cc441;
+      font-size: 200px; }
+  .stat-container .impact-two .impact-graphic {
+    display: flex;
+    justify-content: center;
+    background-image: url(assets/images/impact-sweet-dreams.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+  .stat-container .impact-three .impact-graphic {
+    display: flex;
+    justify-content: center; }
+    .stat-container .impact-three .impact-graphic .fa-hand-holding-heart {
+      color: #8cc441;
+      font-size: 175px; }
 
 .blog-page .jumbotron {
   background-size: cover;
