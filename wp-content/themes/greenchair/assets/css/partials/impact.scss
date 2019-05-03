@@ -3,173 +3,176 @@
 // impact section
 
 .jumbo-impact {
-    background-size: cover;
+  background-size: cover;
 
-    h1 {
-        font-weight: bold;
-        font-size: 4.5rem;
-        color: white !important;
-    }
+  h1 {
+    font-weight: bold;
+    font-size: 4.5rem;
+    color: white !important;
+  }
 }
 
 .breakdown-block {
-    flex: 1;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
+  flex: 1;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 
-    h2 {
-        font-weight: bold;
-        font-size: 50px;
-    }
+  h2 {
+    font-weight: bold;
+    font-size: 50px;
+  }
 
-    p {
-        text-transform: uppercase;
-    }
+  p {
+    text-transform: uppercase;
+  }
 }
 
 .impact-get-involved {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 .impact-duo {
-    margin-top: 40px;
+  margin-top: 40px;
 
-    .duo-icon-top {
-        .impact-chart {
-            position: relative;
-            width: 300px;
-            height: 300px;
-            // border: 2px solid $teal;
-            border-radius: 100%;
+  .duo-icon-top {
+    .impact-chart {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      // border: 2px solid $teal;
+      border-radius: 100%;
 
-            // border: 6px solid $teal;
-            // border-radius: 100%;
-            // display: flex;
-            // justify-content: center;
-            // align-items: center;
-            // background-image: linear-gradient(to right, transparent 50%, #655 0);
-            .pie {
-                background: #20504F;
-                border-radius: 50%;
-            }
+      // border: 6px solid $teal;
+      // border-radius: 100%;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // background-image: linear-gradient(to right, transparent 50%, #655 0);
+      .pie {
+        background: #20504f;
+        border-radius: 50%;
+      }
 
-            .pie circle {
-                fill: none;
-                stroke: #20504F;
-                stroke-width: 32;
-                animation: rotate 1.5s ease-in;
-            }
+      .pie circle {
+        fill: none;
+        stroke: #20504f;
+        stroke-width: 32;
+        animation: rotate 1.5s ease-in;
+      }
 
-            i {
-                color: white;
-                font-size: 20px;
-                // background-color: $teal !important;
-            }
+      i {
+        color: white;
+        font-size: 20px;
+        // background-color: $teal !important;
+      }
 
-            .chart-house {
-                position: absolute;
-                z-index: 200;
+      .chart-house {
+        position: absolute;
+        z-index: 200;
 
-                &.chart-house-one {
-                    position: absolute;
-                    top: 50 !important;
-                    left: 20 !important;
-                }
-
-                &.chart-house-two {}
-
-                &.chart-house-three {}
-
-                &.chart-house-four {}
-
-                &.chart-house-five {}
-
-                &.chart-house-six {}
-            }
+        &.chart-house-one {
+          position: absolute;
+          top: 50 !important;
+          left: 20 !important;
         }
 
+        &.chart-house-two {
+        }
 
-    }
+        &.chart-house-three {
+        }
 
-    .impact-duo-content {
-        // background-image: linear-gradient(white, white, $green);
-    }
+        &.chart-house-four {
+        }
 
-    .duo-icon-bottom {
-        border-left: 6px solid $green;
+        &.chart-house-five {
+        }
+
+        &.chart-house-six {
+        }
+      }
     }
+  }
+
+  .duo-icon-bottom {
+    border-left: 6px solid $green;
+  }
 }
 
 .testimony-banner {
-    margin-top: 40px;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    background-image: url(assets/images/greenwood.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    color: #ffffff;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(assets/images/greenwood.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #ffffff;
 }
 
 .stat-banner {
-    margin-top: 80px;
-    margin-bottom: 0px !important;
-    padding: 100px 0px 100px 0px;
-    background-image: url(assets/images/homebackground.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top right;
-    color: #ffffff;
+  margin-top: 80px;
+  margin-bottom: 0px !important;
+  padding: 100px 0px 100px 0px;
+  background-image: url(assets/images/homebackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: #ffffff;
 }
 
 .stat-container {
-    padding-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 
-    h1 {
-        padding: 40px 0px 0px 0px;
+  h1 {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .row {
+    padding: 40px 0px 40px 0px;
+  }
+
+  .impact-one {
+    .impact-graphic {
+      display: flex;
+      justify-content: center;
+
+      .fa-couch {
+        color: $green;
+        font-size: 200px;
+      }
     }
+  }
 
-    .row {
-        padding: 40px 0px 40px 0px;
+  .impact-two {
+    .impact-graphic {
+      display: flex;
+      justify-content: center;
+      background-image: url(assets/images/impact-sweet-dreams.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
+  }
 
-    .impact-one {
-        .impact-graphic {
-            display: flex;
-            justify-content: center;
+  .impact-three {
+    .impact-graphic {
+      display: flex;
+      justify-content: center;
 
-            .fa-couch {
-                color: $green;
-                font-size: 200px;
-            }
-        }
+      .fa-hand-holding-heart {
+        color: $green;
+        font-size: 175px;
+      }
     }
+  }
+}
 
-    .impact-two {
-        .impact-graphic {
-            display: flex;
-            justify-content: center;
-            background-image: url(assets/images/impact-sweet-dreams.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
-        }
-    }
-
-    .impact-three {
-        .impact-graphic {
-            display: flex;
-            justify-content: center;
-
-            .fa-hand-holding-heart {
-                color: $green;
-                font-size: 175px;
-            }
-        }
-    }
+.testimony-quote {
+  font-style: italic;
 }

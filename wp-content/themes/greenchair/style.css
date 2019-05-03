@@ -828,11 +828,11 @@ a {
     height: 300px;
     border-radius: 100%; }
     .impact-duo .duo-icon-top .impact-chart .pie {
-      background: #20504F;
+      background: #20504f;
       border-radius: 50%; }
     .impact-duo .duo-icon-top .impact-chart .pie circle {
       fill: none;
-      stroke: #20504F;
+      stroke: #20504f;
       stroke-width: 32;
       animation: rotate 1.5s ease-in; }
     .impact-duo .duo-icon-top .impact-chart i {
@@ -849,7 +849,6 @@ a {
     border-left: 6px solid #8cc441; }
 
 .testimony-banner {
-  margin-top: 40px;
   padding-top: 40px;
   padding-bottom: 40px;
   background-image: url(assets/images/greenwood.jpg);
@@ -869,7 +868,8 @@ a {
   color: #ffffff; }
 
 .stat-container {
-  padding-top: 40px; }
+  padding-top: 40px;
+  padding-bottom: 40px; }
   .stat-container h1 {
     padding: 40px 0px 0px 0px; }
   .stat-container .row {
@@ -893,6 +893,9 @@ a {
     .stat-container .impact-three .impact-graphic .fa-hand-holding-heart {
       color: #8cc441;
       font-size: 175px; }
+
+.testimony-quote {
+  font-style: italic; }
 
 .blog-page .jumbotron {
   background-size: cover;
