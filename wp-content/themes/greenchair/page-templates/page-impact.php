@@ -154,7 +154,7 @@ get_header(); ?>
         </div>
         <div class="container" style="padding-top: 40px;">
             <h1>What others are saying about The Green Chair</h1>
-            <div class="row" style="margin-top: 40px;">
+            <div class="row" style="margin-top: 40px;">            
                 <div class="col">
                     <div class="testimony-card">
                         <div class="testimony-card-top">

@@ -17,3 +17,4 @@
 @include 'eventsCustom.php';
 @include 'teamCustom.php';
 @include 'supporterCustom.php';
+@include 'testimonialCustom.php';
