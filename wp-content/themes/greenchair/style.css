@@ -868,9 +868,16 @@ a {
     padding: 40px 0px 0px 0px; }
   .stat-container .row {
     padding: 40px 0px 40px 0px; }
+  .stat-container .impact-graphic .graphic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
   .stat-container .impact-one .impact-graphic {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
     .stat-container .impact-one .impact-graphic .fa-couch {
       color: #8cc441;
       font-size: 200px; }
@@ -884,15 +891,46 @@ a {
   .stat-container .impact-three .impact-graphic {
     display: flex;
     justify-content: center; }
-    .stat-container .impact-three .impact-graphic .fa-hand-holding-heart {
+    .stat-container .impact-three .impact-graphic .graphic {
+      height: 350px;
+      width: 350px;
+      border-radius: 100%; }
+  .stat-container .impact-four .impact-graphic {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .stat-container .impact-four .impact-graphic .fa-hand-holding-heart {
       color: #8cc441;
       font-size: 175px; }
+  .stat-container .impact-five {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; }
+    .stat-container .impact-five .impact-graphic {
+      height: 250px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; }
+      .stat-container .impact-five .impact-graphic .fa-hands-helping {
+        color: #8cc441;
+        font-size: 175px; }
+
+.village-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -500px;
+  height: 600px; }
 
 .testimony-quote {
   font-style: italic; }
   .testimony-quote span {
     color: #8cc441;
-    font-size: 20px; }
+    font-size: 20px;
+    font-weight: bold; }
 
 .impact-plus {
   position: relative;
@@ -940,6 +978,10 @@ a {
     .testimony-card .testimony-card-bottom .testimony-name {
       margin-top: 60px;
       color: white; }
+
+.impact-breakdown h1 {
+  color: #8cc441;
+  font-size: 3.5rem; }
 
 .blog-page .jumbotron {
   background-size: cover;

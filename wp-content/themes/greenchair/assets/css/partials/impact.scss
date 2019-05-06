@@ -198,12 +198,21 @@
   .row {
     padding: 40px 0px 40px 0px;
   }
+  .impact-graphic {
+    .graphic {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
 
   .impact-one {
     .impact-graphic {
       display: flex;
       justify-content: center;
-
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
       .fa-couch {
         color: $green;
         font-size: 200px;
@@ -227,19 +236,57 @@
       display: flex;
       justify-content: center;
 
+      .graphic {
+        height: 350px;
+        width: 350px;
+        border-radius: 100%;
+      }
+    }
+  }
+  .impact-four {
+    .impact-graphic {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       .fa-hand-holding-heart {
         color: $green;
         font-size: 175px;
       }
     }
   }
+  .impact-five {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .impact-graphic {
+      height: 250px;
+      width: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      .fa-hands-helping {
+        color: $green;
+        font-size: 175px;
+      }
+    }
+  }
 }
-
+.village-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -500px;
+  height: 600px;
+}
 .testimony-quote {
   font-style: italic;
   span {
     color: $green;
     font-size: 20px;
+    font-weight: bold;
   }
 }
 
@@ -297,5 +344,12 @@
       margin-top: 60px;
       color: white;
     }
+  }
+}
+
+.impact-breakdown {
+  h1 {
+    color: $green;
+    font-size: 3.5rem;
   }
 }

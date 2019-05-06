@@ -94,7 +94,7 @@ get_header(); ?>
         </div>
         <div class="jumbotron stat-banner" style="background-image: url(<?php echo get_field('impact_section_three_banner'); ?>);">
             <div class="container">
-                    <h1 style="border-bottom: 4px solid white; display: inline-block;"><div style="margin: 0 auto;"><strong><?php echo the_field('impact_section_three_banner_title_top'); ?></strong></div></h1>
+                    <h1 style="border-bottom: 4px solid white; display: inline-block; font-size: 3.5rem;"><div style="margin: 0 auto;"><strong><?php echo the_field('impact_section_three_banner_title_top'); ?></strong></div></h1>
                     <h4><?php echo the_field('impact_section_three_banner_title_bottom'); ?></h4>
             </div>
         </div>
@@ -104,30 +104,49 @@ get_header(); ?>
                 <div class="col impact-graphic">
                 <i class="fas fa-couch"></i>
                 </div>
-                <div class="col">
-                <h3><?php echo the_field('impact_section_three_row_one_title'); ?></h3>
-                <p><?php echo the_field('impact_section_three_row_one_content'); ?></p>
+                <div class="col impact-breakdown">
+                <h1><?php echo the_field('impact_section_three_row_one_title'); ?></h1>
+                <h4 class="teal"><?php echo the_field('impact_section_three_row_one_content'); ?></h4>
                 </div>
             </div>
             <div class="row impact-two">
-                <div class="col">
-                <h3><?php echo the_field('impact_section_three_row_two_title'); ?></h3>
-                <p><?php echo the_field('impact_section_three_row_two_content'); ?></p>
+                <div class="col impact-breakdown">
+                <h1><?php echo the_field('impact_section_three_row_two_title'); ?></h1>
+                <h4 class="teal"><?php echo the_field('impact_section_three_row_two_content'); ?></h4>
                 </div>
                 <div class="col impact-graphic">
                 </div>
             </div>
             <div class="row impact-three">
                 <div class="col impact-graphic">
+                    <div class="graphic" style="background-image: url(<?php echo get_field('impact_section_three_row_three_graphic'); ?>);"></div>
+                </div>
+                <div class="col impact-breakdown">
+                <h1><?php echo the_field('impact_section_three_row_three_title'); ?></h1>
+                <h4 class="teal"><?php echo the_field('impact_section_three_row_three_content'); ?></h4>
+                </div>
+            </div>
+            <div class="row impact-four">
+                <div class="col impact-breakdown">
+                <h1><?php echo the_field('impact_section_three_row_four_title'); ?></h1>
+                <h4 class="teal"><?php echo the_field('impact_section_three_row_four_content'); ?></h4>
+                </div>
+                <div class="col impact-graphic">
                     <i class="fas fa-hand-holding-heart"></i>
                 </div>
-                <div class="col">
-                <h3><?php echo the_field('impact_section_three_row_three_title'); ?></h3>
-                <p><?php echo the_field('impact_section_three_row_three_content'); ?></p>
+            </div>
+            <div class="row impact-five">
+                <div class="col impact-graphic">
+                <i class="fas fa-hands-helping"></i>
+                </div>
+                <div class="col impact-breakdown">
+                <h1><?php echo the_field('impact_section_three_row_five_title'); ?></h1>
+                <h4 class="teal"><?php echo the_field('impact_section_three_row_five_content'); ?></h4>
                 </div>
             </div>
         </div>
         </div>
+        <div class="village-banner" style="background-image: url(<?php echo get_field('impact_village_banner'); ?>);"></div>
         <div class="testimony-banner wood-background">
             <div class="container">
                 <h4 style="font-style: italic;"><?php echo the_field('impact_section_four_banner_title'); ?></h4>
