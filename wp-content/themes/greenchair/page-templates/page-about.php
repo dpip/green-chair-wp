@@ -116,7 +116,7 @@ get_header(); ?>
                                     }                                   
                                     wp_reset_postdata();
                                 } else {
-                                    echo '<p>Oops! Something went wrong.</p>';
+                                    echo '<p>For Staff information you can contact The Green Chair directly</p>';
                                 }
                             ?>
             </div>

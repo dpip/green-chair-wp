@@ -170,10 +170,39 @@
   padding-top: 40px;
   padding-bottom: 40px;
   background-image: url(assets/images/greenwood.jpg);
+  // background-color: $pink;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   color: #ffffff;
+  .testimony-banner-img-wrap {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    .testimony-banner-img {
+      width: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center -15px;
+      align-items: flex-end;
+      height: 250px;
+      p {
+        margin: 0px;
+        color: white;
+        padding: 0px 10px 0px 10px;
+        background-color: $pink;
+      }
+    }
+  }
+  .quote {
+    // justify-content: center;
+    align-items: center;
+    // background-color: $pink;
+    background-color: rgba(218, 64, 109, 0.8);
+    h4 {
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .stat-banner {
@@ -285,7 +314,7 @@
   font-style: italic;
   span {
     color: $green;
-    font-size: 20px;
+    // font-size: 20px;
     font-weight: bold;
   }
 }
@@ -315,6 +344,7 @@
   width: auto;
   box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
   border-radius: 25px;
+  margin-top: 40px;
 
   .testimony-card-top {
     padding-bottom: 80px;
@@ -328,17 +358,18 @@
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
-    background-color: $green;
+    // background-color: $green;
     .testimony-avatar {
       position: absolute;
       top: -40px;
       height: 80px;
       width: 80px;
-      border-radius: 100%;
-      background-image: url(assets/images/testOne.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center;
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        object-fit: cover;
+      }
     }
     .testimony-name {
       margin-top: 60px;

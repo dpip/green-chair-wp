@@ -1,6 +1,6 @@
 <?php
 
-//Register Custom Post Type for testimony
+//Register Custom Post Type for Testimonies
 function testimony_custom_init()
 {
     $args = array(
@@ -12,7 +12,7 @@ function testimony_custom_init()
             'thumbnail'
         ),
         'rewrite' => array( 'with_front' => false ),
-        'menu_icon' => 'dashicons-groups'
+        'menu_icon' => 'dashicons-format-quote'
     );
     register_post_type('testimony-item', $args);
 }

@@ -76,7 +76,7 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1rem;
-  padding: .7rem 1rem;
+  padding: 0.7rem 1rem;
 }
 
 .btn-primary {
@@ -118,6 +118,10 @@ a {
   color: $teal;
 }
 
+.pink {
+  color: $pink;
+}
+
 .btn-white {
   background: none;
   color: #ffffff;
@@ -136,7 +140,7 @@ a {
 }
 
 .woodbackground {
-  background-image: url('assets/images/greendotbkd.jpg');
+  background-image: url("assets/images/greendotbkd.jpg");
   background-size: cover;
   background-color: $green;
   background-repeat: no-repeat;
@@ -238,19 +242,18 @@ a {
   filter: sepia(50%);
 }
 
-
 //Additional Styles
 @import "partials/navbar";
 @import "partials/footer";
-@import 'partials/donate';
-@import 'partials/home';
-@import 'partials/events';
-@import 'partials/news';
-@import 'partials/about';
-@import 'partials/impact';
-@import 'partials/blog';
-@import 'partials/misctemplates';
-@import 'partials/contact';
-@import 'partials/get-involved';
-@import 'partials/careers';
-@import 'partials/volunteer';
+@import "partials/donate";
+@import "partials/home";
+@import "partials/events";
+@import "partials/news";
+@import "partials/about";
+@import "partials/impact";
+@import "partials/blog";
+@import "partials/misctemplates";
+@import "partials/contact";
+@import "partials/get-involved";
+@import "partials/careers";
+@import "partials/volunteer";

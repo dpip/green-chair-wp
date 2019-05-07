@@ -146,48 +146,66 @@ get_header(); ?>
             </div>
         </div>
         </div>
-        <div class="village-banner" style="background-image: url(<?php echo get_field('impact_village_banner'); ?>);"></div>
-        <div class="testimony-banner wood-background">
-            <div class="container">
-                <h4 style="font-style: italic;"><?php echo the_field('impact_section_four_banner_title'); ?></h4>
+        <!-- <div class="village-banner" style="background-image: url(<?php echo get_field('impact_village_banner'); ?>);"></div> -->
+        <div class="testimony-banner">
+            <div class="container d-flex">
+                <div class="col testimony-banner-img-wrap">
+                    <div class="testimony-banner-img d-flex" style="background-image: url(<?php echo get_field('impact_testimony_banner_image'); ?>);">
+                        <p><?php echo get_field('impact_testimony_banner_image_caption'); ?></p>
+                    </div>
+                </div>
+                <div class="col quote d-flex ">
+                    <h4 style="font-style: italic;"><?php echo the_field('impact_section_four_banner_title'); ?></h4>
+                </div>
             </div>
         </div>
         <div class="container" style="padding-top: 40px;">
             <h1>What others are saying about The Green Chair</h1>
-            <div class="row" style="margin-top: 40px;">            
-                <div class="col">
-                    <div class="testimony-card">
-                        <div class="testimony-card-top">
-                        <p class="testimony-quote"><span>"</span> They are awesome!!! Thank you guys again!!!!! My experience couldn't be any better!!!!! Staff/Volunteers couldn't have been any more friendly!!!! <span>"</span></p>
-                        </div>
-                        <div class="testimony-card-bottom">
-                            <div class="testimony-avatar"></div>
-                            <p class="testimony-name">&ndash; Shatina</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="testimony-card">
-                        <div class="testimony-card-top">
-                        <p class="testimony-quote">"I was blessed today by the Green chair project and im so greatful for everything that were able to bless me with in my new home thank you very much."</p>
-                        </div>
-                        <div class="testimony-card-bottom">
-                            <div class="testimony-avatar"></div>
-                            <p class="testimony-name">&ndash; Marie</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                                     <div class="testimony-card">
-                        <div class="testimony-card-top">
-                        <p class="testimony-quote">"The green chair project has helped me and my family tremendously and we are so grateful. The staff there are so polite and helpful. Thank you all so much!!!"</p>
-                        </div>
-                        <div class="testimony-card-bottom">
-                            <div class="testimony-avatar"></div>
-                            <p class="testimony-name">&ndash; Alizabeth</p>
-                        </div>
-                    </div>
-                </div>
+           
+            <div class="row">            
+                <?php
+                //Board Items
+                $the_query = new WP_Query( 
+                    array(
+                        'post_type' => 'testimony-item',
+                        'posts_per_page' => -1,
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'testimony_category',
+                                'field'    => 'slug',
+                                'terms'    => 'impact-testimony',
+                            ),
+                        )
+                    ) 
+                );
+
+                if ( $the_query->have_posts() ) {
+                    while ( $the_query->have_posts() ) {
+                        $the_query->the_post();
+                        $id = get_the_ID();
+                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                        $title = get_the_title($id);
+                        $quote = get_the_content($id);
+                        $category = get_field('team_category');
+
+
+                        echo '<div class="col col-4 col-md-4 col-sm-6">';
+                            echo '<div class="testimony-card">';
+                                echo '<div class="testimony-card-top">';
+                                echo '<p class="testimony-quote"><span>"</span>' . $quote . '<span>"</span></p>';
+                                echo '</div>';
+                                echo '<div class="testimony-card-bottom woodbackground">';
+                                    echo '<div class="testimony-avatar">' . $img . '</div>';
+                                    echo '<p class="testimony-name"><span class="">&ndash;</span> ' . $title . '</p>';
+                                echo '</div>';
+                            echo '</div>';
+                        echo '</div>';
+                    }
+                    wp_reset_postdata();
+                } else {
+                    echo '<p>Check out our Facebook page!</p>';
+                }
+            ?>
             </div>
          </div>
         </div>

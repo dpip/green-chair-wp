@@ -62,7 +62,7 @@ a {
   font-weight: 300;
   text-transform: uppercase;
   font-size: 1rem;
-  padding: .7rem 1rem; }
+  padding: 0.7rem 1rem; }
 
 .btn-primary {
   background: #ffffff;
@@ -93,6 +93,9 @@ a {
 
 .teal {
   color: #18a79d; }
+
+.pink {
+  color: #da406d; }
 
 .btn-white {
   background: none;
@@ -850,6 +853,25 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   color: #ffffff; }
+  .testimony-banner .testimony-banner-img-wrap {
+    display: flex; }
+    .testimony-banner .testimony-banner-img-wrap .testimony-banner-img {
+      width: 400px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center -15px;
+      align-items: flex-end;
+      height: 250px; }
+      .testimony-banner .testimony-banner-img-wrap .testimony-banner-img p {
+        margin: 0px;
+        color: white;
+        padding: 0px 10px 0px 10px;
+        background-color: #da406d; }
+  .testimony-banner .quote {
+    align-items: center;
+    background-color: rgba(218, 64, 109, 0.8); }
+    .testimony-banner .quote h4 {
+      font-size: 1.5rem; }
 
 .stat-banner {
   margin-top: 80px;
@@ -929,7 +951,6 @@ a {
   font-style: italic; }
   .testimony-quote span {
     color: #8cc441;
-    font-size: 20px;
     font-weight: bold; }
 
 .impact-plus {
@@ -952,7 +973,8 @@ a {
 .testimony-card {
   width: auto;
   box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-  border-radius: 25px; }
+  border-radius: 25px;
+  margin-top: 40px; }
   .testimony-card .testimony-card-top {
     padding-bottom: 80px;
     background-color: white;
@@ -963,18 +985,17 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
-    background-color: #8cc441; }
+    margin-top: 40px; }
     .testimony-card .testimony-card-bottom .testimony-avatar {
       position: absolute;
       top: -40px;
       height: 80px;
-      width: 80px;
-      border-radius: 100%;
-      background-image: url(assets/images/testOne.jpg);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center center; }
+      width: 80px; }
+      .testimony-card .testimony-card-bottom .testimony-avatar img {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        object-fit: cover; }
     .testimony-card .testimony-card-bottom .testimony-name {
       margin-top: 60px;
       color: white; }
