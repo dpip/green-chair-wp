@@ -7,41 +7,64 @@ get_header(); ?>
 <div id="main-content" class="image-leadspace contact">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php $backgroundimage = get_the_post_thumbnail_url(get_the_ID(), 'full', true); ?>
-    <div class="jumbotron" style="background-image:url(<?php echo $backgroundimage ?>);">
+    <div class="jumbotron" style="background-image:url(<?php echo $backgroundimage ?>); background-position: center bottom;">
         <div class="container">
             <div class="row py-5">
-                <div class="col-xs-12 col-sm-12 col-md-8 offset-md-2">
-                    <h1 class="text-center display-4 my-5"><?php the_title(); ?></h1>
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <h1 class="display-4 my-5"><?php the_title(); ?></h1>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-    <h4 class="careers-rule"><?php echo the_field('intro_title'); ?><div class="horizontal-rule"></div></h4>
         <div class="row">
-            <div class="col-xs-12 col-md-12 careers-intro">
-                <?php the_content(); ?>
-                <h3><?php echo the_field('intro_statement'); ?></h3>
-                <p><?php echo the_field('intro_supporting_text'); ?></p>
-            </div>
+            
+        <?php
+                //Career Items
+
+                $the_query = new WP_Query( 
+                    array(
+                        'post_type' => 'career-item',
+                        'posts_per_page' => -1
+                    ) 
+                );
+
+                if ( $the_query->have_posts() ) {
+                    while ( $the_query->have_posts() ) {
+                        $the_query->the_post();
+                        $id = get_the_ID();
+                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                        $title = get_the_title($id);
+                        $brief = get_field('brief_summary');
+                        $category = get_field('career_category');
+                        $link = get_the_permalink($id);
+
+                        echo '<div class="col-xs-12 col-md-6 col-lg-6 careers-intro careers-container">';
+                            echo '<h2 class="careers-available-title">' . $title . '</h2>';
+                            echo '<p>' . $brief . '</p>';
+                            echo '<a href="'. $link .'">View Details »</a>';
+                        echo '</div>';
+
+                    }
+                    echo '<div class="col-6 careers-volunteer careers-container">';
+                            echo '<h2 class="green">Nothing Jumping Out?</h2>';
+                            echo '<p style="padding-bottom: 20px;">If the current positions do not seem like the best fit you are more than welcome to Join Team Green Chair as a volunteer!</p>';
+                            echo '<a href="/get-involved" class="btn btn-green">Get Involved</a>';
+                    echo '</div>';
+                    wp_reset_postdata();
+                } else {
+                    echo '<div class="col-9">';
+                        echo '<h4 class="fallback-header">Thank you for your interest in working with The Green Chair Project!</h4>';
+                    echo '</div>';
+                    echo '<div class="col-9">';
+                        echo '<p class="fall-back-content">Currently we do not have any staff openings available, but we always have room for more volunteers!  Take a look at our volunteer page and come get to know us.  We look forward to seeing you soon!</p>';
+                        echo '<a href="/get-involved" class="btn btn-green">Get Involved</a>';
+                    echo '</div>';
+                }
+            ?>
+
         </div>
     </div>  
-    <div class="container">
-        <h4 class="careers-rule careers-available-title"><?php echo the_field('available_careers_title'); ?><div class="horizontal-rule"></div></h4>
-        <div class="row">
-        <div class="col-xs-12 col-md-6 col-lg-6 careers-intro career-container">
-        <h2>Director of Program Services</h2>
-        <p>Contribute insights and expertise to the operations, direction, and goals of The Green Chair Project</p>
-        <a href="">View Details »</a>
-        </div>
-        <div class="col-xs-12 col-md-6 col-lg-6 careers-intro career-container">
-        <h2>Volunteer Services</h2>
-        <p>Contribute insights and expertise to the operations, direction, and goals of The Green Chair Project</p>
-        <a href="">View Details »</a>
-        </div>
-       
-    </div>  
-    
     <?php endwhile; ?>
     <?php endif; ?>
 </div><!-- #main-content -->

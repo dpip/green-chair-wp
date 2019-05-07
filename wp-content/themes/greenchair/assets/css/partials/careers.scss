@@ -1,23 +1,26 @@
 @import "variables";
 
 .careers-intro {
-    h3 {
-        // color: $green !important;
-        margin-top: 25px;
-    }
+  h3 {
+    // color: $green !important;
+    margin-top: 25px;
+  }
 }
-.careers-rule {
-    color: $teal;
-    display: inline-flex;
-    flex-direction: column;
-}
+
 .careers-available-title {
-    margin-top: 25px;
-    color: $teal;
-    
+  //   border-bottom: 4px solid $green;
+  display: inline-block;
 }
-.career-container {
-    width: 100%;
-    height: auto;
-    margin-top: 25px;
+.careers-container {
+  margin-top: 40px;
+  border-left: 4px solid $green;
+
+  .fallback-header {
+    border-bottom: 4px solid $green;
+    padding-bottom: 20px;
+  }
+  .fall-back-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }

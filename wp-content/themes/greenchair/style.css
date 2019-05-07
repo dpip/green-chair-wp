@@ -868,8 +868,7 @@ a {
         padding: 0px 10px 0px 10px;
         background-color: #da406d; }
   .testimony-banner .quote {
-    align-items: center;
-    background-color: rgba(218, 64, 109, 0.8); }
+    align-items: center; }
     .testimony-banner .quote h4 {
       font-size: 1.5rem; }
 
@@ -1109,19 +1108,18 @@ a {
 .careers-intro h3 {
   margin-top: 25px; }
 
-.careers-rule {
-  color: #18a79d;
-  display: inline-flex;
-  flex-direction: column; }
-
 .careers-available-title {
-  margin-top: 25px;
-  color: #18a79d; }
+  display: inline-block; }
 
-.career-container {
-  width: 100%;
-  height: auto;
-  margin-top: 25px; }
+.careers-container {
+  margin-top: 40px;
+  border-left: 4px solid #8cc441; }
+  .careers-container .fallback-header {
+    border-bottom: 4px solid #8cc441;
+    padding-bottom: 20px; }
+  .careers-container .fall-back-content {
+    padding-top: 20px;
+    padding-bottom: 20px; }
 
 .volunteer-page .jumbotron {
   background-size: cover;
