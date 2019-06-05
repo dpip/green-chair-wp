@@ -632,11 +632,9 @@ a {
   .staff-item:hover .img-wrap {
     transition: all .25s ease-in-out;
     border: 1px solid rgba(0, 0, 0, 0.23);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23); }
     .staff-item:hover .img-wrap img {
-      width: 16rem;
-      height: 16rem;
-      object-fit: cover;
+      object-fit: cover !important;
       filter: grayscale(0); }
   .staff-item .img-wrap {
     background-color: #fff center center no-repeat;
@@ -644,10 +642,10 @@ a {
     border: 1px solid #dfdfdf;
     transition: all .25s ease-in-out; }
     .staff-item .img-wrap img {
-      width: 16rem;
+      min-width: 100%;
       height: 16rem;
-      object-fit: cover;
-      filter: grayscale(1);
+      object-fit: cover !important;
+      filter: grayscale(0.75);
       transition: all .25s ease-in-out; }
   .staff-item .staff-placeholder {
     width: 15.5rem;
@@ -659,7 +657,7 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: #18a79d; }
+    color: #8cc441; }
     .staff-item .staff-placeholder h4 {
       padding: 4px; }
   .staff-item .content-block {
@@ -667,12 +665,16 @@ a {
     padding: 1em 0.5em;
     color: #515151;
     text-decoration: none;
-    min-height: 8rem;
+    min-height: 8.5rem;
     width: 100%;
     justify-content: center;
     align-items: flex-start; }
     .staff-item .content-block .title-container {
       text-align: center; }
+      .staff-item .content-block .title-container .title-staff {
+        color: #8cc441 !important; }
+      .staff-item .content-block .title-container .title-board {
+        color: #18a79d !important; }
       .staff-item .content-block .title-container .placeholder {
         display: none; }
   .staff-item .staff-phone-block {
@@ -691,6 +693,9 @@ a {
       color: #18a79d; }
       .staff-item .staff-email-block .email-icon:hover {
         color: #3a3a3a; }
+
+.title-board {
+  color: #18a79d !important; }
 
 .board-container {
   margin-top: 50px; }

@@ -44,11 +44,12 @@ get_header(); ?>
         <div class="jumbotron jumbo-staff d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo get_field('about_image_staff_main'); ?>);">
             <div class="container">
                 <div class="column">
-                <h1 class="my-3 display-3"><?php echo the_field('about_staff_heading'); ?></h1>
+                <h1 class="my-3 display-3"><?php echo the_field('about_team_heading'); ?></h1>
                 </div>
             </div>
         </div>
         <div class="container staff-container">
+            <h2><?php echo the_field('about_staff_heading'); ?></h2>
             <div class="row staff-wrap">
             <?php
                                 //Staff Items
@@ -85,32 +86,19 @@ get_header(); ?>
                                                         if (has_post_thumbnail()) {
                                                             echo $img; 
                                                         } else {
-                                                            echo '<div class="staff-placeholder"><h4>' . $title . '</h4></div>';
+                                                            echo '<div class="staff-placeholder"><h4 class="title-staff">' . $title . '</h4></div>';
                                                         }
                                                     echo '</div>';
                                                 echo '</a>';
                                                 echo '<div class="content-block d-flex">';
                                                     echo '<div class="title-container">';
                                                         if (has_post_thumbnail()) {
-                                                            echo '<h6>'. $title . '<div class="horizontal-rule"></div></h6>';
+                                                            echo '<h6 class="title-staff">'. $title . '<div class="horizontal-rule"></div></h6>';
                                                         } else {
                                                             echo '<h6 class="placeholder">'. $title . '</h6>';
                                                         }
                                                         echo '<p class="staff-position"><strong>'. $position . '</strong></p>';
                                                     echo '</div>';
-                                                    // if (!empty($phone)) {
-                                                    //     echo '<div class="staff-phone-block"><p class="phone-icon"><i class="fas fa-phone"></i></p><p class="vertical-rule"></p><p>' . $phone . '</p></div>';
-                                                    // }                                                   
-                                                    // if (!empty($email)) {
-                                                    //     echo '<div class="staff-email-block"><p class="email-icon"><i class="fas fa-envelope"></i></p><p class="vertical-rule"></p><p>' . $email . '</p></div>';
-                                                    // } 
-                                                    // echo '<div class="content-last-of">';
-                                                    //     if (!empty($linkedin)) {
-                                                    //         echo '<p class="linkedin"><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
-                                                    //         echo '<p class="vertical-rule"></p>';
-                                                    //     } 
-                                                    //     echo '<p class="more-about"><a class="" href ="">More about ' . $firstname[0] . ' »</a></p>';
-                                                    // echo '</div>';
                                                 echo '</div>';
                                         echo '</div>';
                                     }                                   
@@ -152,17 +140,26 @@ get_header(); ?>
                         $linkedin = get_field('email');
                         $category = get_field('team_category');
 
-                        echo '<div class="board-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
-                                echo '</a>';
-                                echo '<div class="content-block">';
-                                    echo '<div class="title-container">';
-                                        echo '<div class="board-title-wrap">';
-                                            echo '<h6>'. $title . ' <div class="horizontal-rule"></div></h6>';
-                                        echo '</div>';
-                                        if (!empty($company)) {
-                                            echo '<p>'. $position . ', <span class="board-company">'. $company . '</span></p>';
+                        echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
+                                    echo '<div class="img-wrap">';
+                                        if (has_post_thumbnail()) {
+                                            echo $img; 
                                         } else {
-                                            echo '<p>'. $position . '</p>';
+                                            echo '<div class="staff-placeholder title-board"><h4 class="title-board" style="padding: 4px;">' . $title . '</h4></div>';
+                                        }
+                                    echo '</div>';
+                                echo '</a>';
+                                echo '<div class="content-block d-flex">';
+                                    echo '<div class="title-container">';
+                                        if (has_post_thumbnail()) {
+                                            echo '<h6 class="title-board" >'. $title . '<div class="horizontal-rule"></div></h6>';
+                                            // echo '<p><strong>'. $position . '</strong>, <span class="board-company">'. $company . '</span><div class="horizontal-rule"></div></p>';
+                                            // echo '<h6>'. $title . '<div class="horizontal-rule"></div></h6>';
+                                        } 
+                                        if (!empty($company)) {
+                                            echo '<p><strong>'. $position . '</strong>, <span class="board-company">'. $company . '</span></p>';
+                                        } else {
+                                            echo '<p><strong>'. $position . '</strong></p>';
                                         }
                                     echo '</div>';
                                 echo '</div>';
