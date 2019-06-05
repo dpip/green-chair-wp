@@ -89,28 +89,28 @@ get_header(); ?>
                                                         }
                                                     echo '</div>';
                                                 echo '</a>';
-                                                echo '<div class="content-block">';
+                                                echo '<div class="content-block d-flex">';
                                                     echo '<div class="title-container">';
                                                         if (has_post_thumbnail()) {
                                                             echo '<h6>'. $title . '<div class="horizontal-rule"></div></h6>';
                                                         } else {
                                                             echo '<h6 class="placeholder">'. $title . '</h6>';
                                                         }
-                                                        echo '<p>'. $position . '</p>';
+                                                        echo '<p class="staff-position"><strong>'. $position . '</strong></p>';
                                                     echo '</div>';
-                                                    if (!empty($phone)) {
-                                                        echo '<div class="staff-phone-block"><p class="phone-icon"><i class="fas fa-phone"></i></p><p class="vertical-rule"></p><p>' . $phone . '</p></div>';
-                                                    }                                                   
-                                                    if (!empty($email)) {
-                                                        echo '<div class="staff-email-block"><p class="email-icon"><i class="fas fa-envelope"></i></p><p class="vertical-rule"></p><p>' . $email . '</p></div>';
-                                                    } 
-                                                    echo '<div class="content-last-of">';
-                                                        if (!empty($linkedin)) {
-                                                            echo '<p class="linkedin"><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
-                                                            echo '<p class="vertical-rule"></p>';
-                                                        } 
-                                                        echo '<p class="more-about"><a class="" href ="">More about ' . $firstname[0] . ' »</a></p>';
-                                                    echo '</div>';
+                                                    // if (!empty($phone)) {
+                                                    //     echo '<div class="staff-phone-block"><p class="phone-icon"><i class="fas fa-phone"></i></p><p class="vertical-rule"></p><p>' . $phone . '</p></div>';
+                                                    // }                                                   
+                                                    // if (!empty($email)) {
+                                                    //     echo '<div class="staff-email-block"><p class="email-icon"><i class="fas fa-envelope"></i></p><p class="vertical-rule"></p><p>' . $email . '</p></div>';
+                                                    // } 
+                                                    // echo '<div class="content-last-of">';
+                                                    //     if (!empty($linkedin)) {
+                                                    //         echo '<p class="linkedin"><a class="fab fa-linkedin" href ="'. $linkedin .'"></a></p>';
+                                                    //         echo '<p class="vertical-rule"></p>';
+                                                    //     } 
+                                                    //     echo '<p class="more-about"><a class="" href ="">More about ' . $firstname[0] . ' »</a></p>';
+                                                    // echo '</div>';
                                                 echo '</div>';
                                         echo '</div>';
                                     }                                   

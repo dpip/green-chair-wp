@@ -624,39 +624,57 @@ a {
   flex-direction: column;
   font-size: 16px;
   width: 100%;
-  max-width: 18rem;
+  max-width: 16rem;
   overflow: hidden;
-  box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s;
   margin: 1rem;
   padding: 0px !important;
   cursor: pointer; }
+  .staff-item:hover .img-wrap {
+    transition: all .25s ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+    .staff-item:hover .img-wrap img {
+      width: 16rem;
+      height: 16rem;
+      object-fit: cover;
+      filter: grayscale(0); }
   .staff-item .img-wrap {
-    background: #fff center center no-repeat; }
+    background-color: #fff center center no-repeat;
+    box-shadow: none;
+    border: 1px solid #dfdfdf;
+    transition: all .25s ease-in-out; }
     .staff-item .img-wrap img {
-      width: 18rem;
-      height: 18rem;
-      object-fit: cover; }
+      width: 16rem;
+      height: 16rem;
+      object-fit: cover;
+      filter: grayscale(1);
+      transition: all .25s ease-in-out; }
   .staff-item .staff-placeholder {
-    width: 18rem;
-    height: 18rem;
+    width: 15.5rem;
+    height: 16rem;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-image: url("assets/images/greenwood.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    color: white;
-    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3); }
+    color: #18a79d; }
+    .staff-item .staff-placeholder h4 {
+      padding: 4px; }
   .staff-item .content-block {
     display: block;
     padding: 1em 0.5em;
     color: #515151;
     text-decoration: none;
-    min-height: 15rem;
-    width: 100%; }
+    min-height: 8rem;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start; }
+    .staff-item .content-block .title-container {
+      text-align: center; }
+      .staff-item .content-block .title-container .placeholder {
+        display: none; }
   .staff-item .staff-phone-block {
     display: flex;
     align-items: center; }
