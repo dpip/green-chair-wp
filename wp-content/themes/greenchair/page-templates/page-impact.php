@@ -144,8 +144,249 @@ get_header(); ?>
                 <h4 class="teal"><?php echo the_field('impact_section_three_row_five_content'); ?></h4>
                 </div>
             </div>
+             <div class="row impact-six">
+                <div class="col impact-breakdown">
+                <h1>$10,000+ RAISED</h1>
+                <h4 class="teal">by companies and organizations who help support The Green Chair!</h4>
+                </div>
+                <div class="col impact-graphic">
+                    placeholder
+                </div>
+            </div>
         </div>
         </div>
+
+
+        <!-- get involved start -->
+
+        <div id="supporters-list">
+            <div class="container">
+                <div class="row">    
+                    <div class="col-sm-12 d-inline-flex">
+                        <h1 class="mt-4 mb-3">Our Partners<div class="horizontal-rule"></div> </h1>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'tenthousand-plus',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                                $title = get_the_title($id);
+                                $link = get_field('company_website');
+
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                    if(!empty($img)){
+                                        if(!empty($link)){
+                                            echo '<a href="' . $link . '" target="_blank">';
+                                                echo $img;
+                                            echo '</a>';
+                                        }else{
+                                            echo $img;
+                                        }
+                                    }else{
+                                        echo '<p>'. $title . '</p>';
+                                    }
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } else {
+                           echo '<p>Unfortunately, we have no supporters at this level.</p>';
+                        }
+                            
+                    ?>
+
+                    <div class="col-sm-12 d-inline-flex pt-4">
+                        <h1 class="mt-4 mb-3">Government Support<div class="horizontal-rule"></div></h1>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'government-support',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                                $title = get_the_title($id);
+                                $link = get_field('company_website');
+                                $content = get_field('disclaimer_text');
+
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                    if(!empty($img)){
+                                        if(!empty($link)){
+                                            echo '<a href="' . $link . '" target="_blank">';
+                                                echo $img;
+                                            echo '</a>';
+                                        }else{
+                                            echo $img;
+                                        }
+                                    }else{
+                                        echo '<p>'. $title . '</p>';
+                                    }
+
+                                    if(!empty($content)){
+                                        echo '<p>'. $content . '</p>';
+                                    }
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        }    
+                    ?>
+
+                    <div class="col-sm-12 d-inline-flex">
+                        <h1 class="mt-4 mb-3">Foundation and Community Grants<div class="horizontal-rule"></div></h1>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'foundation-and-community-grants',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                                $title = get_the_title($id);
+                                $link = get_field('company_website');
+                                $content = get_field('disclaimer_text');
+
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                    if(!empty($img)){
+                                        if(!empty($link)){
+                                            echo '<a href="' . $link . '" target="_blank">';
+                                                echo $img;
+                                            echo '</a>';
+                                        }else{
+                                            echo $img;
+                                        }
+                                    }else{
+                                        echo '<p>'. $title . '</p>';
+                                    }
+
+                                    if(!empty($content)){
+                                        echo '<p>'. $content . '</p>';
+                                    }
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } 
+                            
+                    ?>
+
+
+                    <div class="col-sm-12 d-inline-flex pt-4 pb-2">
+                        <h1 class="mt-4 mb-3">Workplace Campaigns<div class="horizontal-rule"></div></h1>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'workplace-campaigns',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $title = get_the_title($id);
+                                
+                                echo '<div class="col-lg-3">';
+                                        echo '<p><strong>'. $title . '</strong></p>';
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } 
+                            
+                    ?>
+
+
+                    <div class="col-sm-12 d-inline-flex pt-3">
+                        <h1 class="mt-4 mb-3">Faith Partners<div class="horizontal-rule"></div></h1>
+                    </div>                
+                    <?php
+                        $the_query = new WP_Query( 
+                            array(
+                                'post_type' => 'supporters', 
+                                'posts_per_page' => -1,
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'supporter_category',
+                                        'field'    => 'slug',
+                                        'terms'    => 'faith-partners',
+                                    ),
+                                ),
+                            ) 
+                        );
+
+                        if ( $the_query->have_posts() ) {
+                            while ( $the_query->have_posts() ) {
+                                $the_query->the_post();
+                                $id = get_the_ID();
+                                $title = get_the_title($id);
+                                
+                                echo '<div class="col-lg-3 my-2">';
+                                        echo '<p><strong>'. $title . '</strong></p>';
+                                echo '</div>';
+                            }
+                            
+                            wp_reset_postdata();
+                        } 
+                            
+                    ?>
+                </div>
+            </div>
+        </div>
+
+        <!-- get involved end -->
+
+
         <!-- <div class="village-banner" style="background-image: url(<?php echo get_field('impact_village_banner'); ?>);"></div> -->
         <div class="testimony-banner">
             <div class="container d-flex">

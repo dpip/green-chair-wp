@@ -19,6 +19,7 @@
   align-items: center;
   margin-top: 50px;
   position: relative;
+
   h2 {
     font-weight: bold;
     font-size: 50px;
@@ -34,6 +35,7 @@
     flex-basis: auto;
     width: 100%;
     margin-bottom: 0px;
+
     span {
       height: 4px;
       background-color: $green;
@@ -41,6 +43,7 @@
       flex: 0 0 0px;
     }
   }
+
   .impact-accent {
     position: relative;
     display: inline-flex;
@@ -49,17 +52,21 @@
     flex-shrink: 0;
     flex-basis: auto;
     bottom: 10px !important;
+
     span {
       height: 4px;
       background-color: $green;
       flex: 0 0 0px;
     }
+
     .accentOne {
       animation: growAccentOne 1.7s ease-in forwards;
     }
+
     .accentTwo {
       animation: growAccentTwo 1.7s ease-in forwards;
     }
+
     .accentThree {
       animation: growAccentThree 1.7s ease-in forwards;
     }
@@ -70,22 +77,27 @@
   0% {
     flex: 0 0 0px;
   }
+
   100% {
     flex: 0 0 130px;
   }
 }
+
 @keyframes growAccentTwo {
   0% {
     flex: 0 0 0px;
   }
+
   100% {
     flex: 0 0 158px;
   }
 }
+
 @keyframes growAccentThree {
   0% {
     flex: 0 0 0px;
   }
+
   100% {
     flex: 0 0 150px;
   }
@@ -143,20 +155,15 @@
           left: 20 !important;
         }
 
-        &.chart-house-two {
-        }
+        &.chart-house-two {}
 
-        &.chart-house-three {
-        }
+        &.chart-house-three {}
 
-        &.chart-house-four {
-        }
+        &.chart-house-four {}
 
-        &.chart-house-five {
-        }
+        &.chart-house-five {}
 
-        &.chart-house-six {
-        }
+        &.chart-house-six {}
       }
     }
   }
@@ -175,8 +182,10 @@
   background-repeat: no-repeat;
   background-position: center center;
   color: #ffffff;
+
   .testimony-banner-img-wrap {
     display: flex;
+
     // align-items: center;
     // justify-content: center;
     .testimony-banner-img {
@@ -186,6 +195,7 @@
       background-position: center -15px;
       align-items: flex-end;
       height: 250px;
+
       p {
         margin: 0px;
         color: white;
@@ -194,9 +204,11 @@
       }
     }
   }
+
   .quote {
     // justify-content: center;
     align-items: center;
+
     // background-color: $pink;
     // background-color: rgba(218, 64, 109, 0.9);
     h4 {
@@ -227,6 +239,7 @@
   .row {
     padding: 40px 0px 40px 0px;
   }
+
   .impact-graphic {
     .graphic {
       background-size: cover;
@@ -242,6 +255,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
+
       .fa-couch {
         color: $green;
         font-size: 200px;
@@ -272,6 +286,7 @@
       }
     }
   }
+
   .impact-four {
     .impact-graphic {
       display: flex;
@@ -284,10 +299,12 @@
       }
     }
   }
+
   .impact-five {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
     .impact-graphic {
       height: 250px;
       width: 250px;
@@ -297,6 +314,7 @@
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
+
       .fa-hands-helping {
         color: $green;
         font-size: 175px;
@@ -304,14 +322,17 @@
     }
   }
 }
+
 .village-banner {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center -500px;
   height: 600px;
 }
+
 .testimony-quote {
   font-style: italic;
+
   span {
     color: $green;
     // font-size: 20px;
@@ -326,14 +347,17 @@
   opacity: 0;
   transform: translateX(-10px);
 }
+
 @keyframes moveplus {
   0% {
     opacity: 0;
     transform: translateX(-10px);
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 1;
     transform: translateX(0px);
@@ -351,6 +375,7 @@
     background-color: white;
     padding: 10px;
   }
+
   .testimony-card-bottom {
     position: relative;
     display: flex;
@@ -358,12 +383,14 @@
     align-items: center;
     flex-direction: column;
     margin-top: 40px;
+
     // background-color: $green;
     .testimony-avatar {
       position: absolute;
       top: -40px;
       height: 80px;
       width: 80px;
+
       img {
         height: 100%;
         width: 100%;
@@ -371,6 +398,7 @@
         object-fit: cover;
       }
     }
+
     .testimony-name {
       margin-top: 60px;
       color: white;
@@ -382,5 +410,12 @@
   h1 {
     color: $green;
     font-size: 3.5rem;
+  }
+}
+
+
+.supporters-list {
+  p {
+    display: none;
   }
 }

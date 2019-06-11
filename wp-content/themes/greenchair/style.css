@@ -1026,6 +1026,9 @@ a {
   color: #8cc441;
   font-size: 3.5rem; }
 
+.supporters-list p {
+  display: none; }
+
 .blog-page .jumbotron {
   background-size: cover;
   background-position: top center;
@@ -1123,6 +1126,9 @@ a {
   .get-involved .type h3 {
     color: #3a3a3a;
     font-size: 1.6rem; }
+
+.get-involved #supporters-list p {
+  text-align: left; }
 
 .get-involved #supporters-list .my-2 img {
   max-height: 130px;
