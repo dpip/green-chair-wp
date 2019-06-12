@@ -81,7 +81,7 @@ get_header(); ?>
                                         $linkedin = get_field('linkedin_url');
                                         $category = get_field('team_category');            
 
-                                        echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
+                                        echo '<div class="staff-item col-xs-12 col-sm-3 col-md-4 col-lg-3">';
                                                     echo '<div class="img-wrap">';
                                                         if (has_post_thumbnail()) {
                                                             echo $img; 
@@ -140,7 +140,7 @@ get_header(); ?>
                         $linkedin = get_field('email');
                         $category = get_field('team_category');
 
-                        echo '<div class="staff-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
+                        echo '<div class="staff-item col-xs-12 col-sm-3 col-md-4 col-lg-3">';
                                     echo '<div class="img-wrap">';
                                         if (has_post_thumbnail()) {
                                             echo $img; 

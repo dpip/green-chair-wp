@@ -47,10 +47,12 @@
 
 .staff-wrap {
     display: flex;
-    justify-content: center;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 
+    @include sm {
+        justify-content: center !important;
+    }
 }
 
 .staff-item {
@@ -59,42 +61,50 @@
     align-items: center;
     flex-direction: column;
     font-size: 16px;
-    width: 100%;
-    max-width: 16rem;
+    width: 25%;
+    min-width: 16rem;
     overflow: hidden;
-    margin: 1rem;
-    padding: 0px !important;
+    margin: 15px 0px;
     cursor: pointer;
 
-    &:hover {
-        .img-wrap {
-            transition: all .25s ease-in-out;
-            border: 1px solid rgba(0, 0, 0, 0.23);
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16),
-                0 2px 4px rgba(0, 0, 0, 0.23);
-            // background-color: $teal;
-            // color: white;
-            // transition: all .25s ease-in-out;
+    @include xl {
+        min-width: 12rem;
 
-            img {
-                object-fit: cover !important;
-                filter: grayscale(0);
-            }
+        .title-staff {
+            font-size: 1.2rem;
         }
 
+        .title-board {
+            font-size: 1.2rem;
+        }
+    }
+
+    @include md {
+        min-width: 16rem;
+    }
+
+    @include sm {
+        min-width: 16rem;
     }
 
     .img-wrap {
         background-color: #fff center center no-repeat;
         box-shadow: none;
-        // box-shadow: 0 0 3rem -1rem rgba(0, 0, 0, 0.5);
-
         border: 1px solid #dfdfdf;
         transition: all .25s ease-in-out;
+        height: 16rem;
+        width: 100%;
+
+        @include xl {
+            height: 12rem;
+        }
 
         img {
             min-width: 100%;
             height: 16rem;
+            width: 16rem;
+            width: 100%;
+            height: 100%;
             object-fit: cover !important;
             filter: grayscale(0.75);
             transition: all .25s ease-in-out;
@@ -102,8 +112,8 @@
     }
 
     .staff-placeholder {
-        width: 15.5rem;
-        height: 16rem;
+        min-width: 100%;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -112,7 +122,11 @@
         background-repeat: no-repeat;
         background-position: center center;
         color: $green;
-        // transition: all .25s ease-in-out;
+        min-width: 100%;
+
+        @include xl {
+            min-width: 100%;
+        }
 
 
         h4 {
@@ -129,6 +143,10 @@
         width: 100%;
         justify-content: center;
         align-items: flex-start;
+
+        @include xs {
+            min-height: 5.5rem;
+        }
 
         .title-container {
             text-align: center;
@@ -171,6 +189,20 @@
 
             &:hover {
                 color: $gray;
+            }
+        }
+    }
+
+    &:hover {
+        .img-wrap {
+            transition: all .25s ease-in-out;
+            border: 1px solid rgba(0, 0, 0, 0.23);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16),
+                0 2px 4px rgba(0, 0, 0, 0.23);
+
+            img {
+                object-fit: cover !important;
+                filter: grayscale(0);
             }
         }
     }

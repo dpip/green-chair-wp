@@ -84,7 +84,6 @@ get_header(); ?>
                 <i class="fas fa-home"></i>
             </div>
             </div>
-
             </div>
             <div class="col impact-duo-content">
                 <h1 class="green"><?php echo the_field('impact_section_two_lead_two'); ?></h1>    
@@ -155,7 +154,6 @@ get_header(); ?>
             </div>
         </div>
         </div>
-
 
         <!-- get involved start -->
 
