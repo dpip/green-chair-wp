@@ -309,3 +309,35 @@
         content: "Below";
     }
 }
+
+#team-bio-title {
+    color: $grayLight;
+
+    span {
+        // color: $teal;
+        color: $green;
+    }
+}
+
+.team-bio-position {
+    font-size: 20px;
+    color: $grayLight;
+    font-weight: 300;
+
+    span {
+        font-style: italic;
+    }
+}
+
+.fa-linkedin-in {
+    font-size: 20px;
+    color: #0079c1 !important;
+    color: $teal;
+    font-weight: bold;
+    padding: 0px 30px 30px 0px;
+}
+
+.teammate-bio-intro {
+    // color: $teal;
+    color: $green;
+}

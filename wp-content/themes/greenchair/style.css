@@ -795,6 +795,28 @@ a {
   .picture-direction::after {
     content: "Below"; } }
 
+#team-bio-title {
+  color: #767676; }
+  #team-bio-title span {
+    color: #8cc441; }
+
+.team-bio-position {
+  font-size: 20px;
+  color: #767676;
+  font-weight: 300; }
+  .team-bio-position span {
+    font-style: italic; }
+
+.fa-linkedin-in {
+  font-size: 20px;
+  color: #0079c1 !important;
+  color: #18a79d;
+  font-weight: bold;
+  padding: 0px 30px 30px 0px; }
+
+.teammate-bio-intro {
+  color: #8cc441; }
+
 .jumbo-impact {
   background-size: cover; }
   .jumbo-impact h1 {

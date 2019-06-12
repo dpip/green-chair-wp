@@ -79,9 +79,10 @@ get_header(); ?>
                                         $phone = get_field('phone_number');
                                         $email = get_field('email');
                                         $linkedin = get_field('linkedin_url');
-                                        $category = get_field('team_category');            
+                                        $category = get_field('team_category');
+                                        $link = get_the_permalink($id);            
 
-                                        echo '<div class="staff-item col-xs-12 col-sm-3 col-md-4 col-lg-3">';
+                                        echo '<a href="'. $link .'" class="staff-item col-xs-12 col-sm-3 col-md-4 col-lg-3">';
                                                     echo '<div class="img-wrap">';
                                                         if (has_post_thumbnail()) {
                                                             echo $img; 
@@ -89,7 +90,7 @@ get_header(); ?>
                                                             echo '<div class="staff-placeholder"><h4 class="title-staff">' . $title . '</h4></div>';
                                                         }
                                                     echo '</div>';
-                                                echo '</a>';
+                                                
                                                 echo '<div class="content-block d-flex">';
                                                     echo '<div class="title-container">';
                                                         if (has_post_thumbnail()) {
@@ -100,7 +101,7 @@ get_header(); ?>
                                                         echo '<p class="staff-position"><strong>'. $position . '</strong></p>';
                                                     echo '</div>';
                                                 echo '</div>';
-                                        echo '</div>';
+                                        echo '</a>';
                                     }                                   
                                     wp_reset_postdata();
                                 } else {
@@ -127,7 +128,6 @@ get_header(); ?>
                         )
                     ) 
                 );
-
                 if ( $the_query->have_posts() ) {
                     while ( $the_query->have_posts() ) {
                         $the_query->the_post();
@@ -139,8 +139,9 @@ get_header(); ?>
                         $phone = get_field('phone_number');
                         $linkedin = get_field('email');
                         $category = get_field('team_category');
+                        $link = get_the_permalink($id);
 
-                        echo '<div class="staff-item col-xs-12 col-sm-3 col-md-4 col-lg-3">';
+                        echo '<a href="'. $link .'" class="staff-item col-xs-12 col-sm-3 col-md-4 col-lg-3">';
                                     echo '<div class="img-wrap">';
                                         if (has_post_thumbnail()) {
                                             echo $img; 
@@ -148,13 +149,10 @@ get_header(); ?>
                                             echo '<div class="staff-placeholder title-board"><h4 class="title-board" style="padding: 4px;">' . $title . '</h4></div>';
                                         }
                                     echo '</div>';
-                                echo '</a>';
                                 echo '<div class="content-block d-flex">';
                                     echo '<div class="title-container">';
                                         if (has_post_thumbnail()) {
                                             echo '<h6 class="title-board" >'. $title . '<div class="horizontal-rule"></div></h6>';
-                                            // echo '<p><strong>'. $position . '</strong>, <span class="board-company">'. $company . '</span><div class="horizontal-rule"></div></p>';
-                                            // echo '<h6>'. $title . '<div class="horizontal-rule"></div></h6>';
                                         } 
                                         if (!empty($company)) {
                                             echo '<p><strong>'. $position . '</strong>, <span class="board-company">'. $company . '</span></p>';
@@ -163,7 +161,7 @@ get_header(); ?>
                                         }
                                     echo '</div>';
                                 echo '</div>';
-                        echo '</div>';
+                        echo '</a>';
                     }
                     wp_reset_postdata();
                 } else {
