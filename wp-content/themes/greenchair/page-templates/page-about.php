@@ -33,7 +33,7 @@ get_header(); ?>
         <div class="container" style="margin-top: 50px;">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-7 content">
-                    <h2><?php echo get_field('story_heading'); ?></h2>
+                    <h2 style="padding: 0rem 0rem 2rem 0rem;"><?php echo get_field('story_heading'); ?></h2>
                     <?php the_field('about_story_section'); ?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-5 content">
@@ -49,7 +49,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="container staff-container">
-            <h2><?php echo the_field('about_staff_heading'); ?></h2>
+            <h2 style="padding: 2rem 0rem 2rem 0rem;"><?php echo the_field('about_staff_heading'); ?></h2>
             <div class="row staff-wrap">
             <?php
                                 //Staff Items
@@ -111,7 +111,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="container board-container">
-            <h2><?php echo the_field('about_board_heading'); ?></h2>
+            <h2 style="padding: 0rem 0rem 2rem 0rem;"><?php echo the_field('about_board_heading'); ?></h2>
             <div class="row staff-wrap">
             <?php
                 //Board Items
@@ -171,7 +171,7 @@ get_header(); ?>
             </div>
         </div>
         <div class="container financials-container">
-            <h2><?php echo the_field('about_financials_heading'); ?></h2>
+            <h2 style="padding: 0rem 0rem 2rem 0rem;"><?php echo the_field('about_financials_heading'); ?></h2>
             <div class="row">
                 <div class="col-sm-12 col-md-8 col-lg-8">
                     <p><?php echo the_field('about_financials_lead_text'); ?></p>
@@ -200,3 +200,4 @@ get_header(); ?>
 </div><!-- #main-content -->
 
 <?php get_footer(); 
+

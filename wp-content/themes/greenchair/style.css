@@ -716,13 +716,15 @@ a {
       color: #18a79d; }
       .staff-item .staff-email-block .email-icon:hover {
         color: #3a3a3a; }
-  .staff-item:hover .img-wrap {
-    transition: all .25s ease-in-out;
-    border: 1px solid rgba(0, 0, 0, 0.23);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23); }
-    .staff-item:hover .img-wrap img {
-      object-fit: cover !important;
-      filter: grayscale(0); }
+  .staff-item:hover {
+    text-decoration: none; }
+    .staff-item:hover .img-wrap {
+      transition: all .25s ease-in-out;
+      border: 1px solid rgba(0, 0, 0, 0.23);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23); }
+      .staff-item:hover .img-wrap img {
+        object-fit: cover !important;
+        filter: grayscale(0); }
 
 .title-board {
   color: #18a79d !important; }
