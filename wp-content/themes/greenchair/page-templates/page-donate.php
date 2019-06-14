@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Donate Page
+Template Name: Give Page
  */
 get_header(); ?>
 
@@ -29,7 +29,7 @@ get_header(); ?>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-8  pt-5">
+			<div class="col-xs-12 col-sm-12 col-md-12 pt-5">
 				<div class="row">
 					<div class="col-xs-12 col-sm-12 col-md-6">
 						<div class="row">
@@ -100,23 +100,6 @@ get_header(); ?>
 						<div class="mt-5">
 							<?php the_field('donate_text_beneath_form'); ?>
 						</div>
-					</div>
-				</div>
-			</div>
-			<div class="sidebar-donate col-xs-12 col-sm-12 col-md-4">
-				<div class="inner pt-5">
-					<h2><?php the_field('sidebar_heading'); ?></h2>
-					<div class="my-5">
-						<a href="<?php the_field('sidebar_item_1_url'); ?>">
-						<img src="<?php the_field('sidebar_item_1_image'); ?>" class="img-fluid d-block" />
-						<h6 class="mt-3"><?php the_field('sidebar_item_1_heading'); ?></h6>
-						</a>
-					</div>
-					<div class="my-5">
-						<a href="<?php the_field('sidebar_item_2_url'); ?>">
-						<img src="<?php the_field('sidebar_item_2_image'); ?>" class="img-fluid d-block" />
-						<h6 class="mt-3"><?php the_field('sidebar_item_2_heading'); ?></h6>
-						</a>
 					</div>
 				</div>
 			</div>
