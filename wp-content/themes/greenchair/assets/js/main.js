@@ -48,7 +48,7 @@ jQuery(function ($) {
     let impactOne = $(".timerOne").attr("data-impactnum");
     let impactTwo = $(".timerTwo").attr("data-impactnum");
     let impactThree = $(".timerThree").attr("data-impactnum");
-    console.log(impactOne);
+
 
     $(".timerOne").countTo({
       from: 50,
