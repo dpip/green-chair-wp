@@ -346,7 +346,7 @@ a {
       padding: 10px 5px;
       line-height: 1; }
 
-.donate-page .jumbotron {
+.give-page .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: left center;
@@ -356,28 +356,28 @@ a {
   height: 60vh;
   margin-bottom: 0; }
 
-.donate-page h1 {
+.give-page h1 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2; }
 
-.donate-page h1,
-.donate-page h4 {
+.give-page h1,
+.give-page h4 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48); }
 
-.donate-page .content-container {
+.give-page .content-container {
   height: 60vh; }
 
-.donate-page .content {
+.give-page .content {
   background: rgba(0, 0, 0, 0.4); }
 
-.donate-page .inner-band {
+.give-page .inner-band {
   background: rgba(24, 167, 157, 0.8);
   padding: 30px;
   height: 60vh;
   text-align: center; }
 
-.donate-page .sidebar-donate .inner {
+.give-page .sidebar-donate .inner {
   background: #efefef;
   padding-left: 30px;
   padding-right: 30px;
@@ -1071,35 +1071,6 @@ a {
 .page-template-page-contact #footer {
   margin-top: 0; }
 
-.get-involved .jumbotron {
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat; }
-  .get-involved .jumbotron h1,
-  .get-involved .jumbotron p {
-    color: #ffffff;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48); }
-
-.get-involved #get-involved-types {
-  margin-top: -100px; }
-
-.get-involved .type {
-  text-align: center; }
-  .get-involved .type .img-wrap {
-    max-height: 170px;
-    overflow: hidden;
-    margin-bottom: 20px; }
-  .get-involved .type h3 {
-    color: #3a3a3a;
-    font-size: 1.6rem; }
-
-.get-involved #supporters-list p {
-  text-align: left; }
-
-.get-involved #supporters-list .my-2 img {
-  max-height: 130px;
-  width: auto; }
-
 .careers-intro h3 {
   margin-top: 25px; }
 
@@ -1147,3 +1118,19 @@ a {
     padding: 5px 10px; }
   .volunteer-page .news-item .continue {
     color: #8cc441; }
+
+.furniture-page .jumbotron {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #ffffff;
+  margin-bottom: 0;
+  min-height: 30vh; }
+
+.furniture-page h1 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48); }

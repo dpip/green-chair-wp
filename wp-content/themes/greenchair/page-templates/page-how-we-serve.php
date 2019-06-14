@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Impact Page
+Template Name: How We Serve Page
  */
 get_header(); ?>
 

@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Agency Partners Page
+Template Name: Who We Serve Page
  */
 get_header(); ?>
 
