@@ -84,15 +84,15 @@ get_header(); ?>
         <div id="news-events">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h2>News</h2>
+                    <div class="col-md-12">
+                        <h2>Our Blog</h2>
                         <div class="row">
                             <?php
                                 //News Items
                                 $the_query = new WP_Query( 
                                     array(
-                                        'post_type' => 'news-item', 
-                                        'posts_per_page' => 4
+                                        'post_type' => 'post', 
+                                        'posts_per_page' => 6
                                     ) 
                                 );
 
@@ -105,7 +105,7 @@ get_header(); ?>
                                         $link = get_the_permalink($id);
                                         $content = wp_trim_words(get_the_content(), 30, '...');
 
-                                        echo '<div class="news-item col-xs-12 col-sm-12 col-md-6">';
+                                        echo '<div class="news-item col-xs-12 col-sm-12 col-md-4">';
                                             echo '<div class="inner">';
                                                 echo '<a href="' . $link .'">';
                                                     echo '<div class="img-wrap">';
@@ -123,89 +123,15 @@ get_header(); ?>
                                     
                                     wp_reset_postdata();
                                 } else {
-                                    echo '<p>Unfortunately, we have no news at this time.</p>';
+                                    echo '<p>Unfortunately, we have no blogs at this time.</p>';
                                 }
                             ?>
                             <div class="col-sm-12">
-                                <a href="/news" class="btn btn-primary see-all">See all news</a>
+                                <a href="/blog" class="btn btn-primary see-all">See all blog posts</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <h2>Upcoming Events</h2>
-                        <div class="row">
-                            <?php
-                                //Event Items
-                                $yesterday = strtotime('yesterday 23:59:59');
-                                $the_query = new WP_Query( 
-                                    array(
-                                        'post_type'=>'events-item', 
-                                        'posts_per_page' => 3,  
-                                        'orderby' => 'meta_value', 
-                                        'order' => 'ASC',
-                                        'meta_query' => array(
-                                            array(
-                                                'key'     => 'events_end_date_edited',
-                                                'value'   => $yesterday,
-                                                'compare' => '>='
-                                            ),
-                                        )
-                                    ) 
-                                );
-
-                                if ( $the_query->have_posts() ) {
-
-                                    while ( $the_query->have_posts() ) {
-                                        $the_query->the_post();
-                                        $id = get_the_ID();
-                                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
-                                        $title = get_the_title($id);
-                                        $link = get_the_permalink($id);
-                                        $content = wp_trim_words(get_the_content(), 30, '...');
-                                        $date = get_post_meta($id, 'events_start_date', true);;
-
-                                        echo '<div class="event-item col-xs-12 col-sm-12 col-md-12">';
-                                                echo '<a href="' . $link .'">';
-                                                    echo '<div class="img-wrap">';
-                                                        echo $img;
-                                                    echo '</div>';
-                                                echo '</a>';
-                                                echo '<h5>'. $title . '</h5>';
-                                                echo '<p class="date"><i class="far fa-clock"></i> ' . $date . '</p>';
-                                                echo '<p>' . $content . '</p>';
-                                                echo '<a href="' . $link .'" class="learn-more">Learn more &raquo; </a>';
-                                        echo '</div>';
-                                    }
-                                    
-                                    wp_reset_postdata();
-                                } else {
-                                    echo '<div class="col-xs-12 col-sm-12">
-                                        <p>Unfortunately, we have no upcoming events at this time.</p>
-                                    </div>';
-                                }
-                            ?>
-                            <div class="col-sm-12">
-                                <a href="/events" class="btn btn-primary see-all">See all events</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="essentials">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 py-3">
-                        <hr class="mb-4" />
-                        <h3 class="text-center"><?php echo get_field('middle_2_section_heading_'); ?></h3>
-                    </div>
-                    <div class="essential-item">
-                        <img src="<?php echo get_field('middle_2_section_image'); ?>" class="img-fluid mx-auto" />
-                    </div>
-                    <div class="col-sm-12 pt-4 text-center">
-                        <?php the_field('middle_2_section_copy'); ?>
-                        <a href="<?php the_field('middle_2_section_cta_url'); ?>" class="btn btn-green" target="_blank"><?php the_field('middle_2_section_cta_text'); ?></a> 
-                    </div>
+                    
                 </div>
             </div>
         </div>
