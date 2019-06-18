@@ -1122,15 +1122,52 @@ a {
 .furniture-page .jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: left center;
   padding-top: 0;
   padding-bottom: 0;
   color: #ffffff;
-  margin-bottom: 0;
-  min-height: 30vh; }
+  height: 50vh;
+  margin-bottom: 0; }
+  .furniture-page .jumbotron .content {
+    background: rgba(0, 0, 0, 0.4); }
 
 .furniture-page h1 {
   font-size: 3.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.2; }
+
+.furniture-page h1,
+.furniture-page h4 {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.48); }
+
+.furniture-page .content-container {
+  height: 50vh; }
+
+.furniture-page .inner-band {
+  background: rgba(24, 167, 157, 0.8);
+  padding: 30px;
+  height: 50vh;
+  text-align: center; }
+
+.furniture-page .news-item {
+  margin: 40px 0;
+  -webkit-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1); }
+  .furniture-page .news-item .block-content {
+    padding: 30px; }
+  .furniture-page .news-item .date {
+    display: inline-block;
+    vertical-align: middle;
+    background: #8cc441;
+    color: #ffffff;
+    padding: 5px 10px;
+    margin-right: 5px; }
+  .furniture-page .news-item .source {
+    display: inline-block;
+    vertical-align: middle;
+    background: #8cc441;
+    color: #ffffff;
+    padding: 5px 10px; }
+  .furniture-page .news-item .continue {
+    color: #8cc441; }
