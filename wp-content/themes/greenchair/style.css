@@ -560,7 +560,7 @@ a {
     background-color: #fff center center no-repeat;
     box-shadow: none;
     border: 1px solid #dfdfdf;
-    transition: all .25s ease-in-out;
+    transition: all 0.25s ease-in-out;
     height: 16rem;
     width: 100%; }
     @media (max-width: 1200px) {
@@ -574,7 +574,7 @@ a {
       height: 100%;
       object-fit: cover !important;
       filter: grayscale(0.75);
-      transition: all .25s ease-in-out; }
+      transition: all 0.25s ease-in-out; }
   .staff-item .staff-placeholder {
     min-width: 100%;
     height: 100%;
@@ -631,7 +631,7 @@ a {
   .staff-item:hover {
     text-decoration: none; }
     .staff-item:hover .img-wrap {
-      transition: all .25s ease-in-out;
+      transition: all 0.25s ease-in-out;
       border: 1px solid rgba(0, 0, 0, 0.23);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.16), 0 2px 4px rgba(0, 0, 0, 0.23); }
       .staff-item:hover .img-wrap img {
@@ -680,7 +680,7 @@ a {
   display: flex; }
   .content-last-of .fab {
     font-size: 20px;
-    transition: all .15s ease-in; }
+    transition: all 0.15s ease-in; }
   .content-last-of .linkedin {
     height: 26px;
     display: flex;
@@ -1118,6 +1118,11 @@ a {
     padding: 5px 10px; }
   .volunteer-page .news-item .continue {
     color: #8cc441; }
+
+.box-image {
+  max-height: 225px !important;
+  width: 100%;
+  object-fit: cover; }
 
 .furniture-page .jumbotron {
   background-repeat: no-repeat;
