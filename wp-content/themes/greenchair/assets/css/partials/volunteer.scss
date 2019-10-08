@@ -47,7 +47,11 @@
 }
 
 .box-image {
-  max-height: 250px !important;
+  max-height: 200px !important;
   width: 100%;
   object-fit: cover;
+}
+
+ul {
+  padding-left: 60px !important;
 }
