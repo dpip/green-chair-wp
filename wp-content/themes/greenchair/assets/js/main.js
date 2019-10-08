@@ -1,6 +1,6 @@
-jQuery(function ($) {
-  $(document).ready(function () {
-    $.fn.countTo = function (options) {
+jQuery(function($) {
+  $(document).ready(function() {
+    $.fn.countTo = function(options) {
       // merge the default plugin settings with the custom options
       options = $.extend({}, $.fn.countTo.defaults, options || {});
 
@@ -8,7 +8,7 @@ jQuery(function ($) {
       var loops = Math.ceil(options.speed / options.refreshInterval),
         increment = (options.to - options.from) / loops;
 
-      return $(this).each(function () {
+      return $(this).each(function() {
         var _this = this,
           loopCount = 0,
           value = options.from,
@@ -49,13 +49,12 @@ jQuery(function ($) {
     let impactTwo = $(".timerTwo").attr("data-impactnum");
     let impactThree = $(".timerThree").attr("data-impactnum");
 
-
     $(".timerOne").countTo({
       from: 50,
       to: impactOne,
       speed: 1500,
       refreshInterval: 50,
-      onComplete: function (value) {
+      onComplete: function(value) {
         console.debug(this);
       }
     });
@@ -64,7 +63,7 @@ jQuery(function ($) {
       to: impactTwo,
       speed: 1500,
       refreshInterval: 50,
-      onComplete: function (value) {
+      onComplete: function(value) {
         console.debug(this);
       }
     });
@@ -73,9 +72,16 @@ jQuery(function ($) {
       to: impactThree,
       speed: 1500,
       refreshInterval: 50,
-      onComplete: function (value) {
+      onComplete: function(value) {
         console.debug(this);
       }
+    });
+    // $(function () {
+    //   $("a").fancybox();
+    // })
+    $("#etapIframe").hide();
+    $("#donate-btn").on("click", function() {
+      $("#pageRoot").show();
     });
   });
 });

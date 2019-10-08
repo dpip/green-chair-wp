@@ -105,8 +105,9 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
+	<!-- <script type="text/JavaScript" src="//app.etapestry.com/hosted/eTapestry.com/etapEmbedResponsiveResizing.js"></script><iframe id="etapIframe" style="border:none;width:100%;" src="https://app.etapestry.com/onlineforms/TheGreenChairProjectInc/contribute.html"></iframe> -->
+
 	<?php endwhile; ?>
 	<?php endif; ?>
 </div><!-- #main-content -->
-
 <?php get_footer();

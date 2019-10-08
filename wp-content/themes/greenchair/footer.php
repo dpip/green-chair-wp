@@ -22,7 +22,9 @@
                     </div>
                     <div class="col-sm">
                     <!--TODO: CODE neded -->
-                        Newsletter Sign Up Form (Code needed)
+                        <a href="/">Newsletter Sign Up Form (Code needed)</a>
+                        <br>
+                        <a href="/careers">Careers</a>
                     </div>
                 </div>
             </div>

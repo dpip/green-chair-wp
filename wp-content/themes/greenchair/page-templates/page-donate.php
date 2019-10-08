@@ -22,7 +22,7 @@ get_header(); ?>
 					<div class="inner-band d-flex flex-column justify-content-center align-items-center">
 						<h2><?php the_field('donate_green_bar_heading'); ?></h2>
 						<p><?php the_field('donate_green_bar_subhead'); ?></p>
-						<a class="btn btn-white" href="<?php the_field('donate_green_bar_cta_url'); ?>"><?php the_field('donate_green_bar_cta_text'); ?></a>
+						<a id="donate-btn" class="btn btn-white" href="<?php the_field('donate_green_bar_cta_url'); ?>"><?php the_field('donate_green_bar_cta_text'); ?></a>
 					</div>
 				</div>
 			</div>
