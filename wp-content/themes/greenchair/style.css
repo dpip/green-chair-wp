@@ -1120,7 +1120,7 @@ a {
     color: #8cc441; }
 
 .box-image {
-  max-height: 225px !important;
+  max-height: 250px !important;
   width: 100%;
   object-fit: cover; }
 
