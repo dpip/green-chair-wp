@@ -16,7 +16,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 //Globals
 @import "partials/variables";
-
+html,
 body {
   margin: 0;
   padding: 0;
@@ -24,6 +24,7 @@ body {
   font-family: $sansserif;
   font-weight: 400;
   color: $gray;
+  min-width: 100%;
 }
 
 h1 {
@@ -241,6 +242,42 @@ a {
 .sepia {
   filter: sepia(50%);
 }
+
+@media all and (max-width: 768px) {
+  .inner-band {
+    display: none !important;
+  }
+}
+
+// @media all and (max-width: 480px) {
+//   .navbar.navbar-light .navbar-brand img {
+//     width: 270px !important;
+//   }
+//   .financials-item:nth-of-type(2) {
+//     margin-bottom: 60px;
+//   }
+//   .display-3 {
+//     line-height: 1 !important;
+//     font-size: 3.5rem !important;
+//   }
+//   .stat-container {
+//     height: auto;
+//     .row {
+//       height: auto;
+//     }
+//     .impact-graphic {
+//       display: none !important;
+//     }
+//   }
+//   .testimony-banner {
+//     height: 325px !important;
+//   }
+//   .page-template-default {
+//     ul {
+//       padding-left: 20px !important;
+//     }
+//   }
+// }
 
 //Additional Styles
 @import "partials/navbar";

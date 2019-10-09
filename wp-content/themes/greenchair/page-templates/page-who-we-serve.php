@@ -44,11 +44,11 @@ get_header(); ?>
                         echo '</div>';
 
                     }
-                    echo '<div class="col-6 careers-volunteer careers-container">';
-                            echo '<h2 class="green">Nothing Jumping Out?</h2>';
-                            echo '<p style="padding-bottom: 20px;">If the current positions do not seem like the best fit you are more than welcome to Join Team Green Chair as a volunteer!</p>';
-                            echo '<a href="/get-involved" class="btn btn-green">Get Involved</a>';
-                    echo '</div>';
+                    // echo '<div class="col-6 careers-volunteer careers-container">';
+                    //         echo '<h2 class="green">Nothing Jumping Out?</h2>';
+                    //         echo '<p style="padding-bottom: 20px;">If the current positions do not seem like the best fit you are more than welcome to Join Team Green Chair as a volunteer!</p>';
+                    //         echo '<a href="/get-involved" class="btn btn-green">Get Involved</a>';
+                    // echo '</div>';
                     wp_reset_postdata();
                 } else {
                     echo '<div class="col-9">';

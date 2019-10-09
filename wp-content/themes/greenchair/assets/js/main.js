@@ -76,12 +76,5 @@ jQuery(function($) {
         console.debug(this);
       }
     });
-    // $(function () {
-    //   $("a").fancybox();
-    // })
-    $("#etapIframe").hide();
-    $("#donate-btn").on("click", function() {
-      $("#pageRoot").show();
-    });
   });
 });

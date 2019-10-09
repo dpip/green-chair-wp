@@ -1,4 +1,4 @@
-@import '_variables';
+@import "_variables";
 
 .give-page {
   .jumbotron {
@@ -16,7 +16,6 @@
     font-size: 3.5rem;
     font-weight: 300;
     line-height: 1.2;
-
   }
 
   h1,
@@ -30,7 +29,6 @@
 
   .content {
     background: rgba(0, 0, 0, 0.4);
-
   }
 
   .inner-band {
@@ -54,4 +52,29 @@
   #footer {
     margin: 0;
   }
+}
+
+#etapIframe {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#pageRoot {
+  margin: 0px !important;
+  background-color: red !important;
+  display: none !important;
+}
+#pageContent {
+  margin: 0px !important;
+}
+
+#gift_information_region {
+  background-color: red !important;
+}
+
+.pageBlock {
+  background-color: red !important;
+}
+#page_bottom_region {
+  background-color: red !important;
 }

@@ -428,7 +428,7 @@ get_header(); ?>
                         $category = get_field('team_category');
 
 
-                        echo '<div class="col col-4 col-md-4 col-sm-6">';
+                        echo '<div class="col col-md-4 col-sm-12 col-xs-12">';
                             echo '<div class="testimony-card">';
                                 echo '<div class="testimony-card-top">';
                                 echo '<p class="testimony-quote"><span>"</span>' . $quote . '<span>"</span></p>';
