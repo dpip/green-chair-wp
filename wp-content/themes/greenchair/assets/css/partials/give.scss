@@ -78,3 +78,34 @@
 #page_bottom_region {
   background-color: red !important;
 }
+
+#Pot,
+#Spoon,
+#Spatula {
+  .cls-1 {
+    stroke-width: 1px !important;
+  }
+}
+
+.give-stat-container {
+  .row {
+    position: relative;
+    min-height: 50px;
+    .stat-container {
+      h2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      svg {
+        width: 100%;
+        height: 100px;
+      }
+    }
+    .gift-description {
+      p {
+        padding-left: 20px;
+      }
+    }
+  }
+}

@@ -432,6 +432,24 @@ a {
 #page_bottom_region {
   background-color: red !important; }
 
+#Pot .cls-1,
+#Spoon .cls-1,
+#Spatula .cls-1 {
+  stroke-width: 1px !important; }
+
+.give-stat-container .row {
+  position: relative;
+  min-height: 50px; }
+  .give-stat-container .row .stat-container h2 {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .give-stat-container .row .stat-container svg {
+    width: 100%;
+    height: 100px; }
+  .give-stat-container .row .gift-description p {
+    padding-left: 20px; }
+
 .home-page .jumbotron {
   background-size: contain;
   background-position: top right;

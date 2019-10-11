@@ -427,7 +427,6 @@ get_header(); ?>
                         $quote = get_the_content($id);
                         $category = get_field('team_category');
 
-
                         echo '<div class="col col-md-4 col-sm-12 col-xs-12">';
                             echo '<div class="testimony-card">';
                                 echo '<div class="testimony-card-top">';
