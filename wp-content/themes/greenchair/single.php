@@ -6,7 +6,7 @@ get_header(); ?>
 	<?php if(!empty($backgroundimage)){ ?>
 	<div class="jumbotron py-0">
         <img src="<?php echo $backgroundimage ?>" class="img-fluid mx-auto d-block" />
-        
+
     </div>
     <?php } ?>
 	<div class="container py-4">
@@ -18,23 +18,23 @@ get_header(); ?>
 		            <ul class="categories">
 		            	<?php
 						$post_categories = wp_get_post_categories( get_the_ID());
-						     
+
 						foreach($post_categories as $c){
 							$cat = get_category( $c );
 							echo '<li><a href="'. get_category_link( $cat->term_id ). '"><i class="far fa-folder-open"></i> ' . $cat->name . '</a></li>';
-						    
-						    
+
+
 						} ?>
 		            </ul>
 		            <hr />
-		    		 <?php the_content(); ?>	
+		    		 <?php the_content(); ?>
 		    	<?php endwhile; ?>
-		    	<?php endif; ?>  
+		    	<?php endif; ?>
 		    </div><!--offset-column-->
-    	</div>	
-	</div>	
-	
+    	</div>
+	</div>
+
 </div><!-- #main-content -->
 
-<?php get_footer(); 
+<?php get_footer();
 	

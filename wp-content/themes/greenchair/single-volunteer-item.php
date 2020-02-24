@@ -24,12 +24,12 @@ get_header(); ?>
 		            <ul class="categories">
 		            	<?php
 						$post_categories = wp_get_post_categories( get_the_ID());
-						     
+
 						foreach($post_categories as $c){
 							$cat = get_category( $c );
 							echo '<li><a href="'. get_category_link( $cat->term_id ). '"><i class="far fa-folder-open"></i> ' . $cat->name . '</a></li>';
-						    
-						    
+
+
 						} ?>
 		            </ul>
 					<hr />
@@ -39,11 +39,11 @@ get_header(); ?>
                      <div style="margin-top: 40px;">
                      </div>
 		    	<?php endwhile; ?>
-		    	<?php endif; ?>  
+		    	<?php endif; ?>
 		    </div><!--offset-column-->
-    	</div>	
-	</div>	
-	
+    	</div>
+	</div>
+
 </div><!-- #main-content -->
 
-<?php get_footer(); 
+<?php get_footer();
