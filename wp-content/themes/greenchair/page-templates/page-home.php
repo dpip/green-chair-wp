@@ -21,50 +21,50 @@ get_header(); ?>
         <div id="features">
             <div class="container py-4">
                 <div class="row text-center">
-                    <div class="col-xs-12 col-sm-12 col-md-3 feature">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 feature">
                         <div class="inner">
                             <div class="img-container">
                                 <img src="<?php the_field('home_block_1_image'); ?>" alt="<?php the_field('home_block_1_text'); ?> image" />
                             </div>
-                            <h6><?php the_field('home_block_1_text'); ?></h6>
-                            <p><?php the_field('home_block_1_description'); ?></p>
+                            <h6 class="home-block-title"><?php the_field('home_block_1_text'); ?></h6>
+                            <p class="home-block-sub"><?php the_field('home_block_1_description'); ?></p>
                             <a href="<?php the_field('home_block_1_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_1_cta_text'); ?></a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 feature">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 feature">
                         <div class="inner">
                             <div class="img-container">
                                 <img src="<?php the_field('home_block_2_image'); ?>" alt="<?php the_field('home_block_2_text'); ?> image" />
                             </div>
-                            <h6><?php the_field('home_block_2_text'); ?></h6>
-                            <p><?php the_field('home_block_2_description'); ?></p>
+                            <h6 class="home-block-title"><?php the_field('home_block_2_text'); ?></h6>
+                            <p class="home-block-sub"><?php the_field('home_block_2_description'); ?></p>
                             <a href="<?php the_field('home_block_2_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_2_cta_text'); ?></a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 feature">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 feature">
                         <div class="inner">
                             <div class="img-container">
                                 <img src="<?php the_field('home_block_3_image'); ?>" alt="<?php the_field('home_block_3_text'); ?> image" />
                             </div>
-                            <h6><?php the_field('home_block_3_text'); ?></h6>
-                            <p><?php the_field('home_block_3_description'); ?></p>
+                            <h6 class="home-block-title"><?php the_field('home_block_3_text'); ?></h6>
+                            <p class="home-block-sub"><?php the_field('home_block_3_description'); ?></p>
                             <a href="<?php the_field('home_block_3_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_3_cta_text'); ?></a>
                         </div>
                     </div>
-                    <div class="col-xs-12 col-sm-12 col-md-3 feature">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3 feature">
                         <div class="inner">
                             <div class="img-container">
                                 <img src="<?php the_field('home_block_4_image'); ?>" alt="<?php the_field('home_block_4_text'); ?> image" />
                             </div>
-                            <h6><?php the_field('home_block_4_text'); ?></h6>
-                            <p><?php the_field('home_block_4_description'); ?></p>
+                            <h6 class="home-block-title"><?php the_field('home_block_4_text'); ?></h6>
+                            <p class="home-block-sub"><?php the_field('home_block_4_description'); ?></p>
                             <a href="<?php the_field('home_block_4_cta_url'); ?>" class="btn btn-green"><?php the_field('home_block_4_cta_text'); ?></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="about" class="woodbackground">
+        <div id="about" class="hexbackground">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5 py-5">
@@ -81,7 +81,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div id="news-events">
+        <!-- <div id="news-events">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -134,7 +134,7 @@ get_header(); ?>
                     
                 </div>
             </div>
-        </div>
+        </div> -->
         <div id="home-bottom">
             <div class="container-fluid">
                 <div class="row">

@@ -149,6 +149,15 @@ a {
   color: #ffffff;
 }
 
+.hexbackground {
+  background-image: url("assets/images/hexpattern.jpg");
+  background-size: cover;
+  background-color: $green;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  color: #ffffff;
+}
+
 .videoWrapper {
   iframe {
     max-width: 100%;

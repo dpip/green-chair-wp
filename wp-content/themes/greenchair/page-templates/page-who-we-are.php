@@ -56,7 +56,7 @@ get_header(); ?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">
                     <h6>Audited Financials<div class="horizontal-rule"></div></h6>
-                    <p>The Green Chair Project performed its first annual independent audit that includes financial position, compliance information, and related statements of activities.</p>
+                    <p>The Green Chair Project performed its first annual independent audit that includes financial position, compliance information and related statements of activities.</p>
                     <a href="https://www.thegreenchair.org/site_data/thegreenchair/editor_assets/The_Green_Chair_Project_Audited_Financial_Statements_2017.pdf">View our most recent Audited Financial Statements »</a>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4 financials-item">

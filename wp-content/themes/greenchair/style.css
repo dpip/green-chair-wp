@@ -119,6 +119,14 @@ a {
   background-position: bottom center;
   color: #ffffff; }
 
+.hexbackground {
+  background-image: url("assets/images/hexpattern.jpg");
+  background-size: cover;
+  background-color: #8cc441;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  color: #ffffff; }
+
 .videoWrapper iframe {
   max-width: 100%; }
 
@@ -363,13 +371,19 @@ a {
     max-width: 200px; }
   #footer #social-links {
     list-style-type: none;
-    padding-left: 0;
+    padding-left: 0px !important;
     color: #ffffff; }
     #footer #social-links li {
       display: inline-block;
       font-size: 3rem;
       padding: 10px 5px;
       line-height: 1; }
+
+.footer-contact-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; }
 
 .give-page .jumbotron {
   background-repeat: no-repeat;
@@ -562,6 +576,12 @@ a {
 
 .page-template-page-home #footer {
   margin-top: 0; }
+
+@media only screen and (max-width: 844px) {
+  .home-block-title {
+    color: white; }
+  .home-block-sub {
+    color: white; } }
 
 .doc-wrap {
   display: flex; }

@@ -398,7 +398,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container" style="padding-top: 40px;">
+        <!-- <div class="container" style="padding-top: 40px;">
             <h1>What others are saying about The Green Chair</h1>
            
             <div class="row">            
@@ -445,7 +445,7 @@ get_header(); ?>
                 }
             ?>
             </div>
-         </div>
+         </div> -->
         </div>
     <?php endwhile; ?>
     <?php endif; ?>
