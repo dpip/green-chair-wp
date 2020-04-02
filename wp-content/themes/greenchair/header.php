@@ -25,18 +25,32 @@
     <body <?php body_class(); ?>>
         <div id="wrapper">
             <div id="main">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="container-fluid flex-lg-column ">
-                        <a class="navbar-brand" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/assets/images/tgcplogo.svg" /></a>
-                        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <?php wp_nav_menu( array( 'theme_location' => 'main_navigation', 'container' => false, 'menu' => 'main-navigation', 'menu_class'=> 'navbar-nav ml-auto', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
+                <nav id="nav-cta-wrapper" class="navbar sticky-top navbar-expand-xl navbar-light bg-light">
+                    <div class="container-fluid flex-xl-column">
+                        <a class="navbar-brand" href="<?php echo site_url(); ?>"><img class="brand-desktop" src="<?php bloginfo('template_directory'); ?>/assets/images/tgcplogo.svg" /></a>
+                        
+                        <div class="nav-cta-wrap">
+                            <a href="/donate" class="btn btn-primary">Donate</a>
+                            <a href="/give" class="btn btn-green">Support</a>
+                        
+                            <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                            </button> -->
+                            <div class="three">
+                                <div class="navbar-toggler collapsed hamburger" id="hamburger-1">
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                <span class="line"></span>
+                                </div>
+                            </div>
                         </div>
+                        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+                            <?php wp_nav_menu( array( 'theme_location' => 'main_navigation', 'container' => false, 'menu' => 'main-navigation', 'menu_class'=> 'navbar-nav ml-auto', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
+                        <!-- </div> -->
                     </div>
+                    <a class="navbar-brand-mobile" href="<?php echo site_url(); ?>"><img  src="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico" /><span class="brand-text"><span>The</span> Green Chair</span>
+                    </span></a>
                 </nav>
         

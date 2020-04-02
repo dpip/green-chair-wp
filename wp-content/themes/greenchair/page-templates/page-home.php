@@ -81,18 +81,18 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <!-- <div id="news-events">
+        <div id="news-events">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h2>Our Blog</h2>
+                        <h2>What's happening at Greenchair</h2>
                         <div class="row">
                             <?php
                                 //News Items
                                 $the_query = new WP_Query( 
                                     array(
                                         'post_type' => 'post', 
-                                        'posts_per_page' => 6
+                                        'posts_per_page' => 3
                                     ) 
                                 );
 
@@ -127,14 +127,14 @@ get_header(); ?>
                                 }
                             ?>
                             <div class="col-sm-12">
-                                <a href="/blog" class="btn btn-primary see-all">See all blog posts</a>
+                                <a href="/blog" class="btn btn-primary see-all">See more</a>
                             </div>
                         </div>
                     </div>
                     
                 </div>
             </div>
-        </div> -->
+        </div>
         <div id="home-bottom">
             <div class="container-fluid">
                 <div class="row">
