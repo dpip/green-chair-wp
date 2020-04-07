@@ -32,12 +32,6 @@
                         <div class="nav-cta-wrap">
                             <a href="/donate" class="btn btn-primary">Donate</a>
                             <a href="/give" class="btn btn-green">Support</a>
-                        
-                            <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                            </button> -->
                             <div class="three">
                                 <div class="navbar-toggler collapsed hamburger" id="hamburger-1">
                                 <span class="line"></span>
@@ -46,11 +40,20 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-                            <?php wp_nav_menu( array( 'theme_location' => 'main_navigation', 'container' => false, 'menu' => 'main-navigation', 'menu_class'=> 'navbar-nav ml-auto', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
-                        <!-- </div> -->
+                        <?php wp_nav_menu( array( 'theme_location' => 'main_navigation', 'container' => false, 'menu' => 'main-navigation', 'menu_class'=> 'navbar-nav ml-auto', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
                     </div>
-                    <a class="navbar-brand-mobile" href="<?php echo site_url(); ?>"><img  src="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico" /><span class="brand-text"><span>The</span> Green Chair</span>
-                    </span></a>
+                    <a class="navbar-brand-mobile" href="<?php echo site_url(); ?>"><img  src="<?php bloginfo('template_directory'); ?>/assets/images/chair.png" /><span class="brand-text"><span>The</span> Green Chair</span></span></a>
+                    <?php if( get_field('notification_banner_') ): ?>
+                        <section id="notification-banner">
+                            <div class="notification-content">
+                                <?php if( get_field('notification_text') ): ?>
+                                    <span>!</span>
+                                    &nbsp;&nbsp; <?php the_field('notification_text'); ?>
+                                    <a href="<?php the_field('notification_button_link'); ?>" ><?php the_field('notification_button_text'); ?></a>
+                                 <?php endif; ?>
+                            </div> 
+                            <div class="close-banner">X</div>
+                        </section>
+                    <?php endif; ?>
                 </nav>
         

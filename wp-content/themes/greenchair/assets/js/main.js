@@ -100,4 +100,8 @@ jQuery(function ($) {
       $(this).addClass('open');
     }
   })
+
+  $('.close-banner').on('click', function () {
+    $('#notification-banner').hide();
+  })
 });

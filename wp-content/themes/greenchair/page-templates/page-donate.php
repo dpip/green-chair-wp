@@ -30,10 +30,10 @@ get_header(); ?>
 	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-8 pt-5">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pt-5">
 				<?php the_content(); ?>
 			</div>
-            <div class="col-xs-12 col-sm-12 col-md-4 pt-5">
+            <div class="donate-card-wrap col-xs-12 col-sm-12 col-md-12 pt-5">
 				<div class="news-item">
 					<div class="block-content">
 						<a class="continue float-right" href="<?php the_field('donate_sidebar_url_1'); ?>">

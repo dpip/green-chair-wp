@@ -5,12 +5,13 @@ Template Name: Home Page
 get_header(); ?>
 
 <div id="main-content" class="home-page">
+    
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <?php $backgroundimage = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
         <div class="jumbotron d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo $backgroundimage ?>);">
             <div class="container">
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                    <div class="left-mobile col-xs-12 col-sm-12 col-md-8 col-lg-6">
                         <h1 class="my-3 display-3"><?php echo get_the_title(); ?></h1>
                         <?php the_content(); ?>
                         <a href="<?php the_field('home_cta_url'); ?>" class="btn btn-white"><?php the_field('home_cta_text'); ?></a>
@@ -105,7 +106,7 @@ get_header(); ?>
                                         $link = get_the_permalink($id);
                                         $content = wp_trim_words(get_the_content(), 30, '...');
 
-                                        echo '<div class="news-item col-xs-12 col-sm-12 col-md-4">';
+                                        echo '<div class="news-item col-xs-12 col-sm-12 col-md-6 col-lg-4">';
                                             echo '<div class="inner">';
                                                 echo '<a href="' . $link .'">';
                                                     echo '<div class="img-wrap">';
@@ -138,7 +139,7 @@ get_header(); ?>
         <div id="home-bottom">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col left" style="background-image:url('<?php the_field('bottom_section_image'); ?>');">
+                    <div class="hide col left" style="background-image:url('<?php the_field('bottom_section_image'); ?>');">
                     </div>
                     <div class="col right woodbackground">
                         <div class="text-center align-middle">

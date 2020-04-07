@@ -91,10 +91,22 @@ get_header(); ?>
             </div>
         </div>
         </div>
-        <div class="jumbotron stat-banner" style="background-image: url(<?php echo get_field('impact_section_three_banner'); ?>);">
+        <!-- <div class="jumbotron stat-banner" style="background-image: url(<?php echo get_field('impact_section_three_banner'); ?>);">
             <div class="container">
                     <h1 style="border-bottom: 4px solid white; display: inline-block; font-size: 3.5rem;"><div style="margin: 0 auto;"><strong><?php echo the_field('impact_section_three_banner_title_top'); ?></strong></div></h1>
                     <h4><?php echo the_field('impact_section_three_banner_title_bottom'); ?></h4>
+            </div>
+        </div> -->
+        <div class="testimony-banner" style="margin-top: 60px;">
+            <div class="container d-flex">
+                <div class="col testimony-banner-img-wrap">
+                    <div class="testimony-banner-img d-flex" style="background-image: url(<?php echo get_field('impact_testimony_banner_image'); ?>);">
+                        <p><?php echo get_field('impact_testimony_banner_image_caption'); ?></p>
+                    </div>
+                </div>
+                <div class="col quote d-flex ">
+                    <h4 style="font-style: italic;"><?php echo the_field('impact_section_four_banner_title'); ?></h4>
+                </div>
             </div>
         </div>
         <div style="background-color: #F8FAFC">
@@ -118,7 +130,11 @@ get_header(); ?>
             </div>
             <div class="row impact-three">
                 <div class="col impact-graphic">
-                    <div class="graphic" style="background-image: url(<?php echo get_field('impact_section_three_row_three_graphic'); ?>);"></div>
+                    <!-- <div class="graphic" style="background-image: url(<?php echo get_field('impact_section_three_row_three_graphic'); ?>);"></div> -->
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player
+    src="https://assets5.lottiefiles.com/packages/lf20_KqyKvM.json"  background="transparent"  speed="0.1"  style="width: 300px; height: 300px;"  loop  autoplay >
+</lottie-player>
                 </div>
                 <div class="col impact-breakdown">
                 <h1><?php echo the_field('impact_section_three_row_three_title'); ?></h1>
@@ -131,12 +147,20 @@ get_header(); ?>
                 <h4 class="teal"><?php echo the_field('impact_section_three_row_four_content'); ?></h4>
                 </div>
                 <div class="col impact-graphic">
-                    <i class="fas fa-hand-holding-heart"></i>
+                    <!-- <i class="fas fa-hand-holding-heart"></i> -->
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player
+    src="https://assets7.lottiefiles.com/packages/lf20_kUtZZs.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop controls autoplay >
+</lottie-player>
                 </div>
             </div>
             <div class="row impact-five">
                 <div class="col impact-graphic">
-                <i class="fas fa-hands-helping"></i>
+                <!-- <i class="fas fa-hands-helping"></i> -->
+                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player
+                        src="https://assets6.lottiefiles.com/packages/lf20_HjyVnF.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay >
+                    </lottie-player>
                 </div>
                 <div class="col impact-breakdown">
                 <h1><?php echo the_field('impact_section_three_row_five_title'); ?></h1>
@@ -149,7 +173,10 @@ get_header(); ?>
                 <h4 class="teal">by companies and organizations who help support The Green Chair!</h4>
                 </div>
                 <div class="col impact-graphic">
-                    placeholder
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player
+    src="https://assets2.lottiefiles.com/temp/lf20_5zyRML.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay >
+</lottie-player>
                 </div>
             </div>
         </div>
@@ -157,7 +184,7 @@ get_header(); ?>
 
         <!-- get involved start -->
 
-        <div id="supporters-list">
+        <!-- <div id="supporters-list">
             <div class="container">
                 <div class="row">    
                     <div class="col-sm-12 d-inline-flex">
@@ -380,41 +407,20 @@ get_header(); ?>
                     ?>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <!-- get involved end -->
+        
+        <div class="container" style="margin-bottom: 60px;">
+            <h1 style="margin-top: 60px; margin-bottom: 60px;">Organizations we support</h1>
+        <div class="row">
+            
+        <?php
+                //Agency Partner Items
 
-
-        <!-- <div class="village-banner" style="background-image: url(<?php echo get_field('impact_village_banner'); ?>);"></div> -->
-        <div class="testimony-banner">
-            <div class="container d-flex">
-                <div class="col testimony-banner-img-wrap">
-                    <div class="testimony-banner-img d-flex" style="background-image: url(<?php echo get_field('impact_testimony_banner_image'); ?>);">
-                        <p><?php echo get_field('impact_testimony_banner_image_caption'); ?></p>
-                    </div>
-                </div>
-                <div class="col quote d-flex ">
-                    <h4 style="font-style: italic;"><?php echo the_field('impact_section_four_banner_title'); ?></h4>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="container" style="padding-top: 40px;">
-            <h1>What others are saying about The Green Chair</h1>
-           
-            <div class="row">            
-                <?php
-                //Board Items
                 $the_query = new WP_Query( 
                     array(
-                        'post_type' => 'testimony-item',
-                        'posts_per_page' => -1,
-                        'tax_query' => array(
-                            array(
-                                'taxonomy' => 'testimony_category',
-                                'field'    => 'slug',
-                                'terms'    => 'impact-testimony',
-                            ),
-                        )
+                        'post_type' => 'agency-partners-item',
+                        'posts_per_page' => -1
                     ) 
                 );
 
@@ -422,33 +428,45 @@ get_header(); ?>
                     while ( $the_query->have_posts() ) {
                         $the_query->the_post();
                         $id = get_the_ID();
-                        $img = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
+                        $logo = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
                         $title = get_the_title($id);
-                        $quote = get_the_content($id);
-                        $category = get_field('team_category');
+                        $partnerName = get_field('partner_name');
+                        $link = get_field('partner_link');
 
-                        echo '<div class="col col-md-4 col-sm-12 col-xs-12">';
-                            echo '<div class="testimony-card">';
-                                echo '<div class="testimony-card-top">';
-                                echo '<p class="testimony-quote"><span>"</span>' . $quote . '<span>"</span></p>';
-                                echo '</div>';
-                                echo '<div class="testimony-card-bottom woodbackground">';
-                                    echo '<div class="testimony-avatar">' . $img . '</div>';
-                                    echo '<p class="testimony-name"><span class="">&ndash;</span> ' . $title . '</p>';
-                                echo '</div>';
-                            echo '</div>';
+                        echo '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 agency-partners-container">';
+                        echo '<a href="'. $link .'"><img alt="" src="'. $logo .'"></img></a>';
+                            echo '<p class="careers-available-title">' . $partnerName . '</p>';
                         echo '</div>';
+
                     }
+                    
                     wp_reset_postdata();
                 } else {
-                    echo '<p>Check out our Facebook page!</p>';
+                    echo '<div class="col-9">';
+                        echo '<h4 class="fallback-header">Thank you for your interest in working with The Green Chair Project!</h4>';
+                    echo '</div>';
+                    echo '<div class="col-9">';
+                        echo '<p class="fall-back-content">Currently we do not have any staff openings available, but we always have room for more volunteers!  Take a look at our volunteer page and come get to know us.  We look forward to seeing you soon!</p>';
+                        echo '<a href="/get-involved" class="btn btn-green">Get Involved</a>';
+                    echo '</div>';
                 }
             ?>
-            </div>
-         </div> -->
+
         </div>
+    </div>  
+
+        <!-- get involved end -->
+
+
+        <!-- <div class="village-banner" style="background-image: url(<?php echo get_field('impact_village_banner'); ?>);"></div> -->
+        
+    </div>
     <?php endwhile; ?>
     <?php endif; ?>
 </div><!-- #main-content -->
+<!-- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player
+    src="https://assets1.lottiefiles.com/datafiles/HlIGYbSpHNmLYD5/data.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" autoplay >
+</lottie-player> -->
 
 <?php get_footer(); 

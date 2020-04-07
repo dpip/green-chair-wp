@@ -72,3 +72,21 @@
     }
   }
 }
+
+.donate-card-wrap {
+  display: flex;
+  padding-bottom: 30px;
+  .news-item {
+      width: calc(100% / 3);
+      margin: 5px;
+    }
+}
+
+@media (max-width: 767.98px) { 
+  .donate-card-wrap {
+    display: block;
+    .news-item {
+      width: 100%;
+    }
+  }
+}

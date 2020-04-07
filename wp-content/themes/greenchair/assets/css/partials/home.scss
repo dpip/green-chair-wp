@@ -2,13 +2,12 @@
 
 .home-page {
     .jumbotron {
-        background-size: contain;
-        background-position: top right;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         margin-bottom: 0;
         background-color: #c2c0b9;
         min-height: 600px;
-
         h1 {
             color: #ffffff;
         }
@@ -19,6 +18,10 @@
 
         .btn-white {
             margin-top: 20px;
+        }
+        .left-mobile {
+            justify-content: flex-start;
+            text-align: left;
         }
     }
 
@@ -35,7 +38,7 @@
                 text-align: center;
 
                 .img-container {
-                    max-height: 140px;
+                    // max-height: 140px;
                     margin-bottom: 15px;
 
                     img {
@@ -46,7 +49,7 @@
 
                 p {
                     padding: 0 20px;
-                    min-height: 50px;
+                    // min-height: 50px;
                 }
             }
         }
@@ -148,6 +151,7 @@
             background-size: cover;
             background-position: center;
             min-height: 400px;
+            display: none;
         }
 
         .right {
@@ -161,6 +165,9 @@
             margin-left: auto;
             margin-right: auto;
         }
+        .col {
+            margin: 0px;
+        }
     }
 }
 
@@ -170,11 +177,34 @@
     }
 }
 
-@media only screen and (max-width: 844px) {
-    .home-block-title {
-        color: white;
+
+@media (min-width: 1200px) {
+        .home-page {
+            .jumbotron {
+                background-size: contain;
+                background-position: top right;
+            }
         }
-    .home-block-sub {
-        color: white;
+        .left-mobile {
+            justify-content: center;
+            text-align: center !important;
+        }
+}
+
+@media (min-width: 768px) { 
+    #home-bottom {
+        .left {
+            display: block !important;
+        }
+        .col {
+            margin: 1% 0 1% 1.6%;
+        }
+    }
+    #features {
+        .inner {
+            p {
+                min-height: 50px;
+            }
+        }
     }
 }
