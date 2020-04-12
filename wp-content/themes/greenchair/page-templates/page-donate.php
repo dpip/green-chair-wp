@@ -28,45 +28,54 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row">
+	<div id="news-events">
+		<div class="container">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pt-5">
-				<?php the_content(); ?>
-			</div>
-            <div class="donate-card-wrap col-xs-12 col-sm-12 col-md-12 pt-5">
-				<div class="news-item">
-					<div class="block-content">
-						<a class="continue float-right" href="<?php the_field('donate_sidebar_url_1'); ?>">
-							<img src="<?php the_field('donate_sidebar_image_1'); ?>" class="img-fluid mx-auto mb-3" />
-						</a>
-						<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_1'); ?></h5>
-						<p class="content"><?php the_field('donate_sidebar_copy_text_1'); ?></p>
-						<a class="continue float-right" href="<?php the_field('donate_sidebar_url_1'); ?>"><?php the_field('donate_sidebar_cta_text_1'); ?> &raquo; </a>
-						<div class="clearfix"></div>
-					</div>
+					<?php the_content(); ?>
 				</div>
-				<div class="news-item">
-					<div class="block-content">
-						<a class="continue float-right" href="<?php the_field('donate_sidebar_url_2'); ?>">
-							<img src="<?php the_field('donate_sidebar_image_2'); ?>" class="img-fluid mx-auto mb-3" />
-						</a>
-						<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_2'); ?></h5>
-						<p class="content"><?php the_field('donate_sidebar_copy_text_2'); ?></p>
-						<a class="continue float-right" href="<?php the_field('donate_sidebar_url_2'); ?>"><?php the_field('donate_sidebar_cta_text_2'); ?> &raquo; </a>
-						<div class="clearfix"></div>
+			<div class="row" style="padding: 30px 0px 30px 0px;">
+					<div class="news-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<div class="inner">
+							<a class="continue float-right img-wrap" href="<?php the_field('donate_sidebar_url_1'); ?>">
+								<img src="<?php the_field('donate_sidebar_image_1'); ?>" class="img-fluid mx-auto mb-3" />
+							</a>
+							<div class="content-block">
+								<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_1'); ?></h5>
+							<p class="content"><?php the_field('donate_sidebar_copy_text_1'); ?></p>
+							<a class="continue float-right" href="<?php the_field('donate_sidebar_url_1'); ?>"><?php the_field('donate_sidebar_cta_text_1'); ?> &raquo; </a>
+							<div class="clearfix"></div>
+							</div>
+							
+						</div>
 					</div>
-				</div>
-				<div class="news-item">
-					<div class="block-content">
-						<a class="continue float-right" href="<?php the_field('donate_sidebar_url_3'); ?>">
-							<img src="<?php the_field('donate_sidebar_image_3'); ?>" class="img-fluid mx-auto mb-3" />
-						</a>
-						<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_3'); ?></h5>
-						<p class="content"><?php the_field('donate_sidebar_copy_text_3'); ?></p>
-						<a class="continue float-right" href="<?php the_field('donate_sidebar_url_3'); ?>"><?php the_field('donate_sidebar_cta_text_3'); ?> &raquo; </a>
-						<div class="clearfix"></div>
+					<div class="news-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<div class="inner">
+							<a class="continue float-right img-wrap" href="<?php the_field('donate_sidebar_url_2'); ?>">
+								<img src="<?php the_field('donate_sidebar_image_2'); ?>" class="img-fluid mx-auto mb-3" />
+							</a>
+							<div class="content-block">
+								<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_2'); ?></h5>
+							<p class="content"><?php the_field('donate_sidebar_copy_text_2'); ?></p>
+							<a class="continue float-right" href="<?php the_field('donate_sidebar_url_2'); ?>"><?php the_field('donate_sidebar_cta_text_2'); ?> &raquo; </a>
+							<div class="clearfix"></div>
+							</div>
+							
+						</div>
 					</div>
-				</div>
+					<div class="news-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
+						<div class="inner">
+							<a class="continue float-right img-wrap" href="<?php the_field('donate_sidebar_url_3'); ?>">
+								<img src="<?php the_field('donate_sidebar_image_3'); ?>" class="img-fluid mx-auto mb-3" />
+							</a>
+							<div class="content-block">
+								<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_3'); ?></h5>
+							<p class="content"><?php the_field('donate_sidebar_copy_text_3'); ?></p>
+							<a class="continue float-right" href="<?php the_field('donate_sidebar_url_3'); ?>"><?php the_field('donate_sidebar_cta_text_3'); ?> &raquo; </a>
+							<div class="clearfix"></div>
+							</div>
+							
+						</div>
+					</div>
 			</div>
 		</div>
 	</div>

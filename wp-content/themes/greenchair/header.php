@@ -30,8 +30,8 @@
                         <a class="navbar-brand" href="<?php echo site_url(); ?>"><img class="brand-desktop" src="<?php bloginfo('template_directory'); ?>/assets/images/tgcplogo.svg" /></a>
                         
                         <div class="nav-cta-wrap">
-                            <a href="/donate" class="btn btn-primary">Donate</a>
-                            <a href="/give" class="btn btn-green">Support</a>
+                            <a href="/donate" class="btn--xsm green donate">Donate</a>
+                            <a href="/give" class="btn--xsm white">Support</a>
                             <div class="three">
                                 <div class="navbar-toggler collapsed hamburger" id="hamburger-1">
                                 <span class="line"></span>
@@ -49,7 +49,7 @@
                                 <?php if( get_field('notification_text') ): ?>
                                     <span>!</span>
                                     &nbsp;&nbsp; <?php the_field('notification_text'); ?>
-                                    <a href="<?php the_field('notification_button_link'); ?>" ><?php the_field('notification_button_text'); ?></a>
+                                    <a class="btn--xsm" href="<?php the_field('notification_button_link'); ?>" ><?php the_field('notification_button_text'); ?></a>
                                  <?php endif; ?>
                             </div> 
                             <div class="close-banner">X</div>

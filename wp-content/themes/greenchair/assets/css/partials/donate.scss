@@ -41,35 +41,33 @@
 
 
   .news-item {
-    margin: 40px 0;
-    -webkit-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
-    box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+      margin-top: 15px;
+      margin-bottom: 15px;
 
-    .block-content {
-      padding: 30px;
-    }
+      .inner {
+          -webkit-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 1px 7px 0px rgba(0, 0, 0, 0.1);
+          min-height: 450px;
+      }
 
-    .date {
-      display: inline-block;
-      vertical-align: middle;
-      background: $green;
-      color: #ffffff;
-      padding: 5px 10px;
-      margin-right: 5px;
-    }
+      .img-wrap {
+          max-height: 255px;
+          overflow: hidden;
+          margin-bottom: 10px;
+      }
 
-    .source {
-      display: inline-block;
-      vertical-align: middle;
-      background: $green;
-      color: #ffffff;
-      padding: 5px 10px;
-    }
+      .content-block {
+          padding: 30px;
+      }
 
-    .continue {
-      color: $green;
-    }
+      p {
+          margin-bottom: 0;
+      }
+
+      .learn-more {
+          color: $green;
+      }
   }
 }
 
