@@ -294,6 +294,7 @@ a {
     border-radius: 3px;
     transition: all 0.25s ease-in-out;
     text-decoration: none !important;
+    font-weight: 300;
     &.green {
       border: 1px solid $green;
       margin-right: 0.625rem;
