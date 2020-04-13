@@ -414,12 +414,14 @@ a {
   .navbar-brand-mobile img {
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    width: 60px !important; }
+    width: 34px !important;
+    margin-left: 5px; }
   .navbar-brand-mobile .brand-text {
     font-weight: bold; }
     .navbar-brand-mobile .brand-text span {
       color: #000 !important;
-      font-weight: normal; }
+      font-weight: normal;
+      margin-left: 5px; }
   .navbar-brand-mobile:hover {
     border-bottom: 3px solid #6bbf4e; }
 
@@ -642,19 +644,20 @@ a {
     transform: translateY(0%); } }
 
 #footer {
-  background: #363f44;
-  color: #ffffff;
-  margin-top: 60px; }
+  background: #fff;
+  color: #363f44;
+  margin-top: 60px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
   #footer h6,
   #footer p,
   #footer a {
-    color: #ffffff; }
+    color: #363f44; }
   #footer #creds img {
     max-width: 200px; }
   #footer #social-links {
     list-style-type: none;
     padding-left: 0px !important;
-    color: #ffffff; }
+    color: #363f44; }
     #footer #social-links li {
       display: inline-block;
       font-size: 3rem;

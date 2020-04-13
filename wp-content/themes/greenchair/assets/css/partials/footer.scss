@@ -1,14 +1,18 @@
 @import '_variables';
 
 #footer {
-    background: $gray;
-    color: #ffffff;
-    margin-top: 60px;
+    // background: #fff;
+        background: #fff;
+                // background: #dae4e6;
 
+    color: $gray;
+    margin-top: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
     h6,
     p,
     a {
-        color: #ffffff;
+        color: $gray;
     }
     #creds {
         img {
@@ -18,7 +22,7 @@
     #social-links {
         list-style-type: none;
         padding-left: 0px !important;
-        color: #ffffff;
+        color: $gray;
 
         li {
             display: inline-block;

@@ -42,7 +42,7 @@
                         </div>
                         <?php wp_nav_menu( array( 'theme_location' => 'main_navigation', 'container' => false, 'menu' => 'main-navigation', 'menu_class'=> 'navbar-nav ml-auto', 'walker' => new wp_bootstrap_navwalker() ) ); ?>
                     </div>
-                    <a class="navbar-brand-mobile" href="<?php echo site_url(); ?>"><img  src="<?php bloginfo('template_directory'); ?>/assets/images/chair.png" /><span class="brand-text"><span>The</span> Green Chair</span></span></a>
+                    <a class="navbar-brand-mobile" href="<?php echo site_url(); ?>"><img  src="<?php bloginfo('template_directory'); ?>/assets/images/chair.svg" /><span class="brand-text"><span>The</span> Green Chair</span></span></a>
                     <?php if( get_field('notification_banner_') ): ?>
                         <section id="notification-banner">
                             <div class="notification-content">
