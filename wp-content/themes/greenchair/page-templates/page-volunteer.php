@@ -19,7 +19,11 @@ get_header(); ?>
         <div id="volunteer-info" class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 py-5">
-                    <?php the_content(); ?>
+                    <div class="row">
+                        <div class=" col-md-12 col-lg-10">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-4 py-5">
                             <div class="card">

@@ -30,10 +30,10 @@ get_header(); ?>
 	</div>
 	<div id="news-events">
 		<div class="container">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pt-5">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 pt-5">
 					<?php the_content(); ?>
 				</div>
-			<div class="row" style="padding: 30px 0px 30px 0px;">
+			<div class="row" >
 					<div class="news-item col-xs-12 col-sm-12 col-md-6 col-lg-4">
 						<div class="inner">
 							<a class="continue float-right img-wrap" href="<?php the_field('donate_sidebar_url_1'); ?>">
@@ -73,9 +73,11 @@ get_header(); ?>
 							<a class="continue float-right" href="<?php the_field('donate_sidebar_url_3'); ?>"><?php the_field('donate_sidebar_cta_text_3'); ?> &raquo; </a>
 							<div class="clearfix"></div>
 							</div>
-							
 						</div>
 					</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pt-5" style="padding: 30px 0px 30px 0px;">
+					<?php the_field('donation_disclaimer'); ?>
 			</div>
 		</div>
 	</div>

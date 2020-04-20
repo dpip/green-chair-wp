@@ -26,7 +26,7 @@ get_header(); ?>
                     <svg viewBox="0 0 64 64" class="pie">
                         <circle r="25%" cx="50%" cy="50%" style="stroke-dasharray: 75.3 100">
                         </circle>
-                        <circle r="25%" cx="50%" cy="50%" style="stroke-dasharray: 15.9 100; stroke: #8cc441; stroke-dashoffset: -85.3; animation-delay: 0.25s">
+                        <circle r="25%" cx="50%" cy="50%" style="stroke-dasharray: 15.9 100; stroke: #363f44; stroke-dashoffset: -85.3; animation-delay: 0.25s">
                         </circle>
                         <circle r="25%" cx="50%" cy="50%" style="stroke-dasharray: 19.3 100; stroke: inherit; stroke-dashoffset: -95.2; animation-delay: 0.5s">
                         </circle>
@@ -60,7 +60,7 @@ get_header(); ?>
                 <h4 class=""><?php echo the_field('impact_section_two_content_two'); ?></h4>
             </div>
         </div>
-                <h1 style="border-bottom: 4px solid #8cc441; padding-bottom: 10px; padding-top: 60px; font-weight: bold;">Since 2009 The Green Chair</h1>
+                <h1 style="border-bottom: 4px solid #8cc441; padding-bottom: 10px; padding-top: 60px; font-weight: bold;">Since 2009 The Green Chair </h1>
             
             <div class="d-flex row breakdown-wrap">
                 <div class="col breakdown-block block-three">

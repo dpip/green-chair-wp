@@ -258,7 +258,8 @@ a {
   text-transform: uppercase;
   padding-left: 0.8rem;
   border-bottom: 2px solid #fff;
-  transition: all 0.25s ease-in-out; }
+  transition: all 0.25s ease-in-out;
+  font-size: 0.8125rem; }
 
 .navbar.navbar-light .navbar-nav .btn-green {
   vertical-align: bottom;
@@ -318,8 +319,9 @@ a {
     transform-origin: top center;
     transform: scale(1, 0);
     opacity: 0;
-    border-top: 0.5px solid white !important;
-    border-radius: 0px 0px 5px 5px !important; }
+    border-radius: 0px 0px 5px 5px !important;
+    border: 1px solid #EDEDED !important;
+    border-top: 0.5px solid white !important; }
     .dropdown-menu a {
       transition: all 0.15s; }
       .dropdown-menu a:hover {
@@ -644,7 +646,7 @@ a {
     transform: translateY(0%); } }
 
 #footer {
-  background: #fff;
+  background: #EDEDED;
   color: #363f44;
   margin-top: 60px;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
@@ -871,8 +873,7 @@ a {
     background-size: contain;
     background-position: top right; }
   .left-mobile {
-    justify-content: center;
-    text-align: center !important; } }
+    justify-content: center; } }
 
 @media (min-width: 768px) {
   #home-bottom .left {
@@ -1213,11 +1214,11 @@ a {
     height: 300px;
     border-radius: 100%; }
     .impact-duo .duo-icon-top .impact-chart .pie {
-      background: #20504f;
+      background: #6bbf4e;
       border-radius: 50%; }
     .impact-duo .duo-icon-top .impact-chart .pie circle {
       fill: none;
-      stroke: #20504f;
+      stroke: #6bbf4e;
       stroke-width: 32;
       animation: rotate 1.5s ease-in; }
     .impact-duo .duo-icon-top .impact-chart i {

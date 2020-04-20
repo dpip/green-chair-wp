@@ -127,21 +127,16 @@
       height: 300px;
       // border: 2px solid $teal;
       border-radius: 100%;
-
-      // border: 6px solid $teal;
-      // border-radius: 100%;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // background-image: linear-gradient(to right, transparent 50%, #655 0);
       .pie {
-        background: #20504f;
+        // background: #20504f;
+        background: $green;
         border-radius: 50%;
       }
 
       .pie circle {
         fill: none;
-        stroke: #20504f;
+        // stroke: #20504f;
+        stroke: $green;
         stroke-width: 32;
         animation: rotate 1.5s ease-in;
       }
