@@ -26,6 +26,7 @@
                         <a href="/">Newsletter Sign Up Form (Code needed)</a>
                         <br>
                         <a href="/careers">Careers</a>
+                        <a href="/financials">Financials</a>
                     </div>
                 </div>
             </div>

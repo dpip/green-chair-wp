@@ -648,7 +648,6 @@ a {
 #footer {
   background: #EDEDED;
   color: #363f44;
-  margin-top: 60px;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
   #footer h6,
   #footer p,
@@ -1061,7 +1060,7 @@ a {
   width: 2px; }
 
 .horizontal-rule {
-  border-bottom: 1px solid #554a4e;
+  border-bottom: 4px solid #6bbf4e;
   width: 100%;
   height: 10px; }
 

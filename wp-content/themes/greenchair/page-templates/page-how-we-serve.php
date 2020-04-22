@@ -16,8 +16,11 @@ get_header(); ?>
     <div class="container">
         <div class="d-flex row impact-duo justify-content-center align-items-center">
                 <div class="col d-flex flex-column justify-content-center align-items-center">
+                <div class="col-sm-12 d-inline-flex" style="padding-left: 0px;">
+                    <!-- <h1 style="padding-bottom: 10px; padding-top: 60px; font-weight: bold;">Since 2009 The Green Chair <div class="horizontal-rule"></div></h1> -->
+                    <h1 style="padding-bottom: 10px; font-weight: bold;"><?php echo the_field('impact_section_two_lead_one'); ?><div class="horizontal-rule"></div></h1>
+                </div>
                     <span>
-                        <h1 style="border-bottom: 4px solid #8cc441; padding-bottom: 10px; font-weight: bold;"><?php echo the_field('impact_section_two_lead_one'); ?></h1>
                         <h4 style="font-size: 1.75rem;"><?php echo the_field('impact_section_two_content_one'); ?></h4>
                     </span>
                 </div>
@@ -56,12 +59,16 @@ get_header(); ?>
                 </div>
             </div>
             <div class="col impact-duo-content">
-                <h1 class="green"><?php echo the_field('impact_section_two_lead_two'); ?></h1>    
-                <h4 class=""><?php echo the_field('impact_section_two_content_two'); ?></h4>
+                <div class="col-sm-12 d-inline-flex" style="padding-left: 0px;">
+                    <h1 style="padding-bottom: 10px; font-weight: bold; color: #6bbf4e;"><?php echo the_field('impact_section_two_lead_two'); ?></h1>
+                </div>  
+                <h4 class="" style="font-size: 1.75rem;"><?php echo the_field('impact_section_two_content_two'); ?></h4>
             </div>
         </div>
-                <h1 style="border-bottom: 4px solid #8cc441; padding-bottom: 10px; padding-top: 60px; font-weight: bold;">Since 2009 The Green Chair </h1>
-            
+                <div class="col-sm-12 d-inline-flex" style="padding-left: 0px;">
+                    <h1 style="padding-bottom: 10px; padding-top: 60px; font-weight: bold;">Since 2009 The Green Chair <div class="horizontal-rule"></div></h1>
+                </div>
+        
             <div class="d-flex row breakdown-wrap">
                 <div class="col breakdown-block block-three">
                     <p class="teal">We have served</p>
@@ -108,50 +115,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="container" style="margin-bottom: 60px;">
-            <h1 style="border-bottom: 4px solid #8cc441; padding-bottom: 10px; font-weight: bold; margin-top: 60px; margin-bottom: 60px;">Organizations we support</h1>
-        <div class="row">
-            
-        <?php
-                //Agency Partner Items
-
-                $the_query = new WP_Query( 
-                    array(
-                        'post_type' => 'agency-partners-item',
-                        'posts_per_page' => -1
-                    ) 
-                );
-
-                if ( $the_query->have_posts() ) {
-                    while ( $the_query->have_posts() ) {
-                        $the_query->the_post();
-                        $id = get_the_ID();
-                        $logo = get_the_post_thumbnail($id, 'full', array('class' => 'img-fluid mx-auto d-block'));
-                        $title = get_the_title($id);
-                        $partnerName = get_field('partner_name');
-                        $link = get_field('partner_link');
-
-                        echo '<div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 agency-partners-container">';
-                        echo '<a href="'. $link .'"><img alt="" src="'. $logo .'"></img></a>';
-                            echo '<p class="careers-available-title">' . $partnerName . '</p>';
-                        echo '</div>';
-
-                    }
-                    
-                    wp_reset_postdata();
-                } else {
-                    echo '<div class="col-9">';
-                        echo '<h4 class="fallback-header">Thank you for your interest in working with The Green Chair Project!</h4>';
-                    echo '</div>';
-                    echo '<div class="col-9">';
-                        echo '<p class="fall-back-content">Currently we do not have any staff openings available, but we always have room for more volunteers!  Take a look at our volunteer page and come get to know us.  We look forward to seeing you soon!</p>';
-                        echo '<a href="/get-involved" class="btn btn-green">Get Involved</a>';
-                    echo '</div>';
-                }
-            ?>
-
-        </div>
-    </div>          
+               
     </div>
     <?php endwhile; ?>
     <?php endif; ?>

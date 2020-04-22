@@ -31,9 +31,11 @@ get_header(); ?>
             </div>
         </div>
         <div class="container" style="margin-top: 50px;">
+            <div class="col-sm-12 d-inline-flex" style="padding: 0rem 0rem 2rem 0rem;">
+                        <h2><?php echo get_field('story_heading'); ?><div class="horizontal-rule"></div> </h2>
+                    </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-7 content">
-                    <h2 style="padding: 0rem 0rem 2rem 0rem;"><?php echo get_field('story_heading'); ?></h2>
                     <?php the_field('about_story_section'); ?>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-5 content">
@@ -41,7 +43,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 50px;">
+        <!-- <div class="container" style="margin-top: 50px;">
             <h2 style="padding: 0rem 0rem 2rem 0rem;">Who we serve</h2>
         <div class="row">
         <?php
@@ -82,7 +84,7 @@ get_header(); ?>
             ?>
 
         </div>
-    </div>  
+    </div>   -->
         <!-- <div class="container financials-container">
             <h2 style="padding: 0rem 0rem 2rem 0rem;"><?php echo the_field('about_financials_heading'); ?></h2>
             <div class="row">

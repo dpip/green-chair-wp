@@ -85,8 +85,10 @@ get_header(); ?>
         <div id="news-events">
             <div class="container">
                 <div class="row">
+                    <div class="col-sm-12 d-inline-flex">
+                        <h1 class="mt-4 mb-3">What's happening at Greenchair<div class="horizontal-rule"></div> </h1>
+                    </div>
                     <div class="col-md-12">
-                        <h2>What's happening at Greenchair</h2>
                         <div class="row">
                             <?php
                                 //News Items
