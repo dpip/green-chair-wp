@@ -14,6 +14,38 @@ get_header(); ?>
             </div>
         </div>
     <div class="container">
+    <div class="col-sm-12 d-inline-flex" style="padding-left: 0px; position: relative; align-items: center;">
+        <h1 style="padding-top: 0px; font-weight: bold;">Furnishing lives since 2009<div class="horizontal-rule"></div></h1>
+        <div id="heart-animation">
+            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tfaePY.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"    autoplay></lottie-player></div>
+    </div>
+    <div class="d-flex row breakdown-wrap">
+                <div class="col breakdown-block block-three">
+                    <p class="teal">We have served</p>
+                    <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_one_top'); ?>" class="timerOne"></h2><h2 class="green impact-plus">+</h2></div>
+                    <div>
+                        <p><?php echo get_field('impact_column_one_bottom'); ?></p>
+                        <p class="impact-accent"><span class="accentOne"></span></p>
+                        </div>
+                </div>
+                <div class="col breakdown-block block-three">
+                    <p class="teal">We have distributed</p>
+                <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_two_top'); ?>" class="timerTwo"></h2><h2 class="green impact-plus">+</h2></div>
+                    <div>
+                        <p><?php echo get_field('impact_column_two_bottom'); ?></p>
+                        <p class="impact-accent"><span class="accentTwo"></span></p>
+                    </div>      
+                </div>
+                <div class="col breakdown-block block-three">
+                    <p class="teal">We have given</p>
+                <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_three_top'); ?>" class="timerThree"></h2><h2 class="green impact-plus">+</h2></div>
+                    <div>
+                        <p><?php echo get_field('impact_column_three_bottom'); ?></p>
+                        <p class="impact-accent"><span class="accentThree"></span></p>
+                    </div>
+                </div>
+            </div>
         <div class="d-flex row impact-duo justify-content-center align-items-center">
                 <div class="col d-flex flex-column justify-content-center align-items-center">
                 <div class="col-sm-12 d-inline-flex" style="padding-left: 0px;">
@@ -65,11 +97,14 @@ get_header(); ?>
                 <h4 class="" style="font-size: 1.75rem;"><?php echo the_field('impact_section_two_content_two'); ?></h4>
             </div>
         </div>
-                <div class="col-sm-12 d-inline-flex" style="padding-left: 0px;">
-                    <h1 style="padding-bottom: 10px; padding-top: 60px; font-weight: bold;">Since 2009 The Green Chair <div class="horizontal-rule"></div></h1>
-                </div>
+                <!-- <div class="col-sm-12 d-inline-flex" style="padding-left: 0px; position: relative; align-items: center;">
+                    <h1 style="padding-top: 60px; font-weight: bold;">Since 2009<div class="horizontal-rule"></div></h1>
+                    <div id="heart-animation">
+                     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tfaePY.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"    autoplay></lottie-player></div>
+                </div> -->
         
-            <div class="d-flex row breakdown-wrap">
+            <!-- <div class="d-flex row breakdown-wrap">
                 <div class="col breakdown-block block-three">
                     <p class="teal">We have served</p>
                     <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_one_top'); ?>" class="timerOne"></h2><h2 class="green impact-plus">+</h2></div>
@@ -94,7 +129,7 @@ get_header(); ?>
                         <p class="impact-accent"><span class="accentThree"></span></p>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- <div class="jumbotron stat-banner" style="background-image: url(<?php echo get_field('impact_section_three_banner'); ?>);">
             <div class="container">

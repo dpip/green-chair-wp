@@ -1,3 +1,4 @@
+
 jQuery(function ($) {
   $(document).ready(function () {
     $.fn.countTo = function (options) {
@@ -104,4 +105,14 @@ jQuery(function ($) {
   $('.close-banner').on('click', function () {
     $('#notification-banner').hide();
   })
+
+  // const countUp = new CountUp('targetId', 5234);
+
+  // console.log('derp', countUp)
+  // if (!countUp.error) {
+  //   countUp.start();
+  // } else {
+  //   console.error(countUp.error);
+  // }
+
 });

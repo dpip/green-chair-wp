@@ -293,6 +293,15 @@
   flex-direction: column;
 }
 
+#heart-animation {
+  position: relative;
+  height: 100%;
+  right: 0;
+  margin-left: -50px;
+  margin-top: -40px;
+  // background-color: red;
+}
+
 @media screen and (max-width: 991.98px) {
   .doc-wrap {
     flex-direction: column;

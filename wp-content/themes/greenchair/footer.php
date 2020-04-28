@@ -23,10 +23,9 @@
                     </div>
                     <div class="col-sm">
                     <!--TODO: CODE neded -->
-                        <a href="/">Newsletter Sign Up Form (Code needed)</a>
-                        <br>
-                        <a href="/careers">Careers</a>
-                        <a href="/financials">Financials</a>
+                        <p><a href="/">Newsletter Sign Up Form (Code needed)</a></p>
+                        <p><a href="/careers">Careers</a></p>
+                        <p><a href="/financials">Financials</a></p>
                     </div>
                 </div>
             </div>

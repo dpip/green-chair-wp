@@ -8,7 +8,7 @@ get_header(); ?>
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <?php $backgroundimage = get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>
-        <div class="jumbotron d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo $backgroundimage ?>); background-size: cover;">
+        <div class="jumbotron d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo $backgroundimage ?>); background-size: cover; border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 ">
