@@ -16,10 +16,11 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 50px;">
+        <div class="container pb-4" style="margin-top: 50px;">
             <div class="row doc-wrap">
-                <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="col-sm-12 col-md-12 col-lg-10">
                     <!-- <?php the_content(); ?> -->
+                    <h4 class=""><span style="color: #6bbf4e; font-weight: bold;">Thank you</span> to these companies, organizations, and foundations that support our community through donations to The Green Chair Project! </h4>
                 </div>
                 
             </div>
@@ -52,7 +53,7 @@ get_header(); ?>
                                 $title = get_the_title($id);
                                 $link = get_field('company_website');
 
-                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center pb-4">';
                                     if(!empty($img)){
                                         if(!empty($link)){
                                             echo '<a href="' . $link . '" target="_blank">';
@@ -101,7 +102,7 @@ get_header(); ?>
                                 $link = get_field('company_website');
                                 $content = get_field('disclaimer_text');
 
-                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center">';
+                                echo '<div class="col-lg-3 my-2 d-flex flex-column justify-content-center align-items-center pb-4">';
                                     if(!empty($img)){
                                         if(!empty($link)){
                                             echo '<a href="' . $link . '" target="_blank">';

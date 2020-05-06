@@ -23,7 +23,12 @@
                     </div>
                     <div class="col-sm">
                     <!--TODO: CODE neded -->
-                        <p><a href="/">Newsletter Sign Up Form (Code needed)</a></p>
+                        <p><a href="/">Newsletter Sign Up Form</a></p>
+
+                        
+                        <script> var _ctct_m = "3abb8c8516c6fc547b50ecde646e13a3";</script>
+                        <script id="signupScript" src="//static.ctctcdn.com/js/signup-form-widget/current/signup-form-widget.min.js" async defer></script>
+                        <div class="ctct-inline-form" data-form-id="XXXXXXXX-5ede-4802-8f87-cf552f6cd7cf"></div>
                         <p><a href="/careers">Careers</a></p>
                         <p><a href="/financials">Financials</a></p>
                     </div>
