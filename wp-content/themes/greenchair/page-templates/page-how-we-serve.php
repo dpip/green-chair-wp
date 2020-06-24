@@ -13,36 +13,59 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-    <div class="container">
-    <div class="col-sm-12 d-inline-flex" style="padding-left: 0px; position: relative; align-items: center;">
-        <h1 style="padding-top: 0px; font-weight: bold;">Furnishing lives since 2009<div class="horizontal-rule"></div></h1>
-        <div id="heart-animation">
-            <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tfaePY.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"    autoplay></lottie-player></div>
+    <div class="container pt-4 pb-4">
+    <div class="col-sm-12 pt-4 pb-4" style="padding-left: 0px; position: relative; align-items: center;">
+        <div class="hws__draw-top">
+            <h1 style="padding-top: 0px; font-weight: bold;">Furnishing lives since 2009</h1>
+            <div class="lines">
+                <div class="line one">
+                    <div class="hws__fill"></div>
+                </div>
+                <div class="line two">
+                    <div id="heart-animation">
+                        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_tfaePY.json"  background="transparent" speed="1" delay="2" style="width: 150px; height: 150px;" autoplay></lottie-player>
+                    </div>
+                </div>
+                <div class="line three">
+                    <div class="hws__fill"></div>
+                </div>
+            </div>
+        </div>
+        
     </div>
     <div class="d-flex row breakdown-wrap">
-                <div class="col breakdown-block block-three">
-                    <p class="teal">We have served</p>
-                    <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_one_top'); ?>" class="timerOne"></h2><h2 class="green impact-plus">+</h2></div>
-                    <div>
-                        <p><?php echo get_field('impact_column_one_bottom'); ?></p>
-                        <p class="impact-accent"><span class="accentOne"></span></p>
+                <div class="col col-sm-12 col-md-4 breakdown-block block-three">
+                    <div class="inner">
+                        <div class="graphic"></div>
+                        <p class="teal">We have served</p>
+                        <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_one_top'); ?>" class="timerOne"></h2></div>
+                        <div>
+                            <h3><?php echo get_field('impact_column_one_bottom'); ?></h3>
+                            <!-- <p class="impact-accent"><span class="accentOne"></span></p> -->
                         </div>
+                    </div>
                 </div>
-                <div class="col breakdown-block block-three">
-                    <p class="teal">We have distributed</p>
-                <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_two_top'); ?>" class="timerTwo"></h2><h2 class="green impact-plus">+</h2></div>
-                    <div>
-                        <p><?php echo get_field('impact_column_two_bottom'); ?></p>
-                        <p class="impact-accent"><span class="accentTwo"></span></p>
-                    </div>      
+                <div class="col col-sm-12 col-md-4 breakdown-block block-three">
+                    <div class="inner">
+                        <div class="graphic"></div>
+                        <p class="teal">We have distributed</p>
+                        <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_two_top'); ?>" class="timerTwo"></h2></div>
+                        <div>
+                            <h3><?php echo get_field('impact_column_two_bottom'); ?></h3>
+                            <!-- <p class="impact-accent"><span class="accentTwo"></span></p> -->
+                        </div>   
+                    </div>             
                 </div>
-                <div class="col breakdown-block block-three">
-                    <p class="teal">We have given</p>
-                <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_three_top'); ?>" class="timerThree"></h2><h2 class="green impact-plus">+</h2></div>
-                    <div>
-                        <p><?php echo get_field('impact_column_three_bottom'); ?></p>
-                        <p class="impact-accent"><span class="accentThree"></span></p>
+                <div class="col col-sm-12 col-md-4 breakdown-block block-three">
+                    <div class="inner">
+                        <div class="graphic"></div>
+                        <p class="teal">We have given</p>
+                        <div class="d-flex"><h2 data-impactnum="<?php echo get_field('impact_column_three_top'); ?>" class="timerThree"></h2></div>
+                        <div>
+                            <h3><?php echo get_field('impact_column_three_bottom'); ?></h3>
+                            <!-- <p class="impact-accent"><span class="accentThree"></span></p> -->
+                        </div>
                     </div>
                 </div>
             </div>
