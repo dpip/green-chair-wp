@@ -427,6 +427,20 @@
   align-items: center;
   margin: 50px 0px 0px 0px;
   position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation-name: slide;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      &.b1 {
+        animation-delay: 0.5s;
+      }
+      &.b2 {
+        animation-delay: 1s;
+      }
+      &.b3 {
+        animation-delay: 1.5s;
+      }
   .inner {
     // padding: 75px;
     display: flex;
@@ -440,10 +454,13 @@
     padding-bottom: 32px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     .graphic {
-      height: 200px;
-      width: 200px;
-      border: 1px solid $grayLight;
+      height: 125px;
+      width: 125px;
+      // border: 1px solid $grayLight;
       margin-bottom: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   .d-flex {
@@ -482,6 +499,41 @@
   }
   .impact-num {
     color: $green;
+  }
+
+  .impact-counter {
+    height: 75px;
+  }
+
+  .timerOne {
+    &.animate {
+      opacity: 0;
+    animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
+    }
+    
+  }
+  .timerTwo {
+    &.animate {
+      opacity: 0;
+    animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-delay: 1.5s;
+      animation-fill-mode: forwards;
+    }
+    
+  }
+  .timerThree {
+    &.animate {
+      opacity: 0;
+    animation-name: fadeIn;
+      animation-duration: 0.5s;
+      animation-delay: 2s;
+      animation-fill-mode: forwards;
+    }
+    
   }
 
   .impact-accent {
@@ -541,4 +593,48 @@
   100% {
     flex: 0 0 150px;
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.here {
+  background-color: #EDEDED;
+  min-height: 200px;
+  .col {
+    margin: 0;
+    padding: 0;
+  }
+}
+.col-chart {
+  position: relative;
+
+  .chart-content {
+    
+  }
+  
+}
+.chart-supporting {
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

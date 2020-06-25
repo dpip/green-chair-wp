@@ -1185,7 +1185,18 @@ a {
   justify-content: center;
   align-items: center;
   margin: 50px 0px 0px 0px;
-  position: relative; }
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  animation-name: slide;
+  animation-duration: 1s;
+  animation-fill-mode: forwards; }
+  .breakdown-block.b1 {
+    animation-delay: 0.5s; }
+  .breakdown-block.b2 {
+    animation-delay: 1s; }
+  .breakdown-block.b3 {
+    animation-delay: 1.5s; }
   .breakdown-block .inner {
     display: flex;
     flex-direction: column;
@@ -1197,10 +1208,12 @@ a {
     padding-bottom: 32px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
     .breakdown-block .inner .graphic {
-      height: 200px;
-      width: 200px;
-      border: 1px solid #767676;
-      margin-bottom: 24px; }
+      height: 125px;
+      width: 125px;
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
   .breakdown-block .d-flex {
     justify-content: flex-start;
     align-items: center; }
@@ -1231,6 +1244,26 @@ a {
       flex: 0 0 0px; }
   .breakdown-block .impact-num {
     color: #6bbf4e; }
+  .breakdown-block .impact-counter {
+    height: 75px; }
+  .breakdown-block .timerOne.animate {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards; }
+  .breakdown-block .timerTwo.animate {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards; }
+  .breakdown-block .timerThree.animate {
+    opacity: 0;
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards; }
   .breakdown-block .impact-accent {
     position: relative;
     display: inline-flex;
@@ -1267,6 +1300,37 @@ a {
     flex: 0 0 0px; }
   100% {
     flex: 0 0 150px; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0px); } }
+
+.here {
+  background-color: #EDEDED;
+  min-height: 200px; }
+  .here .col {
+    margin: 0;
+    padding: 0; }
+
+.col-chart {
+  position: relative; }
+
+.chart-supporting {
+  height: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 .jumbo-impact {
   background-size: cover;

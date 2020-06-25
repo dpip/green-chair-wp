@@ -1,86 +1,9 @@
 
 jQuery(function ($) {
-  $(document).ready(function () {
-    $.fn.countTo = function (options) {
-      // merge the default plugin settings with the custom options
-      options = $.extend({}, $.fn.countTo.defaults, options || {});
+  // $(document).ready(function () {
+    
 
-      // how many times to update the value, and how much to increment the value on each update
-      var loops = Math.ceil(options.speed / options.refreshInterval),
-        increment = (options.to - options.from) / loops;
-
-      return $(this).each(function () {
-        var _this = this,
-          loopCount = 0,
-          value = options.from,
-          interval = setInterval(updateTimer, options.refreshInterval);
-
-        function updateTimer() {
-          value += increment;
-          loopCount++;
-          $(_this).html(value.toFixed(options.decimals));
-
-          if (typeof options.onUpdate == "function") {
-            options.onUpdate.call(_this, value);
-          }
-
-          if (loopCount >= loops) {
-            clearInterval(interval);
-            value = options.to;
-
-            if (typeof options.onComplete == "function") {
-              options.onComplete.call(_this, value);
-            }
-          }
-        }
-      });
-    };
-
-    $.fn.countTo.defaults = {
-      from: 0, // the number the element should start at
-      to: 100, // the number the element should end at
-      speed: 1000, // how long it should take to count between the target numbers
-      refreshInterval: 100, // how often the element should be updated
-      decimals: 0, // the number of decimal places to show
-      onUpdate: null, // callback method for every time the element is updated,
-      onComplete: null // callback method for when the element finishes updating
-    };
-
-    let impactOne = $(".timerOne").attr("data-impactnum");
-    let impactTwo = $(".timerTwo").attr("data-impactnum");
-    let impactThree = $(".timerThree").attr("data-impactnum");
-
-    $(".timerOne").countTo({
-      from: 50,
-      to: impactOne,
-      speed: 1500,
-      refreshInterval: 50,
-      onComplete: function (value) {
-        console.debug(this);
-      }
-    });
-    $(".timerTwo").countTo({
-      from: 50,
-      to: impactTwo,
-      speed: 1500,
-      refreshInterval: 50,
-      onComplete: function (value) {
-        console.debug(this);
-      }
-    });
-    $(".timerThree").countTo({
-      from: 50,
-      to: impactThree,
-      speed: 1500,
-      refreshInterval: 50,
-      onComplete: function (value) {
-        console.debug(this);
-      }
-    });
-
-    // Present minimal nav on scroll
-
-  });
+  // });
   window.addEventListener("scroll", bringmenu);
 
   function bringmenu() {
@@ -106,13 +29,41 @@ jQuery(function ($) {
     $('#notification-banner').hide();
   })
 
-  // const countUp = new CountUp('targetId', 5234);
+  let countImpact = function(impactId, delay) {
+    console.log('impact id', impactId)
+    var $this = impactId,
+      countTo = $this.attr('data-impactnum');
+    $this.addClass('animate')
+    $({
+      countNum: $this.text()
+    }).delay(delay).animate({
+        countNum: countTo
+      },
+  
+      {
+        duration: 2000,
+        easing: 'linear',
+        step: function() {
+          $this.text(commaSeparateNumber(Math.floor(this.countNum)));
+        },
+        complete: function() {
+          $this.text(commaSeparateNumber(this.countNum));
+          //alert('finished');
+        }
+      }
+    );
+  }
 
-  // console.log('derp', countUp)
-  // if (!countUp.error) {
-  //   countUp.start();
-  // } else {
-  //   console.error(countUp.error);
-  // }
+  countImpact($('.timerOne'), 0)
+  countImpact($('.timerTwo'), 1000)
+  countImpact($('.timerThree'), 2000)
+
+  
+  function commaSeparateNumber(val) {
+    while (/(\d+)(\d{3})/.test(val.toString())) {
+      val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
+    }
+    return val;
+  }
 
 });
