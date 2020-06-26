@@ -140,18 +140,19 @@ get_header(); ?>
         </div>
 
         </div>
-        <div class="d-flex row justify-content-center align-items-center here pt-4 pb-4">
-            <div class="container">
+        <div class="d-flex row justify-content-center align-items-center here pt-3 pb-3">
+            <div class="container container-chart">
                 <div class="col col-sm-12 col-md-4 col-chart">
-                <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 286.244 286.236">
-                <g id="Group_2" data-name="Group 2" transform="translate(370.877 -185.198)">
-                    <path id="Path_5" data-name="Path 5" d="M-143.636,212.532l-16.079,22.13a115.6,115.6,0,0,1,47.739,93.655A115.782,115.782,0,0,1-227.757,444.1,115.781,115.781,0,0,1-343.535,328.317,115.781,115.781,0,0,1-227.757,212.535V185.2c-47.421,0-87.9,20.628-115.778,58.994a143.113,143.113,0,0,0,31.66,199.9,143.113,143.113,0,0,0,199.9-31.66A143.113,143.113,0,0,0-143.636,212.532Z" transform="translate(0 0)" fill="#dfdfdf"/>
-                    <path id="Path_6" data-name="Path 6" d="M-243.878,212.532C-269.457,193.95-296.384,185.2-328,185.2v27.337a115.235,115.235,0,0,1,68.043,22.127Z" transform="translate(100.243 0)" fill="#6bbf4e"/>
-                </g>
-                </svg>
-
+                <div class="chart-content">
+                    <p>More than</p>
+                    <a data-hover="10%">10%</a>
                 </div>
-                <div class="col col-sm-12 col-md-8 chart-supporting">
+                <svg id="right_arrow" class="direction__right direction__item" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="240px" height="240px" viewBox="0 0 240 240" xml:space="preserve">
+                    <circle cx="120" cy="120" r="108" fill="transparent" stroke="#dfdfdf" stroke-width="20" />
+                    <circle class="circle" cx="120" cy="120" r="108" fill="transparent" stroke="#6bbf4e" stroke-width="20" />
+                    </svg>
+                </div>
+                <div class="col col-sm-12 col-md-7 chart-supporting">
                     <h3>Why it matters</h3>
                     <p>With more than 10% of Wake County households living below the federal poverty line, 1 out of 10 cannot afford the cost of basic household furnishings.</p>
                 </div>

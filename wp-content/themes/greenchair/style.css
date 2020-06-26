@@ -1219,7 +1219,7 @@ a {
     align-items: center; }
   .breakdown-block h2 {
     font-weight: bold;
-    font-size: 75px;
+    font-size: 64px;
     color: #6bbf4e; }
   .breakdown-block h3 {
     color: #363f44;
@@ -1323,7 +1323,13 @@ a {
     padding: 0; }
 
 .col-chart {
-  position: relative; }
+  position: relative;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px; }
+  .col-chart.animateMe {
+    display: flex; }
 
 .chart-supporting {
   height: auto !important;
@@ -1331,7 +1337,87 @@ a {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  min-height: 200px; }
+  min-height: 300px; }
+
+#right_arrow {
+  transform: rotate(-90deg); }
+
+.circle {
+  /* calculate using: (2 * PI * R) */
+  stroke-dasharray: 681;
+  stroke-dashoffset: 0;
+  animation-name: rotate;
+  animation-duration: 2s;
+  animation-delay: 0.25s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+  animation-fill-mode: forwards; }
+
+@keyframes rotate {
+  to {
+    stroke-dashoffset: 612.9; } }
+
+.chart-content {
+  position: absolute;
+  height: 240px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 90; }
+  .chart-content a {
+    margin-bottom: 0px;
+    color: #363f44 !important;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    font-size: 64px;
+    font-weight: bold;
+    transform: scale3d(0.5, 0.5, 0.5);
+    transform-origin: center;
+    opacity: 0;
+    animation-name: scaleIn;
+    animation-duration: 1s;
+    animation-delay: 1.25s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+    animation-fill-mode: forwards; }
+    .chart-content a span {
+      color: #363f44 !important; }
+  .chart-content p {
+    margin-bottom: 0px;
+    opacity: 0;
+    transform: translateY(16px);
+    animation-name: fadeP;
+    animation-duration: 0.75s;
+    animation-delay: 0.75s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.37, 0, 0.63, 1);
+    animation-fill-mode: forwards; }
+
+@keyframes fillText {
+  to {
+    width: 100%;
+    opacity: 1; } }
+
+@keyframes fadeP {
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes scaleIn {
+  0% {
+    transform: scale3d(0.85, 0.85, 0.85);
+    transform-origin: center;
+    opacity: 0; }
+  75% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1.1); }
+  100% {
+    transform: scale3d(1, 1, 1);
+    transform-origin: center;
+    opacity: 1; } }
 
 .jumbo-impact {
   background-size: cover;
