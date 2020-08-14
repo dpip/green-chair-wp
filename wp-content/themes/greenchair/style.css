@@ -650,18 +650,19 @@ a {
   color: #363f44;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
   #footer h6,
-  #footer p,
-  #footer a {
+  #footer p {
     color: #363f44; }
-  #footer #creds img {
-    max-width: 200px; }
+  #footer #creds {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   #footer #social-links {
     list-style-type: none;
     padding-left: 0px !important;
     color: #363f44; }
     #footer #social-links li {
       display: inline-block;
-      font-size: 3rem;
+      font-size: 2.25rem;
       padding: 10px 5px;
       line-height: 1; }
 
@@ -669,7 +670,69 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start; }
+  align-items: flex-start;
+  max-width: fit-content;
+  width: fit-content; }
+
+.footer-sign-up-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: fit-content;
+  width: fit-content; }
+
+.footer--contact-item {
+  font-size: 1.25rem;
+  color: #a3a29c !important; }
+
+.footer--contact-email {
+  text-decoration: underline !important;
+  color: #6bbf4e !important; }
+
+.footer-input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: fit-content;
+  width: fit-content;
+  margin-top: .25rem;
+  padding-bottom: 2.75rem; }
+  .footer-input-container input {
+    padding: 7px 17px 7px 1px;
+    font-style: italic;
+    border: 1px solid #a3a29c !important;
+    text-indent: 7px; }
+  .footer-input-container .btn {
+    color: #fff !important;
+    margin-left: 1rem; }
+    .footer-input-container .btn:hover {
+      color: #6bbf4e !important; }
+
+.footer-legal {
+  background-color: #363F44;
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  .footer-legal .copyright {
+    color: #a3a29c !important;
+    font-size: .75rem !important;
+    margin-bottom: 0px !important; }
+  .footer-legal .footer-legal-links {
+    display: flex;
+    align-items: flex-start;
+    flex: 0;
+    width: fit-content;
+    max-width: fit-cotnent; }
+    .footer-legal .footer-legal-links p {
+      margin-bottom: 0px; }
+    .footer-legal .footer-legal-links .legal-link {
+      color: #fff !important;
+      text-decoration: underline; }
+    .footer-legal .footer-legal-links .legal-divider {
+      margin-left: 5px;
+      margin-right: 5px;
+      color: #fff !important; }
 
 .give-page .jumbotron {
   background-repeat: no-repeat;

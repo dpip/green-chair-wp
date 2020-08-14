@@ -10,14 +10,18 @@
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     
     h6,
-    p,
-    a {
+    p {
         color: $gray;
     }
     #creds {
         img {
-            max-width: 200px;
+            // max-width: 135px;
+            // width: 135px;
+            // padding: 10px;
         }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
     #social-links {
         list-style-type: none;
@@ -26,7 +30,7 @@
 
         li {
             display: inline-block;
-            font-size: 3rem;
+            font-size: 2.25rem;
             padding: 10px 5px;
             line-height: 1;
         }
@@ -39,4 +43,85 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    max-width: fit-content;
+    width: fit-content;
 }
+
+.footer-sign-up-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: fit-content;
+    width: fit-content;
+}
+
+.footer--contact-item {
+    font-size: 1.25rem;
+    color: #a3a29c !important;
+}
+
+.footer--contact-email {
+    text-decoration: underline !important;
+    color: $green !important;
+}
+
+.footer-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: fit-content;
+    width: fit-content;
+    margin-top: .25rem;
+    padding-bottom: 2.75rem;
+    input {
+        padding: 7px 17px 7px 1px;
+        // border-radius: .25rem;
+        font-style: italic;
+        border: 1px solid #a3a29c !important;
+        text-indent: 7px;
+    }
+    .btn {
+        color: #fff !important;
+        margin-left: 1rem;
+        &:hover  {
+            color: $green !important;
+        }
+    }
+}
+
+.footer-legal {
+    background-color: #363F44;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .copyright {
+        color: #a3a29c !important;
+        font-size: .75rem !important;
+        margin-bottom: 0px !important;
+    }
+    .footer-legal-links {
+        display: flex;
+        align-items: flex-start;
+        flex: 0;
+        width: fit-content;
+        max-width: fit-cotnent;
+        p {
+            margin-bottom: 0px;
+        }
+        .legal-link {
+            color: #fff !important;
+            text-decoration: underline;
+            // font-size: 1.25rem;
+        }
+        .legal-divider {
+            margin-left: 5px;
+            margin-right: 5px;
+            color: #fff !important;
+            // font-size: 1.25rem;
+        }
+    }
+}
+
+
+
