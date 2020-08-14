@@ -118,7 +118,7 @@ get_header(); ?>
                                                 echo '<div class="content-block">';
                                                     echo '<h5>'. $title . '</h5>';
                                                     echo '<p>' . $content . '</p>';
-                                                    echo '<a href="' . $link .'" class="learn-more">Continue reading &raquo; </a>';
+                                                    echo '<a href="' . $link .'" class="btn btn-green" style="margin-top: 30px;">Continue reading </a>';
                                                 echo '</div>';
                                             echo '</div>';
                                         echo '</div>';

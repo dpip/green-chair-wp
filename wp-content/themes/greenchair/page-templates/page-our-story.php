@@ -30,7 +30,7 @@ get_header(); ?>
                 </div>
             </div>
         </div>
-        <div class="container" style="margin-top: 50px;">
+        <div class="container" style="margin-top: 50px; padding-bottom: 50px;">
             <div class="col-sm-12 d-inline-flex" style="padding: 0rem 0rem 2rem 0rem;">
                         <h2><?php echo get_field('story_heading'); ?><div class="horizontal-rule"></div> </h2>
                     </div>

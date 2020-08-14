@@ -823,7 +823,16 @@ a {
     .home-page #news-events .news-item p {
       margin-bottom: 0; }
     .home-page #news-events .news-item .learn-more {
-      color: #6bbf4e; }
+      color: #6bbf4e;
+      padding: 0.25rem 1.0rem !important;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      background-color: #fff;
+      padding: 7px 14px 7px 14px;
+      margin-left: 18px;
+      border-radius: 2px;
+      border: 1px solid #6bbf4e;
+      transition: all 0.15s ease-in-out; }
   .home-page #news-events .see-all {
     margin-top: 20px; }
   .home-page #news-events .event-item {
@@ -836,7 +845,16 @@ a {
     .home-page #news-events .event-item p {
       margin-bottom: 0; }
     .home-page #news-events .event-item .learn-more {
-      color: #6bbf4e; }
+      color: #6bbf4e;
+      padding: 0.25rem 1.0rem !important;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      background-color: #fff;
+      padding: 7px 14px 7px 14px;
+      margin-left: 18px;
+      border-radius: 2px;
+      border: 1px solid #6bbf4e;
+      transition: all 0.15s ease-in-out; }
 
 .home-page #essentials .essential-item {
   max-width: 100%;
@@ -1423,7 +1441,6 @@ a {
   background-size: cover;
   min-height: 400px; }
   .jumbo-impact h1 {
-    font-weight: bold;
     font-size: 4.5rem;
     color: white !important; }
 

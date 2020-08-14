@@ -29,9 +29,9 @@ get_header(); ?>
                             <div class="card">
                             <img class="box-image" style="height: 225px;" src="<?php the_field('volunteer_box_image_1'); ?>" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title teal"><?php the_field('volunteer_box_title_1'); ?></h5>
+                                <h5 class="card-title"><?php the_field('volunteer_box_title_1'); ?></h5>
                                 <p class="card-text"><?php the_field('volunteer_box_content_1'); ?></p>
-                                <a href="<?php the_field('volunteer_box_cta_url_1'); ?>" class="btn btn-primary"><?php the_field('volunteer_box_cta_1'); ?></a>
+                                <a href="<?php the_field('volunteer_box_cta_url_1'); ?>" class="btn btn-green"><?php the_field('volunteer_box_cta_1'); ?></a>
                             </div>
                             </div>
                         </div>
@@ -39,9 +39,9 @@ get_header(); ?>
                             <div class="card">
                             <img class="box-image" src="<?php the_field('volunteer_box_image_2'); ?>" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title teal"><?php the_field('volunteer_box_title_2'); ?></h5>
+                                <h5 class="card-title"><?php the_field('volunteer_box_title_2'); ?></h5>
                                 <p class="card-text"><?php the_field('volunteer_box_content_2'); ?></p>
-                                <a href="<?php the_field('volunteer_box_cta_url_2'); ?>" class="btn btn-primary"><?php the_field('volunteer_box_cta_2'); ?></a>
+                                <a href="<?php the_field('volunteer_box_cta_url_2'); ?>" class="btn btn-green"><?php the_field('volunteer_box_cta_2'); ?></a>
                             </div>
                             </div>
                         </div>
@@ -49,9 +49,9 @@ get_header(); ?>
                             <div class="card">
                             <img class="box-image" src="<?php the_field('volunteer_box_image_3'); ?>" alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title teal"><?php the_field('volunteer_box_title_3'); ?></h5>
+                                <h5 class="card-title"><?php the_field('volunteer_box_title_3'); ?></h5>
                                 <p class="card-text"><?php the_field('volunteer_box_content_3'); ?></p>
-                                <a href="<?php the_field('volunteer_box_cta_url_3'); ?>" class="btn btn-primary"><?php the_field('volunteer_box_cta_3'); ?></a>
+                                <a href="<?php the_field('volunteer_box_cta_url_3'); ?>" class="btn btn-green"><?php the_field('volunteer_box_cta_3'); ?></a>
                             </div>
                             </div>
                         </div>

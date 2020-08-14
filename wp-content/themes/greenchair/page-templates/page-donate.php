@@ -42,7 +42,7 @@ get_header(); ?>
 							<div class="content-block">
 								<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_1'); ?></h5>
 							<p class="content"><?php the_field('donate_sidebar_copy_text_1'); ?></p>
-							<a class="continue float-right" href="<?php the_field('donate_sidebar_url_1'); ?>"><?php the_field('donate_sidebar_cta_text_1'); ?> &raquo; </a>
+							<a class="btn btn-green" style="margin-top: 30px;" href="<?php the_field('donate_sidebar_url_1'); ?>"><?php the_field('donate_sidebar_cta_text_1'); ?></a>
 							<div class="clearfix"></div>
 							</div>
 							
@@ -56,7 +56,7 @@ get_header(); ?>
 							<div class="content-block">
 								<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_2'); ?></h5>
 							<p class="content"><?php the_field('donate_sidebar_copy_text_2'); ?></p>
-							<a class="continue float-right" href="<?php the_field('donate_sidebar_url_2'); ?>"><?php the_field('donate_sidebar_cta_text_2'); ?> &raquo; </a>
+							<a class="btn btn-green" style="margin-top: 30px;" href="<?php the_field('donate_sidebar_url_2'); ?>"><?php the_field('donate_sidebar_cta_text_2'); ?></a>
 							<div class="clearfix"></div>
 							</div>
 							
@@ -70,7 +70,7 @@ get_header(); ?>
 							<div class="content-block">
 								<h5 class="font-weight-bold"><?php the_field('donate_sidebar_heading_3'); ?></h5>
 							<p class="content"><?php the_field('donate_sidebar_copy_text_3'); ?></p>
-							<a class="continue float-right" href="<?php the_field('donate_sidebar_url_3'); ?>"><?php the_field('donate_sidebar_cta_text_3'); ?> &raquo; </a>
+							<a class="btn btn-green" style="margin-top: 30px;" href="<?php the_field('donate_sidebar_url_3'); ?>"><?php the_field('donate_sidebar_cta_text_3'); ?></a>
 							<div class="clearfix"></div>
 							</div>
 						</div>

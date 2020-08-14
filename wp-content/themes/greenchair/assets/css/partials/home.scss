@@ -104,6 +104,15 @@
 
             .learn-more {
                 color: $green;
+                padding: 0.25rem 1.0rem !important;
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                background-color: #fff;
+                padding: 7px 14px 7px 14px;
+                margin-left: 18px;
+                border-radius: 2px;
+                border: 1px solid $green;
+                transition: all 0.15s ease-in-out;
             }
         }
 
@@ -127,6 +136,15 @@
 
             .learn-more {
                 color: $green;
+                padding: 0.25rem 1.0rem !important;
+                font-family: "Lato", sans-serif;
+                font-weight: 300;
+                background-color: #fff;
+                padding: 7px 14px 7px 14px;
+                margin-left: 18px;
+                border-radius: 2px;
+                border: 1px solid $green;
+                transition: all 0.15s ease-in-out;
             }
         }
     }

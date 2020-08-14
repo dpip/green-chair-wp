@@ -9,7 +9,7 @@ get_header(); ?>
         <div class="jumbotron jumbo-impact d-flex flex-column justify-content-center align-items-center" style="background-image: url(<?php echo get_field('impact_image_top'); ?>);">
             <div class="container">
                 <div class="column">
-                    <h1 class="my-3 display-3"><?php echo get_the_title(); ?></h1>
+                    <h1 class=""><?php echo get_the_title(); ?></h1>
                 </div>
             </div>
         </div>
